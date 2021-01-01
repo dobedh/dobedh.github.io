@@ -1,48 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Jan 2021 17:03:04 GMT</lastBuildDate><item><title><![CDATA[Tag, 태그 게시물 예제]]></title><description><![CDATA[게시물에 태그를 지정할 수 있습니다. 해당 게시물의 Markdown YAML Front matter은 아래와 같습니다. 가이드의 Markdown YAML Front matter를 참고하세요. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://dobedh.github.io/tag-post-example/</link><guid isPermaLink="false">https://dobedh.github.io/tag-post-example/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;게시물에 태그를 지정할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;해당 게시물의 Markdown YAML Front matter은 아래와 같습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
-title: Tag, 태그 게시물 예제
-date: 2019-07-30
-tags:
-  - tag
-  - 태그
----&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;가이드의 Markdown YAML Front matter를 참고하세요.&lt;/p&gt;
-&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Image, 이미지 게시물 예제]]></title><description><![CDATA[이미지 파일이 첨부된 게시물의 예제입니다. 폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다. 게시물 파일명은 index.md 로 합니다. 이미지 파일은 폴더 내에 위치시킵니다. 자세한 가이드는 Documents를 확인해주세요.]]></description><link>https://dobedh.github.io/image-post-example.md/</link><guid isPermaLink="false">https://dobedh.github.io/image-post-example.md/</guid><pubDate>Sun, 24 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB00lEQVQ4y52SW2sUMRiG1+qN3uwhx0nmkMOeatei9G8I/igPoAi6IuKVf05hL6wj88lQaNHxzW531SKWNfDwJZnkmTchvR7aiXe3HxxX3ATLjDbMmA0WZFnGQggsxsi01uv5NHcFjvk7vW1bWPt4cWjPZKk/SiFXUv5CcL4qy3LlqmrF0VdKXeUT+Ia1z3dCIfgbrWWnpGiUlC0WtPI30lhp3WJTK4RsGeMt5FtICNExxt7vhEqJ16Gquli5L7MQmqM4bu77RGwWGN8bx2bufFNWFTAN1jeciwaiRA2+Q/huJ5R5viwWR115fFLLOCVtDAWmKI40WS6oshk5KckYVC8ozwVdJoOYf0X98YcwM2Y5mR12k/mins7vEpJQVhSUo5bOky1KMhhjHY1GnHDkJEvSvwsxsayc65xztfcBKQLF8YR8jOh7KpIsM2vJln8mNNYsy+msG/pYMyRK6SbC0hTkSpMvcAVa46iWwlhSXlwjlJwvM607JmXNcVcCSKRQfJNGbpEbrk04YuwVPnR4c59R6z05hfACwrc7YXpDeGMdPpynv+3JRdoLx4edsN/vPxwMBi9Rn6A+2wfseYr6AvXRWjYcDm9ceg/ALXDzPzjYun4C4yPqy09MVMcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;screenshot&quot;
-        title=&quot;screenshot&quot;
-        src=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png&quot;
-        srcset=&quot;/static/483b2386e38636bd5d9e7357b4c6796b/12f09/screenshot.png 148w,
-/static/483b2386e38636bd5d9e7357b4c6796b/e4a3f/screenshot.png 295w,
-/static/483b2386e38636bd5d9e7357b4c6796b/fcda8/screenshot.png 590w,
-/static/483b2386e38636bd5d9e7357b4c6796b/efc66/screenshot.png 885w,
-/static/483b2386e38636bd5d9e7357b4c6796b/c83ae/screenshot.png 1180w,
-/static/483b2386e38636bd5d9e7357b4c6796b/c0566/screenshot.png 1544w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;이미지 파일이 첨부된 게시물의 예제입니다.&lt;/p&gt;
-&lt;p&gt;폴더를 만들고 폴더의 제목이 해당 게시물의 주소가 됩니다.&lt;/p&gt;
-&lt;p&gt;게시물 파일명은 index.md 로 합니다.&lt;/p&gt;
-&lt;p&gt;이미지 파일은 폴더 내에 위치시킵니다.&lt;/p&gt;
-&lt;p&gt;자세한 가이드는 &lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Borderless Documents]]></title><description><![CDATA[블로그를 본인에 맞춰 커스터마이징하려면 우선 config.js의 수정이 필요합니다. Documents를 확인해주세요.]]></description><link>https://dobedh.github.io/first-post/</link><guid isPermaLink="false">https://dobedh.github.io/first-post/</guid><pubDate>Sat, 23 Mar 1991 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;블로그를 본인에 맞춰 커스터마이징하려면 우선 config.js의 수정이 필요합니다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/junhobaik/junhobaik.github.io/wiki/Document-(Borderless)&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Documents&lt;/a&gt;를 확인해주세요.&lt;/p&gt;</content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Jan 2021 17:36:16 GMT</lastBuildDate><item><title><![CDATA[TIL_210101]]></title><description><![CDATA[1. iOS 배운 것 2. Gatsby 배운 것 git 사용법 gatsby를 위한 install 기타 origin developer의 developer documents를 보는 것이 가장 정확하다. 다른 사람들이 2차 가공한 문서를 보면, 빠르게 학…]]></description><link>https://dobedh.github.io/TIL/</link><guid isPermaLink="false">https://dobedh.github.io/TIL/</guid><pubDate>Sat, 01 Jan 2101 00:00:00 GMT</pubDate><content:encoded>&lt;h4 id=&quot;1-ios-배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-ios-%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;1 ios 배운 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. iOS 배운 것&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;배운 것을 씁니다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;2-gatsby-배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-gatsby-%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;2 gatsby 배운 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Gatsby 배운 것&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;git 사용법&lt;/li&gt;
+&lt;li&gt;gatsby를 위한 install&lt;/li&gt;
+&lt;li&gt;기타&lt;/li&gt;
+&lt;li&gt;origin developer의 developer documents를 보는 것이 가장 정확하다.&lt;/li&gt;
+&lt;li&gt;다른 사람들이 2차 가공한 문서를 보면, 빠르게 학습되지 않는다. &lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL_210102]]></title><description><![CDATA[오늘 배운 것. 
+쓸 예정]]></description><link>https://dobedh.github.io/TIL/</link><guid isPermaLink="false">https://dobedh.github.io/TIL/</guid><pubDate>Sat, 02 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오늘 배운 것.
+쓸 예정&lt;/p&gt;</content:encoded></item></channel></rss>
