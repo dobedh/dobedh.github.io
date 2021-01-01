@@ -5,25 +5,24 @@ module.exports = {
   author: `Author`,                         // (* Required)
   language: 'ko-KR',                        // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'https://dobedh.github.io',                      // (* Required)
-    // ex.'https://junhobaik.github.io'
-    // ex.'https://junhobaik.github.io/' << X, Do not enter "/" at the end.
+
 
   /** Header */
-  profileImageFileName: '', // include filename extension ex.'profile.jpg'
+  profileImageFileName: 'profile.jpg', // include filename extension ex.'profile.jpg'
     // The Profile image file is located at path "./images/"
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'Enter your information in the "./config.js" file. ',
-  name: 'User Name',
+  comment: 'loving to make change for human mind. counseling lover',
+  name: '',
   company: '',
-  location: 'Korea',
+  location: '',
   email: '',
-  website: 'https://github.com/junhobaik/junhobaik.github.io',           // ex.'https://junhobaik.github.io'
-  linkedin: '',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
+  website: '',           
+  linkedin: 'https://www.linkedin.com/in/donghyunkim1218/',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'
   instagram: '',                                                         // ex.'https://www.instagram.com/junhobaik'
-  github: '',                                                            // ex.'https://github.com/junhobaik'
+  github: 'https://github.com/dobedh',                                                            // ex.'https://github.com/junhobaik'
 
   /** Post */
   enablePostOfContents: true,     // TableOfContents activation (Type of Value: Boolean. Not String)
