@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jan 2021 06:07:40 GMT</lastBuildDate><item><title><![CDATA[TIL_210103]]></title><description><![CDATA[초보자를 위한 바닐라 JS JS로 할 수 있는 것 웹, 앱을 만들 수 있음 게임도 제작 가능 꽤 파워풀한 툴인 듯 접근성이 높은 서비스를 만들 때 유용함 바닐라 JS 뜻 : 라이브러리가 없는 JS 하드코딩 한다는 뜻일까? ES5, ES6? 뜻 : E…]]></description><link>https://dobedh.github.io/TIL_3_210103/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_3_210103/</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;초보자를-위한-바닐라-js&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B0%94%EB%8B%90%EB%9D%BC-js&quot; aria-label=&quot;초보자를 위한 바닐라 js permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초보자를 위한 바닐라 JS&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jan 2021 08:23:56 GMT</lastBuildDate><item><title><![CDATA[TIL_210103]]></title><description><![CDATA[초보자를 위한 바닐라 JS JS로 할 수 있는 것 웹, 앱을 만들 수 있음 게임도 제작 가능 꽤 파워풀한 툴인 듯 접근성이 높은 서비스를 만들 때 유용함 바닐라 JS 뜻 : 라이브러리가 없는 JS 하드코딩 한다는 뜻일까? ES5, ES6? 뜻 : E…]]></description><link>https://dobedh.github.io/TIL_3_210103/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_3_210103/</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;초보자를-위한-바닐라-js&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B0%94%EB%8B%90%EB%9D%BC-js&quot; aria-label=&quot;초보자를 위한 바닐라 js permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초보자를 위한 바닐라 JS&lt;/h1&gt;
 &lt;h3 id=&quot;js로-할-수-있는-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#js%EB%A1%9C-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83&quot; aria-label=&quot;js로 할 수 있는 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JS로 할 수 있는 것&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;웹, 앱을 만들 수 있음&lt;/li&gt;
@@ -53,6 +53,42 @@
 alert(&amp;#39;hello world&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;variable-constant&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#variable-constant&quot; aria-label=&quot;variable constant permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Variable, Constant&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Variable : &lt;code class=&quot;language-text&quot;&gt;var&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;let&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Constant : &lt;code class=&quot;language-text&quot;&gt;const&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;실제 tip&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;default로는 constant를 사용하는 것이 좋다.&lt;/li&gt;
+&lt;li&gt;왜? variable은 나중에 바뀔 위험이 있어서일까. 여튼 팁.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;create&lt;/li&gt;
+&lt;li&gt;initialize&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;using&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let a = 221
+let b = a - 5
+a - 4;
+console.log(b, a)
+
+const a = 221&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;data-type-on-js&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#data-type-on-js&quot; aria-label=&quot;data type on js permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Data type on JS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;String : &quot;text&quot;&lt;/li&gt;
+&lt;li&gt;Boolean : true, false&lt;/li&gt;
+&lt;li&gt;Number : 1,2,3 ... &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Float : 55.1 (.을 가진 number)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const string = &amp;quot;dobedh&amp;quot;;
+const boolean = true;
+const number = 1
+const float = 55.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210102]]></title><description><![CDATA[logical operation 1. opposite operation summary : !를 수식 앞에 붙여서, 반대 로직을 만든다 2. AND, OR operation summary : 조건문에서 또는, 그리고 형태 : AND : &&, OR :…]]></description><link>https://dobedh.github.io/TIL_2_210102/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_2_210102/</guid><pubDate>Sat, 02 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;logical-operation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#logical-operation&quot; aria-label=&quot;logical operation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;logical operation&lt;/h1&gt;
 &lt;h3 id=&quot;1-opposite-operation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-opposite-operation&quot; aria-label=&quot;1 opposite operation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. opposite operation&lt;/h3&gt;
