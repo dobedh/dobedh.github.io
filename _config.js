@@ -2,7 +2,7 @@ module.exports = {
   /** Site MetaData (Required all)*/
   title: `dobedh`,                           // (* Required)
   description: `Blog Description`,          // (* Required)
-  author: `Author`,                         // (* Required)
+  author: `Donghyun Kim`,                         // (* Required)
   language: 'ko-KR',                        // (* Required) html lang, ex. 'en' | 'en-US' | 'ko' | 'ko-KR' | ...
   siteUrl: 'https://dobedh.github.io',                      // (* Required)
 
@@ -13,11 +13,11 @@ module.exports = {
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'loving to make change for human mind. counseling lover',
-  name: '',
+  comment: 'loving to make change for human mind. counseling & tech lover',
+  name: 'Donghyun Kim',
   company: '',
   location: '',
-  email: '',
+  email: 'dobedh@gmail.com',
   website: '',           
   linkedin: 'https://www.linkedin.com/in/donghyunkim1218/',                                                          // ex.'https://www.linkedin.com/in/junho-baik-16073a19ab'
   facebook: '',                                                          // ex.'https://www.facebook.com/zuck' or 'https://www.facebook.com/profile.php?id=000000000000000'

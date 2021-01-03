@@ -62,9 +62,9 @@ const Bio = () => {
       )}
 
       <div className="social">
-        <a href={`${config.siteUrl}/rss`} target="_blank" rel="noopener noreferrer">
+        {/* <a href={`${config.siteUrl}/rss`} target="_blank" rel="noopener noreferrer">
           <Fa icon={faRss} className="rss" />
-        </a>
+        </a> */}
 
         {!linkedin ? null : (
           <a href={linkedin} target="_blank" rel="noopener noreferrer">

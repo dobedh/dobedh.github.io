@@ -70,8 +70,8 @@ const Layout = (props: LayoutPropsType) => {
           <footer>
             <span>{`© ${new Date().getFullYear()} ${data.site.siteMetadata.author} | Theme by `}</span>
             <a href="https://github.com/junhobaik">JunhoBaik</a>
-            <span>{` | Built with `}</span>
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            {/* <span>{` | Built with `}</span>
+            <a href="https://www.gatsbyjs.org">Gatsby</a> */}
           </footer>
         </div>
 
