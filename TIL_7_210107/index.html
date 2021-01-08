@@ -566,9 +566,29 @@
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Text(&quot;100&quot;)
 .opacity(0.5)
 .border(color.red, width: 2)</code></pre></div>
-<h4 id="modifier1---fonttitle" style="position:relative;"><a href="#modifier1---fonttitle" aria-label="modifier1   fonttitle permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modifier(1) - font(.title)</h4>
+<h3 id="modifers-유의사항" style="position:relative;"><a href="#modifers-%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD" aria-label="modifers 유의사항 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modifers 유의사항</h3>
 </li>
-<li>font size를 하드코딩 하는게 아니라, title로 해두면 화면 크기에 따라 조정해줌</li>
+<li>
+<p>각 modifer가 return하는 view 종류가 다르다</p>
+<ul>
+<li>예를 들어, .bold() -> Text view를 리턴</li>
+<li>하지만 lineSpacing()은 그냥 view를 리턴</li>
+</ul>
+</li>
+<li>
+<p>때문에 modifier를 놓는 순서를 잘 고려해야 함. </p>
+<ul>
+<li>bold를 lineSpacing에 놓으면, 안됨. bold는 text view에 적용해야하는 것이라</li>
+</ul>
+</li>
+</ul>
+<h4 id="modifier1---font" style="position:relative;"><a href="#modifier1---font" aria-label="modifier1   font permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modifier(1) - font()</h4>
+<ul>
+<li>font size를 하드코딩 하는게 아니라, title, footnote 등의 속성으로 해두면 화면 크기에 따라 size를 조정해줌</li>
+</ul>
+<h4 id="modifier1---kerning" style="position:relative;"><a href="#modifier1---kerning" aria-label="modifier1   kerning permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Modifier(1) - kerning()</h4>
+<ul>
+<li>기능 : letter spacing</li>
 </ul>
 <h3 id="기타" style="position:relative;"><a href="#%EA%B8%B0%ED%83%80" aria-label="기타 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>기타</h3>
 <ul>
