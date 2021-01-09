@@ -13,7 +13,7 @@ module.exports = {
     // If the file does not exist, it is replaced by a random image.
 
   /** Home > Bio information*/
-  comment: 'loving to make change for human mind. counseling & tech lover',
+  comment: 'love to make change for human mind. counseling & tech lover',
   name: 'Donghyun Kim',
   company: '',
   location: '',
