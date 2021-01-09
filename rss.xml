@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 10:13:19 GMT</lastBuildDate><item><title><![CDATA[TIL_210108]]></title><description><![CDATA[Saving the User Name - part1 Local Storage sum. : 작은 정보들을 client단에서 저장하고 있는 것 기타 JS에서, HTML의 class를 가져오는 법 :  form  html에서  class명을 하나에 두개 …]]></description><link>https://dobedh.github.io/TIL_8_210108/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_8_210108/</guid><pubDate>Fri, 08 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;saving-the-user-name---part1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#saving-the-user-name---part1&quot; aria-label=&quot;saving the user name   part1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Saving the User Name - part1&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 13:24:19 GMT</lastBuildDate><item><title><![CDATA[TIL_210109]]></title><description><![CDATA[Saving the User Name part1-1 FORM - 데이터 submit, 가져오기 Summary form에 eventListener로 submit 추가 input의 value값(입력된 데이터)를 .value로 가져옴 form에 event…]]></description><link>https://dobedh.github.io/TIL_9_210109/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_9_210109/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;saving-the-user-name-part1-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#saving-the-user-name-part1-1&quot; aria-label=&quot;saving the user name part1 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Saving the User Name part1-1&lt;/h1&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;form---데이터-submit-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#form---%EB%8D%B0%EC%9D%B4%ED%84%B0-submit-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;form   데이터 submit 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FORM - 데이터 submit, 가져오기&lt;/h3&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Summary&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;form에 eventListener로 submit 추가&lt;/li&gt;
+&lt;li&gt;input의 value값(입력된 데이터)를 .value로 가져옴&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;form에 eventListener 추가&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;형태 : .addEventListener&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;기능 : 특정 이벤트가 발생하면, 특정 액션을 하도록 tag에 eventListener 추가&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function askForName() {
+    form.classList.add(SHOWING_DS);
+    form.addEventListener(&amp;quot;submit&amp;quot;, handleSubmit)
+}
+
+function handleSubmit() {
+    const addUser = input.value
+    localStorage.setItem(USER_LS, addUser);
+    loadName();
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;input의 value 값 가져오기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const addUser = input.value&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
+&lt;br&gt;
+* classList.add / classList.remove
+    * class명 추가 / 삭제
+    * 예시
+    ```
+    form.classList.add(SHOWING_DS)
+    form.classList.remove(SHOWING_DS)
+    ```
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;event.preventDefault()&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 이벤트가 발생했을 때, 기본적으로 브라우저가 하는 행동을 막음(예 : 페이지 새로고침, document레벨 전체)
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;최대한 모든 것을 분절해서, 클래스명이든 기능이든 다 분절해서 코드화 &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210108]]></title><description><![CDATA[Saving the User Name - part1 Local Storage sum. : 작은 정보들을 client단에서 저장하고 있는 것 기타 JS에서, HTML의 class를 가져오는 법 :  form  html에서  class명을 하나에 두개 …]]></description><link>https://dobedh.github.io/TIL_8_210108/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_8_210108/</guid><pubDate>Fri, 08 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;saving-the-user-name---part1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#saving-the-user-name---part1&quot; aria-label=&quot;saving the user name   part1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Saving the User Name - part1&lt;/h1&gt;
 &lt;h3 id=&quot;local-storage&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#local-storage&quot; aria-label=&quot;local storage permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Local Storage&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;sum. : 작은 정보들을 client단에서 저장하고 있는 것&lt;/li&gt;
@@ -245,76 +313,6 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;html 태그에 2개 이상의 class 할당 가능. class=&quot;&quot; 안에서 띄어쓰기로 클래스 명 추가, 구분&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210104_(1)]]></title><description><![CDATA[Function Function(1) - basic 형태 : `function nameHere(parameter1, parameter2) {} why use? : 반복 작업 제거. 한번에 특정 기능 호출 parameter는 1개 이상 올 수 있다. …]]></description><link>https://dobedh.github.io/TIL_4_210104/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_4_210104/</guid><pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;function&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function&quot; aria-label=&quot;function permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function&lt;/h1&gt;
-&lt;h3 id=&quot;function1---basic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function1---basic&quot; aria-label=&quot;function1   basic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function(1) - basic&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;형태 : `function nameHere(parameter1, parameter2) {}&lt;/li&gt;
-&lt;li&gt;why use? : 반복 작업 제거. 한번에 특정 기능 호출&lt;/li&gt;
-&lt;li&gt;parameter는 1개 이상 올 수 있다. parameter를 입력하면 function 내에 전달한다. &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
-  console.log(&amp;quot;hello&amp;quot;, name, &amp;quot;, you are &amp;quot;, age, &amp;quot;years old.&amp;quot;)
-}
-
-myInfo(&amp;quot;Donghyun&amp;quot;, 29)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;function2---다른-방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function2---%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;function2   다른 방식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function(2) - 다른 방식&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&apos;+&apos; 사용 (, 대신)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
-console.log(&amp;quot;hello&amp;quot; + name + &amp;quot;you are &amp;quot; + age + &amp;quot;years old.&amp;quot;)
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&apos;`&apos; 사용&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;형태 : &apos;`&apos;로 전체를 감싸고, 변수는 ${}로 감싼다.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;훨씬더 코드 깔끔  &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
-console.log(`hello ${name}, you are ${age} years old`)
-}
-myInfo(&amp;quot;Donghyun&amp;quot;, 29)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;fucntion3---return&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fucntion3---return&quot; aria-label=&quot;fucntion3   return permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fucntion(3) - return&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;function은 return 값을 보내준다. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;function4---math-연습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function4---math-%EC%97%B0%EC%8A%B5&quot; aria-label=&quot;function4   math 연습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;function(4) - math 연습&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;object 안에 function을 담고, 호출한다&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;function에 꼭 이름을 할당해줄 필요는 없네. 바로 parameter값 넣는다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const calculator = {
-  plus : function(a, b){
-      return a + b;
-  },
-  minus : function(a, b){
-      return a - b;
-  },
-  divide : function(a, b){
-      return a / b
-  },
-  powerOf : function(a, b){
-      return a ** b
-  }
-}
-
-const doMath = {
-  plusResult : calculator.plus(2,3),
-  minusResult : calculator.minus(10,2),
-  divideResult : calculator.divide(8,4),
-  powerOfResult : calculator.powerOf(1, 3)
-}
-
-console.log(doMath)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210104_(2)]]></title><description><![CDATA[DOM DOM(1) - document (JS - HTML) summary 의미 : document는 js 파일에 연결된 할 수 있도록 해준다 형태 : document.blahblah 예시 : document.getElementById DOM(2) …]]></description><link>https://dobedh.github.io/TIL_5_210104/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_5_210104/</guid><pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM&lt;/h1&gt;
 &lt;h3 id=&quot;dom1---document-js---html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom1---document-js---html&quot; aria-label=&quot;dom1   document js   html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(1) - document (JS - HTML)&lt;/h3&gt;
 &lt;ul&gt;
@@ -454,6 +452,76 @@ key2 : &amp;quot;value2&amp;quot;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;JS event 목록을 찾을때는 항상 &lt;code class=&quot;language-text&quot;&gt;MDM&lt;/code&gt;을 검색할 것&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210104_(1)]]></title><description><![CDATA[Function Function(1) - basic 형태 : `function nameHere(parameter1, parameter2) {} why use? : 반복 작업 제거. 한번에 특정 기능 호출 parameter는 1개 이상 올 수 있다. …]]></description><link>https://dobedh.github.io/TIL_4_210104/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_4_210104/</guid><pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;function&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function&quot; aria-label=&quot;function permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function&lt;/h1&gt;
+&lt;h3 id=&quot;function1---basic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function1---basic&quot; aria-label=&quot;function1   basic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function(1) - basic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;형태 : `function nameHere(parameter1, parameter2) {}&lt;/li&gt;
+&lt;li&gt;why use? : 반복 작업 제거. 한번에 특정 기능 호출&lt;/li&gt;
+&lt;li&gt;parameter는 1개 이상 올 수 있다. parameter를 입력하면 function 내에 전달한다. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;예시&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
+  console.log(&amp;quot;hello&amp;quot;, name, &amp;quot;, you are &amp;quot;, age, &amp;quot;years old.&amp;quot;)
+}
+
+myInfo(&amp;quot;Donghyun&amp;quot;, 29)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;function2---다른-방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function2---%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;function2   다른 방식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function(2) - 다른 방식&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&apos;+&apos; 사용 (, 대신)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
+console.log(&amp;quot;hello&amp;quot; + name + &amp;quot;you are &amp;quot; + age + &amp;quot;years old.&amp;quot;)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&apos;`&apos; 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;형태 : &apos;`&apos;로 전체를 감싸고, 변수는 ${}로 감싼다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;훨씬더 코드 깔끔  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function myInfo(name, age) {
+console.log(`hello ${name}, you are ${age} years old`)
+}
+myInfo(&amp;quot;Donghyun&amp;quot;, 29)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fucntion3---return&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#fucntion3---return&quot; aria-label=&quot;fucntion3   return permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Fucntion(3) - return&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;function은 return 값을 보내준다. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;function4---math-연습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function4---math-%EC%97%B0%EC%8A%B5&quot; aria-label=&quot;function4   math 연습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;function(4) - math 연습&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;object 안에 function을 담고, 호출한다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;function에 꼭 이름을 할당해줄 필요는 없네. 바로 parameter값 넣는다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const calculator = {
+  plus : function(a, b){
+      return a + b;
+  },
+  minus : function(a, b){
+      return a - b;
+  },
+  divide : function(a, b){
+      return a / b
+  },
+  powerOf : function(a, b){
+      return a ** b
+  }
+}
+
+const doMath = {
+  plusResult : calculator.plus(2,3),
+  minusResult : calculator.minus(10,2),
+  divideResult : calculator.divide(8,4),
+  powerOfResult : calculator.powerOf(1, 3)
+}
+
+console.log(doMath)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210103]]></title><description><![CDATA[초보자를 위한 바닐라 JS JS로 할 수 있는 것 웹, 앱을 만들 수 있음 게임도 제작 가능 꽤 파워풀한 툴인 듯 접근성이 높은 서비스를 만들 때 유용함 바닐라 JS 뜻 : 라이브러리가 없는 JS ES5, ES6? 뜻 : ECMAScript의 줄임말…]]></description><link>https://dobedh.github.io/TIL_3_210103/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_3_210103/</guid><pubDate>Sun, 03 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;초보자를-위한-바닐라-js&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EB%B0%94%EB%8B%90%EB%9D%BC-js&quot; aria-label=&quot;초보자를 위한 바닐라 js permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초보자를 위한 바닐라 JS&lt;/h1&gt;
 &lt;h3 id=&quot;js로-할-수-있는-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#js%EB%A1%9C-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83&quot; aria-label=&quot;js로 할 수 있는 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JS로 할 수 있는 것&lt;/h3&gt;
 &lt;ul&gt;
