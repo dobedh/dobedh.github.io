@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 13:24:19 GMT</lastBuildDate><item><title><![CDATA[TIL_210109]]></title><description><![CDATA[Saving the User Name part1-1 FORM - 데이터 submit, 가져오기 Summary form에 eventListener로 submit 추가 input의 value값(입력된 데이터)를 .value로 가져옴 form에 event…]]></description><link>https://dobedh.github.io/TIL_9_210109/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_9_210109/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;saving-the-user-name-part1-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#saving-the-user-name-part1-1&quot; aria-label=&quot;saving the user name part1 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Saving the User Name part1-1&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 Jan 2021 05:42:28 GMT</lastBuildDate><item><title><![CDATA[TIL_210110]]></title><description><![CDATA[Making a TO-DO List pre-self code]]></description><link>https://dobedh.github.io/TIL_=10_210110/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_=10_210110/</guid><pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;making-a-to-do-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list&quot; aria-label=&quot;making a to do list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a TO-DO List&lt;/h2&gt;
+&lt;h3 id=&quot;pre-self-code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pre-self-code&quot; aria-label=&quot;pre self code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pre-self code&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    const todo = document.querySelector(&amp;quot;.js-todo&amp;quot;),
+        todoInput = todo.querySelector(&amp;quot;input&amp;quot;),
+        list = document.querySelector(&amp;quot;.js-list&amp;quot;)
+
+    const TODO_LIST = &amp;quot;todoItem&amp;quot;,
+        addTodoList = document.createElement(&amp;quot;li&amp;quot;);
+
+    function storageAdd() {
+        event.preventDefault();
+        const addedItem =  todoInput.value;
+        console.log(addedItem);
+        localStorage.setItem(TODO_LIST, addedItem);
+        listAdd(addedItem);
+    }
+
+    function listAdd(item) {
+        addTodoList.innerText(item);
+        list.appendChild(addTodoList);
+    }
+
+
+    function todoWrite() {
+        todo.addEventListener(&amp;quot;submit&amp;quot;, storageAdd);
+    }
+
+    function init(){
+        todoWrite()
+    }
+
+    init()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL_210109]]></title><description><![CDATA[Saving the User Name part1-1 FORM - 데이터 submit, 가져오기 Summary form에 eventListener로 submit 추가 input의 value값(입력된 데이터)를 .value로 가져옴 form에 event…]]></description><link>https://dobedh.github.io/TIL_9_210109/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_9_210109/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;saving-the-user-name-part1-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#saving-the-user-name-part1-1&quot; aria-label=&quot;saving the user name part1 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Saving the User Name part1-1&lt;/h1&gt;
 &lt;br&gt;
 &lt;h3 id=&quot;form---데이터-submit-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#form---%EB%8D%B0%EC%9D%B4%ED%84%B0-submit-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;form   데이터 submit 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;FORM - 데이터 submit, 가져오기&lt;/h3&gt;
 &lt;br&gt;
@@ -737,13 +768,4 @@ betterStudent = samGrade &amp;gt; chrisGrade ? &amp;quot;Sam&amp;quot; : &amp;qu
 &lt;ul&gt;
 &lt;li&gt;마크다운 안의 박스(&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;)에서, 한 줄을 띄우면 박스에서 벗어나는데 어떻게 처리?&lt;/li&gt;
 &lt;li&gt;해결책 : 띄우고자 하는 문장의 제일 앞에, 스페이스 4개를 add.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210101]]></title><description><![CDATA[1. iOS 배운 것 2. Gatsby 배운 것 git 사용법 gatsby를 위한 install 기타 origin developer의 developer documents를 보는 것이 가장 정확하다. 다른 사람들이 2차 가공한 문서를 보면, 빠르게 학…]]></description><link>https://dobedh.github.io/TIL_1_210101/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_1_210101/</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;1-ios-배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-ios-%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;1 ios 배운 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. iOS 배운 것&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;배운 것을 씁니다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;2-gatsby-배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-gatsby-%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;2 gatsby 배운 것 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Gatsby 배운 것&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;git 사용법&lt;/li&gt;
-&lt;li&gt;gatsby를 위한 install&lt;/li&gt;
-&lt;li&gt;기타&lt;/li&gt;
-&lt;li&gt;origin developer의 developer documents를 보는 것이 가장 정확하다.&lt;/li&gt;
-&lt;li&gt;다른 사람들이 2차 가공한 문서를 보면, 빠르게 학습되지 않는다. &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
