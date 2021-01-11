@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 10 Jan 2021 14:40:48 GMT</lastBuildDate><item><title><![CDATA[TIL_210110]]></title><description><![CDATA[Making a TO-DO List appendChild, innerText  : tag 안/밑에 또다른 tag를 넣을 수 있음  : 태그가 표시하는 text 값을 넣을 수 있음 innerText 적용 대상이 혼동 되는 듯 Eliment 만들기 do…]]></description><link>https://dobedh.github.io/TIL_10_210110/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_10_210110/</guid><pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;making-a-to-do-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list&quot; aria-label=&quot;making a to do list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a TO-DO List&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 Jan 2021 11:21:37 GMT</lastBuildDate><item><title><![CDATA[TIL_210111]]></title><link>https://dobedh.github.io/TIL_11_210111/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_11_210111/</guid><pubDate>Mon, 11 Jan 2021 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[TIL_210110]]></title><description><![CDATA[Making a TO-DO List appendChild, innerText  : tag 안/밑에 또다른 tag를 넣을 수 있음  : 태그가 표시하는 text 값을 넣을 수 있음 innerText 적용 대상이 혼동 되는 듯 Eliment 만들기 do…]]></description><link>https://dobedh.github.io/TIL_10_210110/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_10_210110/</guid><pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;making-a-to-do-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list&quot; aria-label=&quot;making a to do list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a TO-DO List&lt;/h2&gt;
 &lt;h3 id=&quot;appendchild-innertext&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#appendchild-innertext&quot; aria-label=&quot;appendchild innertext permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;appendChild, innerText&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;appendChild&lt;/code&gt; : tag 안/밑에 또다른 tag를 넣을 수 있음&lt;/li&gt;
@@ -759,60 +759,4 @@ console.log(daysOfWeek)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   console.log(dobeInfo.age)
   console.log(dobeInfo)
   console.log(dobeInfo.favMovie[0])
-  console.log(dobeInfo.favFood[1].name)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL_210102]]></title><description><![CDATA[logical operation 1. opposite operation summary : !를 수식 앞에 붙여서, 반대 로직을 만든다 2. AND, OR operation summary : 조건문에서 또는, 그리고 형태 : AND : &&, OR :…]]></description><link>https://dobedh.github.io/TIL_2_210102/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_2_210102/</guid><pubDate>Sat, 02 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;logical-operation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#logical-operation&quot; aria-label=&quot;logical operation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;logical operation&lt;/h1&gt;
-&lt;h3 id=&quot;1-opposite-operation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-opposite-operation&quot; aria-label=&quot;1 opposite operation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. opposite operation&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary : !를 수식 앞에 붙여서, 반대 로직을 만든다&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let passingGrade = 50
-let studentGrade = 50
-let chrisGrade = 49 
-let samGrade = 99
-
-let samPassed = samGrade &amp;gt;= passingGrade
-let chrisPassed = chrisGrade &amp;gt;= passingGrade
-
-!samPassed
-!chrisPassed&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-and-or-operation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-and-or-operation&quot; aria-label=&quot;2 and or operation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. AND, OR operation&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;summary : 조건문에서 또는, 그리고&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;형태 : AND : &amp;#x26;&amp;#x26;, OR : ||&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let bothPassed = samPassed &amp;amp;&amp;amp; chrisPassed
-
-let eitherPassed = samPassed || chrisPassed
-let anyonePassed = samPassed || chrisPassed || studentPassed
-let everyonePassed = samPassed &amp;amp;&amp;amp; chrisPassed &amp;amp;&amp;amp; studentPassed
-
-let meritAwardGrade = 90
-let samHasPerfectAttendace = true
-let chrisHasPefectAttendace = true
-
-let samIsMeritStudent = samHasPerfectAttendace &amp;amp;&amp;amp; samGrade &amp;gt;= meritAwardGrade
-let chrisIsMeritStudent = chrisHasPefectAttendace &amp;amp;&amp;amp; chrisGrade &amp;gt;= meritAwardGrade&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;3-ternary-conditional-operator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-ternary-conditional-operator&quot; aria-label=&quot;3 ternary conditional operator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Ternary conditional operator&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;summary : if문을 간단하게 표현하는 operation&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;형태 : exepression ? true-value : false-value&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var betterStudent : String
-
-if samGrade &amp;gt; chrisGrade {
-    betterStudent = &amp;quot;Sam&amp;quot;
-} else {
-    betterStudent = &amp;quot;Chris&amp;quot;
-}
-
-betterStudent = samGrade &amp;gt; chrisGrade ? &amp;quot;Sam&amp;quot; : &amp;quot;Chris&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;4-오늘의-질문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EC%98%A4%EB%8A%98%EC%9D%98-%EC%A7%88%EB%AC%B8&quot; aria-label=&quot;4 오늘의 질문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 오늘의 질문&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;마크다운 안의 박스(&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;)에서, 한 줄을 띄우면 박스에서 벗어나는데 어떻게 처리?&lt;/li&gt;
-&lt;li&gt;해결책 : 띄우고자 하는 문장의 제일 앞에, 스페이스 4개를 add.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+  console.log(dobeInfo.favFood[1].name)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
