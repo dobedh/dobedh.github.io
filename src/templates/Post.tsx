@@ -319,7 +319,7 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
 
-          {/*isDevelopment ? (
+          {isDevelopment ? (
             <>
               <aside className="ad ad-dev">
                 <span>Ads</span>
@@ -334,7 +334,7 @@ const Post = (props: postProps) => {
             </>
           ) : (
             <>
-              <aside className="ad">
+              {/*<aside className="ad">
                 <AdSense.Google
                   client={config.googleAdsenseClient || 'ca-pub-5001380215831339'}
                   slot={config.googleAdsenseSlot || '5214956675'}
@@ -342,11 +342,11 @@ const Post = (props: postProps) => {
                   format="auto"
                   responsive="true"
                 />
-              </aside>
+          </aside>*/}
 
               {!isSSR ? <Suspense fallback={<></>}>{commentEl}</Suspense> : null}
             </>
-          )*/}
+          )}
         </div>
 
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
