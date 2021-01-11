@@ -319,7 +319,7 @@ const Post = (props: postProps) => {
             </div>
           ) : null}
 
-          {isDevelopment ? (
+          {/*isDevelopment ? (
             <>
               <aside className="ad ad-dev">
                 <span>Ads</span>
@@ -346,7 +346,7 @@ const Post = (props: postProps) => {
 
               {!isSSR ? <Suspense fallback={<></>}>{commentEl}</Suspense> : null}
             </>
-          )}
+          )*/}
         </div>
 
         {!isTableOfContents ? null : <Toc isOutside={true} toc={tableOfContents} />}
