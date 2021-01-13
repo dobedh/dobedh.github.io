@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Jan 2021 15:18:13 GMT</lastBuildDate><item><title><![CDATA[TIL_210112]]></title><description><![CDATA[Making a To Do List part Three 1. remove by id 방법 : id 기준으로 해당 태그를 호출한 후,  사용 2. remove in locaStorage 방법 :  사용? (배열에서 배열 내 값 삭제) 3. target…]]></description><link>https://dobedh.github.io/TIL_12_210112/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_12_210112/</guid><pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;making-a-to-do-list-part-three&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list-part-three&quot; aria-label=&quot;making a to do list part three permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a To Do List part Three&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 13 Jan 2021 14:35:53 GMT</lastBuildDate><item><title><![CDATA[TIL_210113]]></title><description><![CDATA[Nomad Coder Vanila JS challenge code - 1 구현해야 하는 기능 마우스 enter시 문자, 색깔 변경 마우스 leave시 문자, 색깔 변경 윈도우 창 resize시 문자, 색깔 변경 마우스 우클릭시, 문자, 색깔 변경]]></description><link>https://dobedh.github.io/TIL_13_210113/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_13_210113/</guid><pubDate>Wed, 13 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;nomad-coder-vanila-js-challenge-code---1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nomad-coder-vanila-js-challenge-code---1&quot; aria-label=&quot;nomad coder vanila js challenge code   1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nomad Coder Vanila JS challenge code - 1&lt;/h1&gt;
+&lt;h3 id=&quot;구현해야-하는-기능&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B5%AC%ED%98%84%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EA%B8%B0%EB%8A%A5&quot; aria-label=&quot;구현해야 하는 기능 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;구현해야 하는 기능&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;마우스 enter시 문자, 색깔 변경&lt;/li&gt;
+&lt;li&gt;마우스 leave시 문자, 색깔 변경&lt;/li&gt;
+&lt;li&gt;윈도우 창 resize시 문자, 색깔 변경&lt;/li&gt;
+&lt;li&gt;마우스 우클릭시, 문자, 색깔 변경&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    // &amp;lt;⚠️ DONT DELETE THIS ⚠️&amp;gt;
+    import &amp;quot;./styles.css&amp;quot;;
+    const colors = [&amp;quot;#1abc9c&amp;quot;, &amp;quot;#3498db&amp;quot;, &amp;quot;#9b59b6&amp;quot;, &amp;quot;#f39c12&amp;quot;, &amp;quot;#e74c3c&amp;quot;];
+    // &amp;lt;⚠️ /DONT DELETE THIS ⚠️&amp;gt;
+
+    const h2 = document.querySelector(&amp;quot;h2&amp;quot;),
+    html = document.querySelector(&amp;quot;html&amp;quot;);
+
+    const superEventHandler = {
+    mouseEnter: function () {
+        h2.innerHTML = &amp;quot;Mouse Entered :)&amp;quot;;
+        h2.style.color = colors[0];
+    },
+    mouseLeave: function () {
+        h2.innerHTML = &amp;quot;Mouse Leaved :(&amp;quot;;
+        h2.style.color = colors[1];
+    },
+    rightClick: function () {
+        h2.innerText = &amp;quot;Mouse right clicked!&amp;quot;;
+        h2.style.color = colors[2];
+    },
+    resize: function () {
+        h2.innerText = &amp;quot;window resized &amp;lt;&amp;gt;&amp;quot;;
+        h2.style.color = colors[3];
+    }
+    };
+
+    function init() {
+    h2.addEventListener(&amp;quot;mouseenter&amp;quot;, superEventHandler.mouseEnter);
+    h2.addEventListener(&amp;quot;mouseleave&amp;quot;, superEventHandler.mouseLeave);
+    html.addEventListener(&amp;quot;contextmenu&amp;quot;, superEventHandler.rightClick);
+    window.addEventListener(&amp;quot;resize&amp;quot;, superEventHandler.resize);
+    }
+    init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL_210112]]></title><description><![CDATA[Making a To Do List part Three 1. remove by id 방법 : id 기준으로 해당 태그를 호출한 후,  사용 2. remove in locaStorage 방법 :  사용? (배열에서 배열 내 값 삭제) 3. target…]]></description><link>https://dobedh.github.io/TIL_12_210112/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_12_210112/</guid><pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;making-a-to-do-list-part-three&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list-part-three&quot; aria-label=&quot;making a to do list part three permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a To Do List part Three&lt;/h1&gt;
 &lt;h3 id=&quot;1-remove-by-id&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-remove-by-id&quot; aria-label=&quot;1 remove by id permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. remove by id&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -535,145 +576,6 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;html 태그에 2개 이상의 class 할당 가능. class=&quot;&quot; 안에서 띄어쓰기로 클래스 명 추가, 구분&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210104_(2)]]></title><description><![CDATA[DOM DOM(1) - document (JS - HTML) summary 의미 : document는 js 파일에 연결된 할 수 있도록 해준다 형태 : document.blahblah 예시 : document.getElementById DOM(2) …]]></description><link>https://dobedh.github.io/TIL_5_210104/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_5_210104/</guid><pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM&lt;/h1&gt;
-&lt;h3 id=&quot;dom1---document-js---html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom1---document-js---html&quot; aria-label=&quot;dom1   document js   html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(1) - document (JS - HTML)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;의미 : document는 js 파일에 연결된 &lt;code class=&quot;language-text&quot;&gt;html 파일 전체에 접근&lt;/code&gt;할 수 있도록 해준다&lt;/li&gt;
-&lt;li&gt;형태 : document.blahblah&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;예시 : document.getElementById&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dom2---의미-형태&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom2---%EC%9D%98%EB%AF%B8-%ED%98%95%ED%83%9C&quot; aria-label=&quot;dom2   의미 형태 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(2) - 의미, 형태&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;의미&lt;/li&gt;
-&lt;li&gt;Document Object Module.&lt;/li&gt;
-&lt;li&gt;HTML내의 모든 것들을 객체 내의 값들로 변환해준다. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;기능 : JS를 통해 객체화된 HTML 파일들을 조정 가능&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시 : &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.getElementById(&amp;quot;title&amp;quot;)
-title.innerHTML(&amp;quot;Hi! From JS!&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dom3---dom안에-있는-key들-예시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom3---dom%EC%95%88%EC%97%90-%EC%9E%88%EB%8A%94-key%EB%93%A4-%EC%98%88%EC%8B%9C&quot; aria-label=&quot;dom3   dom안에 있는 key들 예시 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(3) - DOM안에 있는 key들 예시&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;summary : 어떤 key값으로 html을 바꿀 수 있는지 예시를 살핀다.&lt;/li&gt;
-&lt;li&gt;how : console.dir(document)를 통해서 document ojbect내의 key값들을 살핀다.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시 &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.querySelector(&amp;quot;#title&amp;quot;)
-
-title.innerHTML = &amp;quot;Hi! From JS!&amp;quot;
-title.style.color = &amp;quot;green&amp;quot;
-document.title = &amp;quot;기발자 :)&amp;quot;
-
-console.dir(document)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;참고 - &lt;code class=&quot;language-text&quot;&gt;querySelector&lt;/code&gt; : The Document method querySelector() returns the &lt;code class=&quot;language-text&quot;&gt;first Element&lt;/code&gt; within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dom4---event-handler&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom4---event-handler&quot; aria-label=&quot;dom4   event handler permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(4) - Event Handler&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;특정 이벤트 발생시, 그에 따른 action 실행(function 등) &lt;/li&gt;
-&lt;li&gt;형태 : &lt;code class=&quot;language-text&quot;&gt;addEventListener&lt;/code&gt;
-&lt;br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시1 : 윈도우 사이즈를 옮기는 event시, console에 표시&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function handleSize(event){
-  console.log(event)
-};
-
-window.addEventListener(&amp;quot;resize&amp;quot;, handleSize);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시2 : title의 문장 클릭시 색깔을 변경&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.querySelector(&amp;quot;#title&amp;quot;);
-
-function handleClick(){
-    title.style.color = &amp;quot;blue&amp;quot;
-};
-title.addEventListener(&amp;quot;click&amp;quot;, handleClick);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;dom5---if-else---function-practice2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom5---if-else---function-practice2&quot; aria-label=&quot;dom5   if else   function practice2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(5) - if else - function practice(2)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;중요 : 함수 func() vs func&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;func() : 해당 함수를 바로 호출해라&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;func : 해당 함수를 필요할 때 호출해라&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.querySelector(&amp;quot;#title&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;const BASE&lt;em&gt;COLOR = &quot;white&quot;;
-const NEW&lt;/em&gt;COLOR = &quot;red&quot;;&lt;/p&gt;
-&lt;p&gt;function handleClick(){
-console.log(title.style.color)
-if (title.style.color === BASE&lt;em&gt;COLOR) {
-title.style.color = NEW&lt;/em&gt;COLOR;
-} else {
-title.style.color = BASE_COLOR;
-}
-}&lt;/p&gt;
-&lt;p&gt;function init() {
-title.style.color = BASE_COLOR;
-title.addEventListener(&quot;click&quot;, handleClick);
-}&lt;/p&gt;
-&lt;p&gt;init();&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;복습1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B3%B5%EC%8A%B51&quot; aria-label=&quot;복습1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;복습1&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Object의 형태 - key값을 &lt;code class=&quot;language-text&quot;&gt;:&lt;/code&gt;로 담는다. &lt;code class=&quot;language-text&quot;&gt;=&lt;/code&gt;이 아니라.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const objectExample = {
-key1 : &amp;quot;value&amp;quot;,
-key2 : &amp;quot;value2&amp;quot;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;and-or&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#and-or&quot; aria-label=&quot;and or permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AND, OR&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;and : &amp;#x26;&amp;#x26;&lt;/li&gt;
-&lt;li&gt;or : ||&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;console.log도 Object의 일종&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;console 이라는 object&lt;/li&gt;
-&lt;li&gt;log라는 key 값을 불러 오는 것&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;id값을 css에서 가져올때는 #id_name 형태 (#을 사용)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#title {
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;JS event 목록을 찾을때는 항상 &lt;code class=&quot;language-text&quot;&gt;MDM&lt;/code&gt;을 검색할 것&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210104_(1)]]></title><description><![CDATA[Function Function(1) - basic 형태 : `function nameHere(parameter1, parameter2) {} why use? : 반복 작업 제거. 한번에 특정 기능 호출 parameter는 1개 이상 올 수 있다. …]]></description><link>https://dobedh.github.io/TIL_4_210104/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_4_210104/</guid><pubDate>Mon, 04 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;function&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function&quot; aria-label=&quot;function permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function&lt;/h1&gt;
 &lt;h3 id=&quot;function1---basic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#function1---basic&quot; aria-label=&quot;function1   basic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Function(1) - basic&lt;/h3&gt;
 &lt;ul&gt;
