@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 14 Jan 2021 16:13:19 GMT</lastBuildDate><item><title><![CDATA[TIL_210114]]></title><description><![CDATA[Making a To Do List part3 - (3) 1. target 의미 : event 발생시, 어떤 코드에서 event가 발생했는지 확인 가능 1.1 target.parentNode 해당 target의 parent가 누군지 확인 가능 2. …]]></description><link>https://dobedh.github.io/TIL_14_210114/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_14_210114/</guid><pubDate>Thu, 14 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;making-a-to-do-list-part3---3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list-part3---3&quot; aria-label=&quot;making a to do list part3   3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a To Do List part3 - (3)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 Jan 2021 14:17:16 GMT</lastBuildDate><item><title><![CDATA[TIL_210115]]></title><description><![CDATA[Image Background 1. Math : random number생성하기  : 랜덤 숫자를 생성  : 숫자 반올림  : 숫자 내림 2. background 이미지 추가하기 아래 코드 보고 추가 공부 필요  : 요건 무슨 기능?  : 요것도 공…]]></description><link>https://dobedh.github.io/TIL_15_210115/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_15_210115/</guid><pubDate>Fri, 15 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;image-background&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#image-background&quot; aria-label=&quot;image background permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Image Background&lt;/h2&gt;
+&lt;h3 id=&quot;1-math--random-number생성하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-math--random-number%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 math  random number생성하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Math : random number생성하기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Math.random()&lt;/code&gt; : 랜덤 숫자를 생성&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Math.floor&lt;/code&gt; : 숫자 반올림&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Math.ceil&lt;/code&gt; : 숫자 내림&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Math.floor(Math.random()*4)+1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-background-이미지-추가하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-background-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0&quot; aria-label=&quot;2 background 이미지 추가하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. background 이미지 추가하기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;아래 코드 보고 추가 공부 필요&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;image = new image()&lt;/code&gt; : 요건 무슨 기능?&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;image.src = &amp;quot;&amp;quot;&lt;/code&gt; : 요것도 공부&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;body에 appendChild로 결국 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;image src&amp;gt;&lt;/code&gt; 요걸 넣은건가?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function paintImage(imgNumber) {
+const image = new Image()
+image.src = `./images/${imgNumber + 1}.jpg`;
+image.classList.add(&amp;#39;bgImage&amp;#39;)
+body.appendChild(image)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-classlistadd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-classlistadd&quot; aria-label=&quot;3 classlistadd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. classList.add&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;의미 : 특정 element에 class 명을 추가함&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;image.classList.add(&amp;#39;bgImage&amp;#39;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;self-study&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-study&quot; aria-label=&quot;self study permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Self study&lt;/h2&gt;
+&lt;h3 id=&quot;1-background-image-넣는법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-background-image-%EB%84%A3%EB%8A%94%EB%B2%95&quot; aria-label=&quot;1 background image 넣는법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. background image 넣는법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;object.style.backgroundImage = &quot;url(&apos;경로&apos;)&quot;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body.style.backgroundImage = &amp;quot;url(&amp;#39;./images/image1.jpg&amp;#39;)&amp;quot;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-background-image-꽉차게-하는법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-background-image-%EA%BD%89%EC%B0%A8%EA%B2%8C-%ED%95%98%EB%8A%94%EB%B2%95&quot; aria-label=&quot;2 background image 꽉차게 하는법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. background image 꽉차게 하는법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;object.style.backgroundSize = &quot;100%&quot;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body.style.backgroundSize = &amp;quot;100%&amp;quot;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-background-image를-fix-시키기스크롤해서-더-보기-x&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-background-image%EB%A5%BC-fix-%EC%8B%9C%ED%82%A4%EA%B8%B0%EC%8A%A4%ED%81%AC%EB%A1%A4%ED%95%B4%EC%84%9C-%EB%8D%94-%EB%B3%B4%EA%B8%B0-x&quot; aria-label=&quot;3 background image를 fix 시키기스크롤해서 더 보기 x permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. background image를 fix 시키기(스크롤해서 더 보기 x)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;object.style.backgroundAttachment = &quot;fixed&quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;항상 코드를 최대한 분절.&lt;/li&gt;
+&lt;li&gt;나중에 바뀔 수 있는 것들은 변수화 시켜서 따로 빼누는 것이 좋다.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210114]]></title><description><![CDATA[Making a To Do List part3 - (3) 1. target 의미 : event 발생시, 어떤 코드에서 event가 발생했는지 확인 가능 1.1 target.parentNode 해당 target의 parent가 누군지 확인 가능 2. …]]></description><link>https://dobedh.github.io/TIL_14_210114/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_14_210114/</guid><pubDate>Thu, 14 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;making-a-to-do-list-part3---3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list-part3---3&quot; aria-label=&quot;making a to do list part3   3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a To Do List part3 - (3)&lt;/h1&gt;
 &lt;h3 id=&quot;1-target&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-target&quot; aria-label=&quot;1 target permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. target&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;의미 : event 발생시, 어떤 코드에서 event가 발생했는지 확인 가능&lt;/li&gt;
@@ -594,73 +654,4 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;코드도, 파일도, 최대한 분리해서 깔끔하게. 정리되게. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210105]]></title><description><![CDATA[DOM DOM(1) - if else Function practice_3 summary 문장 클릭시 색깔이 바뀌는 코드 짜기 class를 추가해, pointer 기능과 색 변화 기능 두가지 모두를 구현하기  1차 코드 :  사용 classList 기…]]></description><link>https://dobedh.github.io/TIL_5_210105/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_5_210105/</guid><pubDate>Tue, 05 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom&quot; aria-label=&quot;dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM&lt;/h1&gt;
-&lt;h3 id=&quot;dom1---if-else-function-practice_3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dom1---if-else-function-practice_3&quot; aria-label=&quot;dom1   if else function practice_3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DOM(1) - if else Function practice_3&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;summary&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문장 클릭시 색깔이 바뀌는 코드 짜기&lt;/li&gt;
-&lt;li&gt;class를 추가해, pointer 기능과 색 변화 기능 두가지 모두를 구현하기 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;1차 코드 : &lt;code class=&quot;language-text&quot;&gt;clssList&lt;/code&gt; 사용&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;classList 기능 : 많은 function들 사용 가능(add, remove, contains..)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.querySelector(&amp;quot;#title&amp;quot;);
-const CLASS_CLICKED = &amp;quot;clicked&amp;quot;
-const CLASS_BTN = &amp;quot;btn&amp;quot;
-
-function handleClick(){
-    const classList = title.classList
-    if (classList.contains(CLASS_CLICKED)) {
-        classList.remove(&amp;quot;clicked&amp;quot;)
-    } else {
-        classList.add(&amp;quot;clicked&amp;quot;)
-    }
-}
-
-function init() {
-    title.addEventListener(&amp;quot;click&amp;quot;, handleClick);
-}
-init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2차 코드 : &lt;code class=&quot;language-text&quot;&gt;toggle&lt;/code&gt; 사용&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;toggle의 기능 : if visible is set remove it, otherwise add it (코드 훨씬 짧아짐!)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const title = document.querySelector(&amp;quot;#title&amp;quot;);
-const CLASS_CLICKED = &amp;quot;clicked&amp;quot;
-
-function handleClick(){
-    title.classList.toggle(CLASS_CLICKED)
-}
-
-function init() {
-    title.addEventListener(&amp;quot;click&amp;quot;, handleClick);
-}
-init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;const 로 정의하더라도, HTML에 바로 반영이 되네. &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JS에서는 css의 값들을 직접 건드리기보다 로직만 짜는 것이 좋다. &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;그래야 jS폴더내에서 색이 뭔지, 크기가 어떤지 등 세부 값들에 대해 신경안쓰고 로직만 신경 쓸 수 있기때문&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;html 태그에 2개 이상의 class 할당 가능. class=&quot;&quot; 안에서 띄어쓰기로 클래스 명 추가, 구분&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
