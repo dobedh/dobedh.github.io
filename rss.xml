@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 16 Jan 2021 08:19:40 GMT</lastBuildDate><item><title><![CDATA[TIL-210116]]></title><description><![CDATA[Getting the Weather part1 - Geolocation 1. navigator 뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용. (1) navigator.geolocation.getCurrentPosition() 현재…]]></description><link>https://dobedh.github.io/TIL_16_210116/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_16_210116/</guid><pubDate>Sat, 16 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather-part1---geolocation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather-part1---geolocation&quot; aria-label=&quot;getting the weather part1   geolocation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather part1 - Geolocation&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Jan 2021 02:48:47 GMT</lastBuildDate><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
+&lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예 : weather API에서 섭씨로 바꾸는 방법은 &quot;units = metric&quot; 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-fetch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fetch&quot; aria-label=&quot;2 fetch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. fetch&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 가져오게 하는 function&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; :  fetch가 데이터를 다가지고 오면, 다음 함수를 실행시킴&lt;/li&gt;
+&lt;li&gt;fetch 밑 json 활용은 다음 코스에서....아래는 완성 코드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function getWeather(lat, lng) {
+    fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;amp;lon=${lng}&amp;amp;appid=${API_KEY}&amp;amp;units=metric`
+    )
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(json){
+        const temp = json.main.temp;
+        const place = json.name;
+        weather.innerText = `${temp} @ ${place}`
+    });
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210116]]></title><description><![CDATA[Getting the Weather  - part1 : Geolocation 1. navigator 뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용. (1) navigator.geolocation.getCurrentPosition()…]]></description><link>https://dobedh.github.io/TIL_16_210116/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_16_210116/</guid><pubDate>Sat, 16 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather----part1--geolocation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather----part1--geolocation&quot; aria-label=&quot;getting the weather    part1  geolocation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather  - part1 : Geolocation&lt;/h2&gt;
 &lt;h3 id=&quot;1-navigator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-navigator&quot; aria-label=&quot;1 navigator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. navigator&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용.&lt;/li&gt;
@@ -34,7 +63,20 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;navigator.geolocation.getCurrentPosition(호출할 함수);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;4-기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EA%B8%B0%ED%83%80&quot; aria-label=&quot;4 기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 기타&lt;/h3&gt;
+&lt;h3 id=&quot;4-nomad-coders---challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-nomad-coders---challenge&quot; aria-label=&quot;4 nomad coders   challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Nomad Coders - Challenge&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;구현할 기능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;국가정보 선택&lt;/li&gt;
+&lt;li&gt;선택한 정보를 local storage에 저장&lt;/li&gt;
+&lt;li&gt;local storage에 저장된 국가 정보 있는지 확인&lt;/li&gt;
+&lt;li&gt;있다면, 해당 정보를 drop down의 default 값으로 표시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;완성 코드 : &lt;a href=&quot;https://codesandbox.io/s/day-six-blueprint-forked-hnyd8?file=/src/index.js&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codesandbox.io/s/day-six-blueprint-forked-hnyd8?file=/src/index.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EA%B8%B0%ED%83%80&quot; aria-label=&quot;5 기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 기타&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;꿀팁 : js에서 object에 key값과 value값이 같을때는, key 값 하나만 적으면 됨&lt;/p&gt;
@@ -553,67 +595,5 @@ function handleSubmit() {
 .text {
 color : red
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210107]]></title><description><![CDATA[views 뜻 : 화면에 표시되는 모든 것이 view  예시 텍스트 슬라이더 버튼 VStack(Vertical Stack) view의 일종으로, 다른 view들을 담는 container 역할 Vertically 담음 HStack Horizontall…]]></description><link>https://dobedh.github.io/TIL_7_210107/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_7_210107/</guid><pubDate>Thu, 07 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;views&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#views&quot; aria-label=&quot;views permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;views&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;뜻 : 화면에 표시되는 모든 것이 view &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;텍스트&lt;/li&gt;
-&lt;li&gt;슬라이더&lt;/li&gt;
-&lt;li&gt;버튼&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;VStack(Vertical Stack)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;view의 일종으로, 다른 view들을 담는 container 역할&lt;/li&gt;
-&lt;li&gt;Vertically 담음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;HStack&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Horizontally 담음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;swift-view-modifiers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#swift-view-modifiers&quot; aria-label=&quot;swift view modifiers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Swift View Modifiers&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;뜻 : CSS같은 개념. UI적 요소들을 바꿀 수 있음&lt;/li&gt;
-&lt;li&gt;규칙 : View modifier가 적힌 순서대로 코드가 적용된다.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;예시 : 아래 예시에서, border에는 opacity가 적용 안됨&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Text(&amp;quot;100&amp;quot;)
-.opacity(0.5)
-.border(color.red, width: 2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;modifers-유의사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modifers-%EC%9C%A0%EC%9D%98%EC%82%AC%ED%95%AD&quot; aria-label=&quot;modifers 유의사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modifers 유의사항&lt;/h3&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;각 modifer가 return하는 view 종류가 다르다&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;예를 들어, .bold() -&gt; Text view를 리턴&lt;/li&gt;
-&lt;li&gt;하지만 lineSpacing()은 그냥 view를 리턴&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;때문에 modifier를 놓는 순서를 잘 고려해야 함. &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;bold를 lineSpacing에 놓으면, 안됨. bold는 text view에 적용해야하는 것이라&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;modifier1---font&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modifier1---font&quot; aria-label=&quot;modifier1   font permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modifier(1) - font()&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;font size를 하드코딩 하는게 아니라, title, footnote 등의 속성으로 해두면 화면 크기에 따라 size를 조정해줌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;modifier1---kerning&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#modifier1---kerning&quot; aria-label=&quot;modifier1   kerning permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Modifier(1) - kerning()&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;기능 : letter spacing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ctrl + cmmd + space : 이모지 창
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
