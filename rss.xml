@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Jan 2021 13:45:43 GMT</lastBuildDate><item><title><![CDATA[TIL-210118]]></title><description><![CDATA[NodeJS Theory Who uses NodeJS Paypal Uber Netflix 1. installing NodeJS mac일땐 brew였는데.. window는 사이트가서 직접 설치 2. Express JS NodeJS에서 작동하는 프레임워…]]></description><link>https://dobedh.github.io/TIL_18_210118/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_18_210118/</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;nodejs-theory&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nodejs-theory&quot; aria-label=&quot;nodejs theory permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NodeJS Theory&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Jan 2021 14:44:31 GMT</lastBuildDate><item><title><![CDATA[TIL-210118]]></title><description><![CDATA[NodeJS Theory Who uses NodeJS Paypal Uber Netflix 1. installing NodeJS mac일땐 brew였는데.. window는 사이트가서 직접 설치 2. Express JS NodeJS에서 작동하는 프레임워…]]></description><link>https://dobedh.github.io/TIL_18_210118/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_18_210118/</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;nodejs-theory&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nodejs-theory&quot; aria-label=&quot;nodejs theory permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;NodeJS Theory&lt;/h1&gt;
 &lt;h2 id=&quot;who-uses-nodejs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#who-uses-nodejs&quot; aria-label=&quot;who uses nodejs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Who uses NodeJS&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Paypal&lt;/li&gt;
@@ -179,6 +179,31 @@ app.listen(4000, handleListening);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;node 명령어로 프로젝트 내 파일을 실행&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210118-part(2)]]></title><description><![CDATA[nomad Coder - challenge(8) appendChild() 동일한 node를 두번 appendChild하면, 해당 node가 두개가 생성되는 것이 아니라, 처음 append한 node의 위치가 두번째 append한 위치로 업데이트 된다…]]></description><link>https://dobedh.github.io/TIL_18_210118_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_18_210118_2/</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nomad-coder---challenge8&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nomad-coder---challenge8&quot; aria-label=&quot;nomad coder   challenge8 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nomad Coder - challenge(8)&lt;/h2&gt;
+&lt;h3 id=&quot;appendchild&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#appendchild&quot; aria-label=&quot;appendchild permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;appendChild()&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;동일한 node를 두번 appendChild하면, 해당 node가 두개가 생성되는 것이 아니라, 처음 append한 node의 위치가 두번째 append한 위치로 업데이트 된다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;두번 이상 반복해서 같은 node를 넣을 수 없다!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const body = document.querySelector(&amp;quot;body&amp;quot;);
+
+const titleText = [&amp;quot;Pending&amp;quot;, &amp;quot;Finished&amp;quot;];
+
+function boardAdd() {
+const pending = document.createElement(&amp;quot;h2&amp;quot;);
+const finished = document.createElement(&amp;quot;h2&amp;quot;);
+pending.innerText = titleText[0];
+finished.innerText = titleText[1];
+body.appendChild(pending);
+body.appendChild(finished);
+}
+
+function init() {
+boardAdd();
+}
+
+init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
 &lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
 &lt;ul&gt;
@@ -644,82 +669,4 @@ if ( loadedToDos !== null) {
 &lt;li&gt;tsx 파일의 주석 처리 {/* */} 로 주석 처리 가능&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210110]]></title><description><![CDATA[Making a TO-DO List appendChild, innerText  : tag 안/밑에 또다른 tag를 넣을 수 있음  : 태그가 표시하는 text 값을 넣을 수 있음 innerText 적용 대상이 혼동 되는 듯 Eliment 만들기 do…]]></description><link>https://dobedh.github.io/TIL_10_210110/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_10_210110/</guid><pubDate>Sun, 10 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;making-a-to-do-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list&quot; aria-label=&quot;making a to do list permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a TO-DO List&lt;/h2&gt;
-&lt;h3 id=&quot;appendchild-innertext&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#appendchild-innertext&quot; aria-label=&quot;appendchild innertext permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;appendChild, innerText&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;appendChild&lt;/code&gt; : tag 안/밑에 또다른 tag를 넣을 수 있음&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;innerText&lt;/code&gt; : 태그가 표시하는 text 값을 넣을 수 있음&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;innerText 적용 대상이 혼동 되는 듯&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function paintToDo(text) {
-const li = document.createElement(&amp;quot;li&amp;quot;)
-const delBtn = document.createElement(&amp;quot;button&amp;quot;)
-delBtn.innerText = &amp;quot;✔&amp;quot;
-li.innerText = text
-li.appendChild(delBtn)
-toDoList.appendChild(li)
-}   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;eliment-만들기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#eliment-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;eliment 만들기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Eliment 만들기&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;document.createElement(&quot;li&quot;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;pre-self-code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#pre-self-code&quot; aria-label=&quot;pre self code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;pre-self code&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    const todo = document.querySelector(&amp;quot;.js-todo&amp;quot;),
-        todoInput = todo.querySelector(&amp;quot;input&amp;quot;),
-        list = document.querySelector(&amp;quot;.js-list&amp;quot;)
-
-    const TODO_LIST = &amp;quot;todoItem&amp;quot;,
-        addTodoList = document.createElement(&amp;quot;li&amp;quot;);
-
-    function storageAdd() {
-        event.preventDefault();
-        const addedItem =  todoInput.value;
-        console.log(addedItem);
-        localStorage.setItem(TODO_LIST, addedItem);
-        listAdd(addedItem);
-    }
-
-    function listAdd(item) {
-        addTodoList.innerText(item);
-        list.appendChild(addTodoList);
-    }
-
-
-    function todoWrite() {
-        todo.addEventListener(&amp;quot;submit&amp;quot;, storageAdd);
-    }
-
-    function init(){
-        todoWrite()
-    }
-
-    init()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;헷갈리는 것&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;O&lt;/code&gt; : innerHTML = &quot;text&quot; &lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;X&lt;/code&gt; : innerHTML(&quot;Text&quot;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;html 태그내 meta charset&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;이모지 등 글꼴 표시하기 위해서는 html내 표기 필수&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;meta charset = &amp;quot;utf-8&amp;quot;&amp;gt;
-&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;window에서 이모지창 단축키 : 윈도우키 + . or ,&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
