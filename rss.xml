@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 Jan 2021 12:46:53 GMT</lastBuildDate><item><title><![CDATA[TIL-210119]]></title><description><![CDATA[Handling Routes with Express 1. 전체적인 서버 작동 flow 요약 서버 생성 express로  Router 생성 get, request 할수 있게, 접속시 반응하는 라우터 response  Router에서 실행한 respon…]]></description><link>https://dobedh.github.io/TIL_19_210119/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_19_210119/</guid><pubDate>Tue, 19 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;handling-routes-with-express&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#handling-routes-with-express&quot; aria-label=&quot;handling routes with express permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Handling Routes with Express&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Jan 2021 15:10:48 GMT</lastBuildDate><item><title><![CDATA[TIL-210120]]></title><description><![CDATA[2.6 Express Core: Middlewares Middleware 의미 유저의 요청, 액션과 서버/브라우저의 액션 사이의 무언가 express에서 모든 함수는 middleware가 될 수 있음 서버-유저 간의 플로우 예시 유저의 브라우저 접속…]]></description><link>https://dobedh.github.io/TIL_20_210120/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_20_210120/</guid><pubDate>Wed, 20 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;26-express-core-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#26-express-core-middlewares&quot; aria-label=&quot;26 express core middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.6] Express Core: Middlewares&lt;/h1&gt;
+&lt;h3 id=&quot;middleware-의미&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#middleware-%EC%9D%98%EB%AF%B8&quot; aria-label=&quot;middleware 의미 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Middleware 의미&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;유저의 요청, 액션과 서버/브라우저의 액션 사이의 무언가&lt;/li&gt;
+&lt;li&gt;express에서 모든 함수는 middleware가 될 수 있음&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;서버-유저 간의 플로우 예시&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;유저의 브라우저 접속, 요청&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;index.js로 와서 서버 실행(express)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;app 라우터를 보고 함수 실행 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;최종 response&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;middleware 예시&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const handleHome = (req, res) =&amp;gt; res.send(&amp;quot;Hi from home! dobedh&amp;quot;);
+const betweenHome = () =&amp;gt; console.log(&amp;quot;I&amp;#39;m in between&amp;quot;)
+app.get(&amp;quot;/&amp;quot;, betweenHome, handleHome) &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-middleware의-형태&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-middleware%EC%9D%98-%ED%98%95%ED%83%9C&quot; aria-label=&quot;2 middleware의 형태 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Middleware의 형태&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Middleware가 되는 function 들은 &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;를 갖는다&lt;/li&gt;
+&lt;li&gt;function의 parameter로 &lt;code class=&quot;language-text&quot;&gt;req&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;res&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;next&lt;/code&gt;를 갖는것&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;최종 response가 되는 것들(즉, middleware가 아닌 것들)은 next를 안줌&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const handleHome = (req, res) =&amp;gt; res.send(&amp;quot;Hi from home! dobedh&amp;quot;);
+const handleProfile = (req, res, next) =&amp;gt; {
+    console.log(&amp;quot;in Between&amp;quot;)
+    next()
+}
+app.get(&amp;quot;/&amp;quot;, betweenHome, handleHome) &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;21-middleware를-모든-라우터에-추가globally&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-middleware%EB%A5%BC-%EB%AA%A8%EB%93%A0-%EB%9D%BC%EC%9A%B0%ED%84%B0%EC%97%90-%EC%B6%94%EA%B0%80globally&quot; aria-label=&quot;21 middleware를 모든 라우터에 추가globally permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.1 Middleware를 모든 라우터에 추가(globally)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;위 예시에서는, &quot;/&quot; 경로(라우터)에만 middleware추가한것&lt;/li&gt;
+&lt;li&gt;웹의 모든 경로에 추가하려면 아래 코드 사용&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(betweeHome)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;위치는, router들 작성 전. 그래야 모든 router들에 적용됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-middleware의-기능&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-middleware%EC%9D%98-%EA%B8%B0%EB%8A%A5&quot; aria-label=&quot;3 middleware의 기능 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Middleware의 기능&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;중간에서 일어나는 모든 작업들 가능&lt;/li&gt;
+&lt;li&gt;유저가 로그인할때 로그인 정보 확인&lt;/li&gt;
+&lt;li&gt;웹에서 발생하는 모든 로그를 중간에서 남기는 일&lt;/li&gt;
+&lt;li&gt;데이터, 정보를 중간에서 가져와서 확인하는 일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;27-express-core--middlewares--part2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#27-express-core--middlewares--part2&quot; aria-label=&quot;27 express core  middlewares  part2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.7] Express core : Middlewares -part(2)&lt;/h1&gt;
+&lt;h3 id=&quot;1-middleware-예시--morgan&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-middleware-%EC%98%88%EC%8B%9C--morgan&quot; aria-label=&quot;1 middleware 예시  morgan permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Middleware 예시 : morgan&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;유저의 log를 남겨줌&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://expressjs.com/en/resources/middleware/morgan.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://expressjs.com/en/resources/middleware/morgan.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2-middleware-예시--helmet&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-middleware-%EC%98%88%EC%8B%9C--helmet&quot; aria-label=&quot;2 middleware 예시  helmet permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. middleware 예시 : helmet&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;보안을 위한 미들웨어&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/helmetjs/helmet&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/helmetjs/helmet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-middleware로-연결을-끊을-수-있음&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-middleware%EB%A1%9C-%EC%97%B0%EA%B2%B0%EC%9D%84-%EB%81%8A%EC%9D%84-%EC%88%98-%EC%9E%88%EC%9D%8C&quot; aria-label=&quot;3 middleware로 연결을 끊을 수 있음 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. middleware로 연결을 끊을 수 있음&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;next 함수를 실행하지 않고, res.send를 통해서 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const notHappening = (req, res, next) =&amp;gt; {
+    res.send(&amp;quot;not happening&amp;quot;)
+}
+
+app.get(&amp;quot;/&amp;quot;, notHappening, handdleHome)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-예시--body-parser&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EC%98%88%EC%8B%9C--body-parser&quot; aria-label=&quot;4 예시  body parser permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 예시 : body parser&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;유저가 보낸 정보(form)를 서버가 이해하도록 돕는 것&lt;/li&gt;
+&lt;li&gt;이건 텍스트 정보, 이건 html 정보, 이건 이런 형태의 정보라고 서버에게 알려주는 것&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;json과 html 파일 읽을 수 있게 middleware로 추가&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://expressjs.com/en/resources/middleware/body-parser.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://expressjs.com/en/resources/middleware/body-parser.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;5-예시--cookie-parser&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EC%98%88%EC%8B%9C--cookie-parser&quot; aria-label=&quot;5 예시  cookie parser permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 예시 : cookie parser&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;유저로 부터 받은 cookie 정보를 서버가 이해하도록 돕는 것&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(cookieParser());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/cookie-parser&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.npmjs.com/package/cookie-parser&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#challenge&quot; aria-label=&quot;challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Challenge&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://codesandbox.io/s/empty-blueprint-forked-8zuni?file=/index.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codesandbox.io/s/empty-blueprint-forked-8zuni?file=/index.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TIL-210119]]></title><description><![CDATA[Handling Routes with Express 1. 전체적인 서버 작동 flow 요약 서버 생성 express로  Router 생성 get, request 할수 있게, 접속시 반응하는 라우터 response  Router에서 실행한 respon…]]></description><link>https://dobedh.github.io/TIL_19_210119/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_19_210119/</guid><pubDate>Tue, 19 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;handling-routes-with-express&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#handling-routes-with-express&quot; aria-label=&quot;handling routes with express permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Handling Routes with Express&lt;/h1&gt;
 &lt;h3 id=&quot;1-전체적인-서버-작동-flow-요약&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%A0%84%EC%B2%B4%EC%A0%81%EC%9D%B8-%EC%84%9C%EB%B2%84-%EC%9E%91%EB%8F%99-flow-%EC%9A%94%EC%95%BD&quot; aria-label=&quot;1 전체적인 서버 작동 flow 요약 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 전체적인 서버 작동 flow 요약&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -408,7 +515,36 @@ boardAdd();
 
 init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117-part2]]></title><description><![CDATA[Youtube Clone Coding - start! Website vs Web app  : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.  : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능 What is …]]></description><link>https://dobedh.github.io/TIL_17_210117_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117_2/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding---start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding---start&quot; aria-label=&quot;youtube clone coding   start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding - start!&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
+&lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예 : weather API에서 섭씨로 바꾸는 방법은 &quot;units = metric&quot; 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-fetch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fetch&quot; aria-label=&quot;2 fetch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. fetch&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 가져오게 하는 function&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; :  fetch가 데이터를 다가지고 오면, 다음 함수를 실행시킴&lt;/li&gt;
+&lt;li&gt;fetch 밑 json 활용은 다음 코스에서....아래는 완성 코드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function getWeather(lat, lng) {
+    fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;amp;lon=${lng}&amp;amp;appid=${API_KEY}&amp;amp;units=metric`
+    )
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(json){
+        const temp = json.main.temp;
+        const place = json.name;
+        weather.innerText = `${temp} @ ${place}`
+    });
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210117-part2]]></title><description><![CDATA[Youtube Clone Coding - start! Website vs Web app  : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.  : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능 What is …]]></description><link>https://dobedh.github.io/TIL_17_210117_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117_2/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding---start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding---start&quot; aria-label=&quot;youtube clone coding   start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding - start!&lt;/h1&gt;
 &lt;h2 id=&quot;website-vs-web-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#website-vs-web-app&quot; aria-label=&quot;website vs web app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Website vs Web app&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;website&lt;/code&gt; : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.&lt;/li&gt;
@@ -454,36 +590,7 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;예 : 유튜브 같은 동영상 처리 서버 등&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
-&lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;예 : weather API에서 섭씨로 바꾸는 방법은 &quot;units = metric&quot; 설정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-fetch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fetch&quot; aria-label=&quot;2 fetch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. fetch&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터를 가져오게 하는 function&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; :  fetch가 데이터를 다가지고 오면, 다음 함수를 실행시킴&lt;/li&gt;
-&lt;li&gt;fetch 밑 json 활용은 다음 코스에서....아래는 완성 코드&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function getWeather(lat, lng) {
-    fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;amp;lon=${lng}&amp;amp;appid=${API_KEY}&amp;amp;units=metric`
-    )
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(json){
-        const temp = json.main.temp;
-        const place = json.name;
-        weather.innerText = `${temp} @ ${place}`
-    });
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210116]]></title><description><![CDATA[Getting the Weather  - part1 : Geolocation 1. navigator 뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용. (1) navigator.geolocation.getCurrentPosition()…]]></description><link>https://dobedh.github.io/TIL_16_210116/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_16_210116/</guid><pubDate>Sat, 16 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather----part1--geolocation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather----part1--geolocation&quot; aria-label=&quot;getting the weather    part1  geolocation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather  - part1 : Geolocation&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210116]]></title><description><![CDATA[Getting the Weather  - part1 : Geolocation 1. navigator 뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용. (1) navigator.geolocation.getCurrentPosition()…]]></description><link>https://dobedh.github.io/TIL_16_210116/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_16_210116/</guid><pubDate>Sat, 16 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather----part1--geolocation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather----part1--geolocation&quot; aria-label=&quot;getting the weather    part1  geolocation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather  - part1 : Geolocation&lt;/h2&gt;
 &lt;h3 id=&quot;1-navigator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-navigator&quot; aria-label=&quot;1 navigator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. navigator&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용.&lt;/li&gt;
@@ -732,89 +839,4 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
     html.addEventListener(&amp;quot;contextmenu&amp;quot;, superEventHandler.rightClick);
     window.addEventListener(&amp;quot;resize&amp;quot;, superEventHandler.resize);
     }
-    init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL_210112]]></title><description><![CDATA[Making a To Do List part Three 1. remove by id 방법 : id 기준으로 해당 태그를 호출한 후,  사용 2. remove in locaStorage 방법 :  사용? (배열에서 배열 내 값 삭제) self code]]></description><link>https://dobedh.github.io/TIL_12_210112/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_12_210112/</guid><pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;making-a-to-do-list-part-three&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#making-a-to-do-list-part-three&quot; aria-label=&quot;making a to do list part three permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Making a To Do List part Three&lt;/h1&gt;
-&lt;h3 id=&quot;1-remove-by-id&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-remove-by-id&quot; aria-label=&quot;1 remove by id permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. remove by id&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;방법 : id 기준으로 해당 태그를 호출한 후, &lt;code class=&quot;language-text&quot;&gt;.remove()&lt;/code&gt; 사용&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const clickedId = event.path[1].id;
-const clickedList = document.getElementById(clickedId);
-clickedList.remove();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-remove-in-locastorage&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-remove-in-locastorage&quot; aria-label=&quot;2 remove in locastorage permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. remove in locaStorage&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;방법 : &lt;code class=&quot;language-text&quot;&gt;.splice&lt;/code&gt; 사용? (배열에서 배열 내 값 삭제)&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const loadedToDos = localStorage.getItem(TODOS_LS);
-const parsedToDos = JSON.parse(loadedToDos);
-parsedToDos.splice(clickedId-1, 1);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;self-code&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-code&quot; aria-label=&quot;self code permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;self code&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    const toDoForm = document.querySelector(&amp;quot;.js-toDoForm&amp;quot;),
-        toDoInput = toDoForm.querySelector(&amp;quot;input&amp;quot;),
-        toDoList = document.querySelector(&amp;quot;.js-toDoList&amp;quot;);
-
-    const TODOS_LS = &amp;quot;toDos&amp;quot;;
-
-    let toDos = [];
-
-    function handleClick(event) {
-        const clickedId = event.path[1].id;
-        const clickedList = document.getElementById(clickedId);
-        clickedList.remove();
-        const loadedToDos = localStorage.getItem(TODOS_LS);
-        const parsedToDos = JSON.parse(loadedToDos);
-        parsedToDos.splice(clickedId-1, 1);
-        toDos = parsedToDos;
-        saveToDo();
-    }
-
-    function saveToDo() {
-        localStorage.setItem(TODOS_LS, JSON.stringify(toDos))
-    }
-
-    function paintToDo(text) {
-        const li = document.createElement(&amp;quot;li&amp;quot;);
-        const delBtn = document.createElement(&amp;quot;button&amp;quot;);
-        const span = document.createElement(&amp;quot;span&amp;quot;);
-        const newId = toDos.length + 1;
-        delBtn.innerText = &amp;quot;✔&amp;quot;;
-        span.innerText = text;
-        li.appendChild(span);
-        li.appendChild(delBtn);
-        li.id = newId;
-        toDoList.appendChild(li);
-        const toDoObj = {
-            text : text,
-            id : newId
-        };
-        toDos.push(toDoObj);
-        saveToDo()
-    }   
-
-    function handleSubmit(event) {
-        event.preventDefault();
-        const currentValue = toDoInput.value;
-        paintToDo(currentValue);
-        toDoInput.value = &amp;quot;&amp;quot;;
-    }
-
-    function loadToDos(){
-        const loadedToDos = localStorage.getItem(TODOS_LS);
-        if ( loadedToDos !== null) {
-            const parsedToDos = JSON.parse(loadedToDos);
-            parsedToDos.forEach(function(toDo){
-                paintToDo(toDo.text)
-            })
-        }
-    }
-
-    function init() {
-        loadToDos();
-        toDoForm.addEventListener(&amp;quot;submit&amp;quot;, handleSubmit);
-        toDoList.addEventListener(&amp;quot;click&amp;quot;, handleClick)
-    }
-
     init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
