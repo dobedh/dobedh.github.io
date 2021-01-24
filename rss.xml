@@ -1,4 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Jan 2021 14:07:27 GMT</lastBuildDate><item><title><![CDATA[TIL-210123]]></title><description><![CDATA[Project Setting - 복습 프로젝트 폴더 생성   해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)  expressJS 사용할 수 있도록 express 설치 node modules 설치…]]></description><link>https://dobedh.github.io/TIL_23_210123/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_23_210123/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;project-setting---복습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-setting---%EB%B3%B5%EC%8A%B5&quot; aria-label=&quot;project setting   복습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Setting - 복습&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 11:45:07 GMT</lastBuildDate><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;coockie-parser&lt;/code&gt; : 사용자 인증할때 쓰는 미들웨어&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;body parser&lt;/code&gt; : 사용자가 보낸 정보를 검증하는 미들웨어&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;morgan&lt;/code&gt; : log를 남겨주는 미들웨어&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;213-installing-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#213-installing-pug&quot; aria-label=&quot;213 installing pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.13] Installing Pug&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Pug&lt;/code&gt;란?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;html 코드를 훨씬 깔금하게 만들어주는 템플릿&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/pug&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.npmjs.com/package/pug&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;pug 초반 세팅&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install pug&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;app.set(&amp;quot;view engine&amp;quot;, &amp;quot;pug&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;view 엔진으로 pug 확장자를 보겠다는 것&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;views&lt;/code&gt; 디렉토리 생성     &lt;/li&gt;
+&lt;li&gt;view를 렌더링 할때, express는 &lt;code class=&quot;language-text&quot;&gt;views&lt;/code&gt; 디렉토리를 봄. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;해당 디렉토리에, pug확장자 파일 생성&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;controller(func) 파일에서, &lt;code class=&quot;language-text&quot;&gt;res.render&lt;/code&gt;로 views 안의 pug파일 가져옴&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;214-layouts-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#214-layouts-with-pug&quot; aria-label=&quot;214 layouts with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.14] Layouts with Pug]&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;pug layout 파일을 생성해서, 전체 html 파일들에 적용될 layout을 세팅하고 불러와서 씀&lt;/li&gt;
+&lt;li&gt;layout관련 디렉토리 생성해서, main.pug 생성&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;해당 파일에서, 모든 파일에 적용될 레이아웃 코드 작성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;block content 부분에, 각 파일의 코드가 삽입 될 예정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;DOCTYPE
+html
+HTML 
+title wetube
+head
+body
+header  
+    h2  Wetube
+main
+    block content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;footer
+span © dobedh&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;각 파일에, &lt;code class=&quot;language-text&quot;&gt;extends layouts/main&lt;/code&gt; 코드 상단에 작성&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block contetn&lt;/code&gt;를 쓰고, 하위에 이제 해당 페이지에 넣을 코드 작성&lt;/li&gt;
+&lt;li&gt;이렇게 하면, main.pug에 작성해둔 레이아웃 유지된 상태에서 block content에 각 페이지의 내용만 삽입됨.&lt;/li&gt;
+&lt;li&gt;와우&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;215-partials-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#215-partials-with-pug&quot; aria-label=&quot;215 partials with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.15] Partials with Pug&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;footer, header 등 partially 들어가는 것들을 따로 템플릿화 해서 저장 가능&lt;/li&gt;
+&lt;li&gt;위 main layout처럼 별도 파일 생성&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;해당 파일의 내용을, &lt;code class=&quot;language-text&quot;&gt;include /파일경로&lt;/code&gt; 코드 통해서 불러옴&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body
+include ../partials/header
+main
+    block content
+include ../partials/footer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;216-local-middelware&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#216-local-middelware&quot; aria-label=&quot;216 local middelware permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.16] local Middelware&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;다른 local 파일에 있는 코드들을 pug view에 끌어다 쓰는 법&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;res.locals&lt;/code&gt; 이용해서, pug에서 쓸수 있게 코드들을 내보내줌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;방법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;로컬 미드웨어 추가 : &lt;code class=&quot;language-text&quot;&gt;app.use(localMiddleware)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;로컬 미드웨어 divide &amp;#x26; conquere : localmiddleware.js&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;해당 파일에서, &lt;code class=&quot;language-text&quot;&gt;res.locals.변수명&lt;/code&gt; 으로 내보낼 값들 설정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;내보낸 값들을 pug에서 불러와서 쓰면 됨&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;localMiddleware.js&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import routes from &amp;quot;./routes&amp;quot;;
+
+export const localMiddelware = (req, res, next) =&amp;gt; {
+    res.locals.siteName = &amp;quot;Wetube&amp;quot;;
+    res.locals.routes = routes
+    next()
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;header.pug&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;header.header
+.header_column
+    i.fab.fa-youtube
+.header_column
+    ul 
+        li
+            a(href=routes.join) join
+        li
+            a(href=routes.login) login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210123]]></title><description><![CDATA[Project Setting - 복습 프로젝트 폴더 생성   해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)  expressJS 사용할 수 있도록 express 설치 node modules 설치…]]></description><link>https://dobedh.github.io/TIL_23_210123/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_23_210123/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;project-setting---복습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-setting---%EB%B3%B5%EC%8A%B5&quot; aria-label=&quot;project setting   복습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Setting - 복습&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;ol&gt;
@@ -7,33 +147,53 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt; &lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install express&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install express&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;expressJS 사용할 수 있도록 express 설치&lt;/li&gt;
 &lt;li&gt;node modules 설치되어, 기존 패키지들 활용 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;README.md 생성&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;README.md 생성&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;해당 프로젝트 설명(github에서)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; 생성&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; 생성&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;github 업로드시 업로드 안하고 무시할 코드/파일들 저장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;git remote add origin &lt;code class=&quot;language-text&quot;&gt;github저장소 url&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git remote add origin &lt;code class=&quot;language-text&quot;&gt;github저장소 url&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;github과 로컬의 해당 프로젝트 폴더를 연결&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -780,63 +940,5 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;컴퓨터의 하드웨어, 메모리 등에 acceess해서 hardcore한 작업을 해야 할 때&lt;/li&gt;
 &lt;li&gt;예 : 유튜브 같은 동영상 처리 서버 등&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210116]]></title><description><![CDATA[Getting the Weather  - part1 : Geolocation 1. navigator 뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용. (1) navigator.geolocation.getCurrentPosition()…]]></description><link>https://dobedh.github.io/TIL_16_210116/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_16_210116/</guid><pubDate>Sat, 16 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather----part1--geolocation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather----part1--geolocation&quot; aria-label=&quot;getting the weather    part1  geolocation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather  - part1 : Geolocation&lt;/h2&gt;
-&lt;h3 id=&quot;1-navigator&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-navigator&quot; aria-label=&quot;1 navigator permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. navigator&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;뜻 : 위치 값을 얻는 object. 안에 API들이 있어 사용.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;1-navigatorgeolocationgetcurrentposition&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-navigatorgeolocationgetcurrentposition&quot; aria-label=&quot;1 navigatorgeolocationgetcurrentposition permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;(1) navigator.geolocation.getCurrentPosition()&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;현재 위치의 위도, 경도, 고도 등의 정보값을 가져올 수 있음&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;()안에 succes시 호출 함수, error시 호출 함수를 넣음&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function askForCoords() {
-   navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError);
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;br&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-가져온-위치-값-localstorage에-저장&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EA%B0%80%EC%A0%B8%EC%98%A8-%EC%9C%84%EC%B9%98-%EA%B0%92-localstorage%EC%97%90-%EC%A0%80%EC%9E%A5&quot; aria-label=&quot;2 가져온 위치 값 localstorage에 저장 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 가져온 위치 값 localStorage에 저장&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;JSON.stringify() : 위치 obj를 string으로 바꿔서 locastorage에wjwkd&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function saveCoords(coordsObj) {
-    const coordsInfo = JSON.stringify(coordsObj)
-    localStorage.setItem(COORDS, coordsInfo)
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;3-self-coding&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-self-coding&quot; aria-label=&quot;3 self coding permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. self coding&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;navigator.geolocation.getCurrentLocation()&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;현재 device의 위도, 경도를 알려준다?!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;navigator.geolocation.getCurrentPosition(호출할 함수);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;4-nomad-coders---challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-nomad-coders---challenge&quot; aria-label=&quot;4 nomad coders   challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Nomad Coders - Challenge&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;구현할 기능&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;국가정보 선택&lt;/li&gt;
-&lt;li&gt;선택한 정보를 local storage에 저장&lt;/li&gt;
-&lt;li&gt;local storage에 저장된 국가 정보 있는지 확인&lt;/li&gt;
-&lt;li&gt;있다면, 해당 정보를 drop down의 default 값으로 표시&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;완성 코드 : &lt;a href=&quot;https://codesandbox.io/s/day-six-blueprint-forked-hnyd8?file=/src/index.js&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codesandbox.io/s/day-six-blueprint-forked-hnyd8?file=/src/index.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;5-기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EA%B8%B0%ED%83%80&quot; aria-label=&quot;5 기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;꿀팁 : js에서 object에 key값과 value값이 같을때는, key 값 하나만 적으면 됨&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const coordsObj = {
-    latitude,
-    longitude
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
