@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 11:45:07 GMT</lastBuildDate><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 14:27:12 GMT</lastBuildDate><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;coockie-parser&lt;/code&gt; : 사용자 인증할때 쓰는 미들웨어&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;body parser&lt;/code&gt; : 사용자가 보낸 정보를 검증하는 미들웨어&lt;/li&gt;
@@ -46,7 +46,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;214-layouts-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#214-layouts-with-pug&quot; aria-label=&quot;214 layouts with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.14] Layouts with Pug]&lt;/h1&gt;
+&lt;h1 id=&quot;214-layouts-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#214-layouts-with-pug&quot; aria-label=&quot;214 layouts with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.14] Layouts with Pug&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;pug layout 파일을 생성해서, 전체 html 파일들에 적용될 layout을 세팅하고 불러와서 씀&lt;/li&gt;
 &lt;li&gt;layout관련 디렉토리 생성해서, main.pug 생성&lt;/li&gt;
@@ -137,6 +137,24 @@ export const localMiddelware = (req, res, next) =&amp;gt; {
             a(href=routes.join) join
         li
             a(href=routes.login) login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;217-template-variables-in-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#217-template-variables-in-pug&quot; aria-label=&quot;217 template variables in pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.17] Template Variables in Pug&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;pug의 layout 템플릿에서 변수를 설정하고, 각 pug 페이지별 이 변수 값을 주는 방법&lt;/li&gt;
+&lt;li&gt;즉, 각 pug별 고유한 변수 값을 전달하는 방법&lt;/li&gt;
+&lt;li&gt;controller에서, 해당 pug page를 render할때, 변수 값을 전달한다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;코드 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---controllers.js
+export const home = (req, res) =&amp;gt; res.render(&amp;quot;Home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot; })
+export const home = (req, res) =&amp;gt; res.render(&amp;quot;Home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot; })
+
+---main.pug
+HTML 
+    head
+        link(rel=&amp;quot;stylesheet&amp;quot;, href=&amp;quot;https://use.fontawesome.com/releases/v5.15.2/css/all.css&amp;quot;, integrity=&amp;quot;sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu&amp;quot;, crossorigin=&amp;quot;anonymous&amp;quot;)
+    title #{pageTitle} | #{siteName}    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210123]]></title><description><![CDATA[Project Setting - 복습 프로젝트 폴더 생성   해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)  expressJS 사용할 수 있도록 express 설치 node modules 설치…]]></description><link>https://dobedh.github.io/TIL_23_210123/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_23_210123/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;project-setting---복습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-setting---%EB%B3%B5%EC%8A%B5&quot; aria-label=&quot;project setting   복습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Setting - 복습&lt;/h1&gt;
 &lt;ul&gt;
@@ -866,36 +884,7 @@ boardAdd();
 
 init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
-&lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;예 : weather API에서 섭씨로 바꾸는 방법은 &quot;units = metric&quot; 설정&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-fetch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fetch&quot; aria-label=&quot;2 fetch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. fetch&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;데이터를 가져오게 하는 function&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; :  fetch가 데이터를 다가지고 오면, 다음 함수를 실행시킴&lt;/li&gt;
-&lt;li&gt;fetch 밑 json 활용은 다음 코스에서....아래는 완성 코드&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function getWeather(lat, lng) {
-    fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;amp;lon=${lng}&amp;amp;appid=${API_KEY}&amp;amp;units=metric`
-    )
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(json){
-        const temp = json.main.temp;
-        const place = json.name;
-        weather.innerText = `${temp} @ ${place}`
-    });
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210117-part2]]></title><description><![CDATA[Youtube Clone Coding - start! Website vs Web app  : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.  : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능 What is …]]></description><link>https://dobedh.github.io/TIL_17_210117_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117_2/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding---start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding---start&quot; aria-label=&quot;youtube clone coding   start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding - start!&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117-part2]]></title><description><![CDATA[Youtube Clone Coding - start! Website vs Web app  : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.  : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능 What is …]]></description><link>https://dobedh.github.io/TIL_17_210117_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117_2/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding---start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding---start&quot; aria-label=&quot;youtube clone coding   start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding - start!&lt;/h1&gt;
 &lt;h2 id=&quot;website-vs-web-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#website-vs-web-app&quot; aria-label=&quot;website vs web app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Website vs Web app&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;website&lt;/code&gt; : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.&lt;/li&gt;
@@ -941,4 +930,33 @@ init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;예 : 유튜브 같은 동영상 처리 서버 등&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
+&lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예 : weather API에서 섭씨로 바꾸는 방법은 &quot;units = metric&quot; 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-fetch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-fetch&quot; aria-label=&quot;2 fetch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. fetch&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;데이터를 가져오게 하는 function&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; :  fetch가 데이터를 다가지고 오면, 다음 함수를 실행시킴&lt;/li&gt;
+&lt;li&gt;fetch 밑 json 활용은 다음 코스에서....아래는 완성 코드&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function getWeather(lat, lng) {
+    fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&amp;amp;lon=${lng}&amp;amp;appid=${API_KEY}&amp;amp;units=metric`
+    )
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(json){
+        const temp = json.main.temp;
+        const place = json.name;
+        weather.innerText = `${temp} @ ${place}`
+    });
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
