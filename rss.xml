@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Jan 2021 14:27:12 GMT</lastBuildDate><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 25 Jan 2021 14:41:42 GMT</lastBuildDate><item><title><![CDATA[TIL-210125]]></title><description><![CDATA[2.18 Search Controller 1 .Form으로 데이터 보내기 form  : form에 데이터가 입력되었을때, 보낼 url, 액션 등  : 은 form에 input된 데이터를 url값으로 넘김. post는 나중에 input  : defau…]]></description><link>https://dobedh.github.io/TIL_25_210125/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_25_210125/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;218-search-controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#218-search-controller&quot; aria-label=&quot;218 search controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.18] Search Controller&lt;/h1&gt;
+&lt;h2 id=&quot;1-form으로-데이터-보내기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-form%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EB%82%B4%EA%B8%B0&quot; aria-label=&quot;1 form으로 데이터 보내기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1 .Form으로 데이터 보내기&lt;/h2&gt;
+&lt;h3 id=&quot;form&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#form&quot; aria-label=&quot;form permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;form&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;action&lt;/code&gt; : form에 데이터가 입력되었을때, 보낼 url, 액션 등&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;method&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;get&lt;/code&gt;은 form에 input된 데이터를 url값으로 넘김. post는 나중에&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;input&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#input&quot; aria-label=&quot;input permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;input&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;placeholder&lt;/code&gt; : default로 쳐져있는 텍스트&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;type&lt;/code&gt; : 넣을 타입&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt; : input된 데이터를 담을 변수 명&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;methoed--get&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#methoed--get&quot; aria-label=&quot;methoed  get permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;methoed = &quot;get&quot;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;input에 넘겨진 value를 url에 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2-reqquery로-데이터-받기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-reqquery%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%9B%EA%B8%B0&quot; aria-label=&quot;2 reqquery로 데이터 받기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. req.query로 데이터 받기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;search를 호출하는 controller funciton에서, &lt;code class=&quot;language-text&quot;&gt;req.qeury&lt;/code&gt;로 form에서 get된 데이터를 가져옴&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;아래 방식으로 가져오기 가능&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;--기존
+const serachingBy = req.query.term
+
+--최신
+const {query : {
+        term: searchingBy
+}} = req.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# [2.19] Join : Log In HTML
+
+### 1. login, join 페이지에 form 추가
+* input의 type을 eamil, password등으로 설정 가능
+* action은 login 페이지로 이동하게
+
+### 2. social login 버튼
+* partial에 socialloin 버튼 추가. 
+* login, join pug에 include로 가져오기
+
+### 기타
+* `|`을 사용하면 pug에서, 제일 앞글자를 element가 아니라 text로 인식해줌
+* `BEM`이 뭐지? `social--login`이런식으로 class name부여하는 방식인듯
+* 카카오 클론 수업에서 다뤘다니까 찾아볼 필요
+* backend할때는 backend만, front할때는 front만. 순차적으로
+
+### Challenge
+* 노션에 오늘의 challenge 코드 정리해둠&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;coockie-parser&lt;/code&gt; : 사용자 인증할때 쓰는 미들웨어&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;body parser&lt;/code&gt; : 사용자가 보낸 정보를 검증하는 미들웨어&lt;/li&gt;
@@ -883,52 +931,6 @@ boardAdd();
 }
 
 init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117-part2]]></title><description><![CDATA[Youtube Clone Coding - start! Website vs Web app  : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.  : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능 What is …]]></description><link>https://dobedh.github.io/TIL_17_210117_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117_2/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding---start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding---start&quot; aria-label=&quot;youtube clone coding   start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding - start!&lt;/h1&gt;
-&lt;h2 id=&quot;website-vs-web-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#website-vs-web-app&quot; aria-label=&quot;website vs web app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Website vs Web app&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;website&lt;/code&gt; : 콘텐츠를 소비할 수 있고, 정적임. interaction 없음.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;webapp&lt;/code&gt; : interaction 가능. 검색, 좋아요, 태그, 재생 등 많은 기능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-is-nodejs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-is-nodejs&quot; aria-label=&quot;what is nodejs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is NodeJS&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;javascript&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;웹에 내장되어있음. 웹/브라우저를 위해 주로 만들어진 언어.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;nodeJS&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;js를 브라우저 밖으로 가져와서, 유저가 local에서 사용할 수 있도록 한 것.&lt;/li&gt;
-&lt;li&gt;브라우저 밖의 javascript&lt;/li&gt;
-&lt;li&gt;js를 이용해서 서버도 만들고, web scrapping도 하고..&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;use-cases-for-nodejs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#use-cases-for-nodejs&quot; aria-label=&quot;use cases for nodejs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Use cases for NodeJS&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;NodeJS vs DJango, Python&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;nodejs&lt;/code&gt; : 무에서 유를 만들어내는 것 같은 자유도. 작은 블럭으로 성을 쌓는 것 같음&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;DJango&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Python&lt;/code&gt; : 매우 큰 성같은 도구를 사용하는 것. 먼저 이 도구에 대해 공부하고 쓸 줄 알아야 사용 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nodeJS가 적합한 때&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;많은 data를 handle 해야할때&lt;/li&gt;
-&lt;li&gt;실시간으로 데이터를 다루는 app (채팅, 우버)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nodeJS가 적합하지 않은 떄&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;컴퓨터의 하드웨어, 메모리 등에 acceess해서 hardcore한 작업을 해야 할 때&lt;/li&gt;
-&lt;li&gt;예 : 유튜브 같은 동영상 처리 서버 등&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210117]]></title><description><![CDATA[Getting the Weather - part2 : API 1. API 특정 웹사이트로부터 데이터 얻거나, 저장된 것들 서로 주고받기위함 API에 있는 unit을 바꾸려면, 해당 API 문서에 방법 설명되어 있음 예 : weather API에서 섭…]]></description><link>https://dobedh.github.io/TIL_17_210117/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_17_210117/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;getting-the-weather---part2--api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-the-weather---part2--api&quot; aria-label=&quot;getting the weather   part2  api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the Weather - part2 : API&lt;/h2&gt;
 &lt;h3 id=&quot;1-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-api&quot; aria-label=&quot;1 api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. API&lt;/h3&gt;
