@@ -1,4 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Jan 2021 14:36:32 GMT</lastBuildDate><item><title><![CDATA[TIL-210126]]></title><description><![CDATA[2.20 Change Profile HTML BEM 사용법 https://en.bem.info/methodology/naming-convention/#naming-rules 2.21 Home Controller 홈화면에서, DB에 있는 데이터들을 가…]]></description><link>https://dobedh.github.io/TIL_26_210126/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_26_210126/</guid><pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;220-change-profile-html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#220-change-profile-html&quot; aria-label=&quot;220 change profile html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.20] Change Profile HTML&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 27 Jan 2021 15:12:32 GMT</lastBuildDate><item><title><![CDATA[TIL-210127]]></title><description><![CDATA[2.23 Join Controller postJoin, getJoin url이 get됐을때 페이지를 render하는 function과 페이지에서 정보를 post할때 부르는 function을 분리 해줌 bodyParser middleware로 심어뒀던…]]></description><link>https://dobedh.github.io/TIL_27_210127/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_27_210127/</guid><pubDate>Wed, 27 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;223-join-controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#223-join-controller&quot; aria-label=&quot;223 join controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.23] Join Controller&lt;/h1&gt;
+&lt;h3 id=&quot;postjoin-getjoin&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#postjoin-getjoin&quot; aria-label=&quot;postjoin getjoin permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;postJoin, getJoin&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;url이 get됐을때 페이지를 render하는 function과&lt;/li&gt;
+&lt;li&gt;페이지에서 정보를 post할때 부르는 function을 분리 해줌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;bodyparser&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bodyparser&quot; aria-label=&quot;bodyparser permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;bodyParser&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;middleware로 심어뒀던 &lt;code class=&quot;language-text&quot;&gt;bodyParser&lt;/code&gt;가, 유저가 정보를 post 할때 쓰임&lt;/li&gt;
+&lt;li&gt;유저가 post한 정보를 body object에 담아서 전달해줌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-post한-정보를-어떻게-route할것인가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-post%ED%95%9C-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-route%ED%95%A0%EA%B2%83%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;1 post한 정보를 어떻게 route할것인가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. post한 정보를 어떻게 route할것인가?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;.post&lt;/code&gt;로 post된 정보를 가졍로 수 있음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.get은 get된 정보를 받아오고&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;.pos는 post된 정보를 받아 routing 시킴&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;globalRouter.get(routes.join, getJoin);
+globalRouter.post(routes.join, postJoin);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-post된-유저-정보-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-post%EB%90%9C-%EC%9C%A0%EC%A0%80-%EC%A0%95%EB%B3%B4-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;2 post된 유저 정보 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. post된 유저 정보 가져오기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;post로 라우팅된 유저 정보는, 이로 인해 호출된 func의 req에 담긴다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;이 req의 body에 유저가 입력한 name, email, password 정보가 담김&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const postJoin = (req, res) =&amp;gt; {
+const {
+    body : {name, email, password, password2}
+} = req;
+if (password !== password2) {
+    res.status(400);
+    res.render(&amp;quot;Join&amp;quot;, { pageTitle : &amp;quot;Join&amp;quot; })
+} else {
+    res.redirect(routes.home)
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-join-후-홈으로-다시-보내기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-join-%ED%9B%84-%ED%99%88%EC%9C%BC%EB%A1%9C-%EB%8B%A4%EC%8B%9C-%EB%B3%B4%EB%82%B4%EA%B8%B0&quot; aria-label=&quot;3 join 후 홈으로 다시 보내기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. join 후 홈으로 다시 보내기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;res.redirect(경로)&lt;/code&gt; 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;224-log-in-and-user-profile-controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#224-log-in-and-user-profile-controller&quot; aria-label=&quot;224 log in and user profile controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.24] Log In and User Profile Controller&lt;/h1&gt;
+&lt;h3 id=&quot;user-authentification-basic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#user-authentification-basic&quot; aria-label=&quot;user authentification basic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;User authentification Basic&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;user정보를 middleware에 저장&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;user 정보가 true인지 체크한다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;true일 경우, 해당 유저의 id 값을 가져온다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;routes에 있는, userDetail 값을 아래와 같이 object화&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;user에 id가 있는 경우, id값을 url로 보낸 값 return&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const routes = {
+userDetail : (id) =&amp;gt; {
+if(id) {
+    return `/users/${id}`
+} else {
+    return USERS_DETAIL
+}
+},
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210126]]></title><description><![CDATA[2.20 Change Profile HTML BEM 사용법 https://en.bem.info/methodology/naming-convention/#naming-rules 2.21 Home Controller 홈화면에서, DB에 있는 데이터들을 가…]]></description><link>https://dobedh.github.io/TIL_26_210126/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_26_210126/</guid><pubDate>Tue, 26 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;220-change-profile-html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#220-change-profile-html&quot; aria-label=&quot;220 change profile html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.20] Change Profile HTML&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;BEM 사용법&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://en.bem.info/methodology/naming-convention/#naming-rules&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://en.bem.info/methodology/naming-convention/#naming-rules&lt;/a&gt;&lt;/li&gt;
@@ -1006,29 +1088,4 @@ app.listen(4000, handleListening);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;node 명령어로 프로젝트 내 파일을 실행&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210118-part(2)]]></title><description><![CDATA[nomad Coder - challenge(8) appendChild() 동일한 node를 두번 appendChild하면, 해당 node가 두개가 생성되는 것이 아니라, 처음 append한 node의 위치가 두번째 append한 위치로 업데이트 된다…]]></description><link>https://dobedh.github.io/TIL_18_210118_2/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_18_210118_2/</guid><pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nomad-coder---challenge8&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nomad-coder---challenge8&quot; aria-label=&quot;nomad coder   challenge8 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nomad Coder - challenge(8)&lt;/h2&gt;
-&lt;h3 id=&quot;appendchild&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#appendchild&quot; aria-label=&quot;appendchild permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;appendChild()&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;동일한 node를 두번 appendChild하면, 해당 node가 두개가 생성되는 것이 아니라, 처음 append한 node의 위치가 두번째 append한 위치로 업데이트 된다.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;두번 이상 반복해서 같은 node를 넣을 수 없다!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const body = document.querySelector(&amp;quot;body&amp;quot;);
-
-const titleText = [&amp;quot;Pending&amp;quot;, &amp;quot;Finished&amp;quot;];
-
-function boardAdd() {
-const pending = document.createElement(&amp;quot;h2&amp;quot;);
-const finished = document.createElement(&amp;quot;h2&amp;quot;);
-pending.innerText = titleText[0];
-finished.innerText = titleText[1];
-body.appendChild(pending);
-body.appendChild(finished);
-}
-
-function init() {
-boardAdd();
-}
-
-init();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
