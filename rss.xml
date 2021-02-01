@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 31 Jan 2021 11:49:46 GMT</lastBuildDate><item><title><![CDATA[TIL-210131]]></title><description><![CDATA[윈도우 셋업 1.2 Chocolatey Chocolatey 설치하면, powershell에서 명령문으로 프로그램 설치가능 윈도우에서 번거로운 .exe 파일 받아서 실행할 필요 x 3.0 MongoDB and Mongoose MongoDB 설치 윈도우…]]></description><link>https://dobedh.github.io/TIL_31_210131/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_31_210131/</guid><pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;윈도우-셋업-12-chocolatey&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%88%EB%8F%84%EC%9A%B0-%EC%85%8B%EC%97%85-12-chocolatey&quot; aria-label=&quot;윈도우 셋업 12 chocolatey permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;윈도우 셋업 [1.2] Chocolatey&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 01 Feb 2021 14:04:30 GMT</lastBuildDate><item><title><![CDATA[TIL-210201]]></title><description><![CDATA[3.6 Uploading and Creating a Video Video 파일만 업로드 받기  코드를 input에 추가 비디오 업로드시, 해당 비디오의 dir를 저장/불러오기 비디오를 직접 DB에 저장하면 너무 heavy해짐 이용해서, 비디오의 링크…]]></description><link>https://dobedh.github.io/TIL_32_210201/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_32_210201/</guid><pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;36-uploading-and-creating-a-video&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#36-uploading-and-creating-a-video&quot; aria-label=&quot;36 uploading and creating a video permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.6] Uploading and Creating a Video&lt;/h1&gt;
+&lt;h3 id=&quot;video-파일만-업로드-받기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#video-%ED%8C%8C%EC%9D%BC%EB%A7%8C-%EC%97%85%EB%A1%9C%EB%93%9C-%EB%B0%9B%EA%B8%B0&quot; aria-label=&quot;video 파일만 업로드 받기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Video 파일만 업로드 받기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;accept=&amp;quot;video/*&amp;quot;&lt;/code&gt; 코드를 input에 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;비디오-업로드시-해당-비디오의-dir를-저장불러오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B9%84%EB%94%94%EC%98%A4-%EC%97%85%EB%A1%9C%EB%93%9C%EC%8B%9C-%ED%95%B4%EB%8B%B9-%EB%B9%84%EB%94%94%EC%98%A4%EC%9D%98-dir%EB%A5%BC-%EC%A0%80%EC%9E%A5%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;비디오 업로드시 해당 비디오의 dir를 저장불러오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;비디오 업로드시, 해당 비디오의 dir를 저장/불러오기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;비디오를 직접 DB에 저장하면 너무 heavy해짐&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;multer&lt;/code&gt;이용해서, 비디오의 링크만 가져올수 있게 하자&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written on top of busboy for maximum efficiency.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;multer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#multer&quot; aria-label=&quot;multer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Multer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;Multer&lt;/code&gt;는 이용자가 데이터를 upload드 할때, 이를 URL형태로 바꿔주고, 업로드하는 파일은 특정 dir에 저장하도록 해준다.&lt;/li&gt;
+&lt;li&gt;따라서 우리가 view에 데이터를 뿌릴 때, multer가 만들어준 path(url) 정보를 끌어다가 쓰면 된다!&lt;/li&gt;
+&lt;li&gt;즉, DB에는 multer가 생성한 데이터의 url 정보만을 저장한다! =&gt; Middleware다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;code-classlanguage-textmultercode-설치법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-classlanguage-textmultercode-%EC%84%A4%EC%B9%98%EB%B2%95&quot; aria-label=&quot;code classlanguage textmultercode 설치법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code class=&quot;language-text&quot;&gt;Multer&lt;/code&gt; 설치법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;참고 : &lt;a href=&quot;https://www.npmjs.com/package/multer&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.npmjs.com/package/multer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install multer&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;middleware파일에 import multer&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import multer from &amp;quot;multer&amp;quot;;
+const multerVideo = multer({dest : &amp;quot;videos/&amp;quot;});
+export const uploadVideo = multerVideo.single(&amp;quot;videoFile&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;multer를 사용할, 즉 이용자가 업로드할 form의 encoding type을 multer에 맞게 설정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;form.upload(action=`/videos${routes.upload}`, method=&amp;quot;post&amp;quot;, enctype=&amp;quot;multipart/form-data&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;multer가 생성해주는 path정보를 받아서, Model(데이터 테이블?)의 schema에 맞게 넘겨준다. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;이떄, &lt;code class=&quot;language-text&quot;&gt;async&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;를 사용해서, Video에 schema정보가 fully 저장되어 넘어가도록 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const postUpload = async (req, res) =&amp;gt; {
+const {
+body : { title, description }, 
+file : { path }
+} = req;
+const newVideo =  await Video.create({
+fileUrl : path,
+title : title,
+description : description
+})    
+// todo : upload and save. // creat new id for uploaded video
+res.render(&amp;quot;upload&amp;quot;, { pageTitle : &amp;quot;Upload&amp;quot; })
+//res.redirect(routes.videoDetail(123123))
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;넘겨준 정보를, model.find()로 불러와서 뿌린다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const home = async (req, res) =&amp;gt; {
+try {
+const videos = await Video.find({})
+console.log(videos)
+res.render(&amp;quot;home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot;, videos})
+} catch {
+console.log(error)
+res.render(&amp;quot;home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot;, videos})
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;37-uploading-and-creating-a-video-part-two&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#37-uploading-and-creating-a-video-part-two&quot; aria-label=&quot;37 uploading and creating a video part two permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.7] Uploading and Creating a Video part Two&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;비디오가 메인에서 재생이 안되는데, 되게해보자.&lt;/li&gt;
+&lt;li&gt;&quot;uploads&quot; dir에 저장했는데, 이걸 routing 하는게 없어서임&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(&amp;quot;/uploads&amp;quot;, express.static(&amp;quot;uploads&amp;quot;))&lt;/code&gt; 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;해당 경로로 왔을때, 현재 프로젝트 내의 uploads dir를 바라봐라는 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;38-getting-video-by-id&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#38-getting-video-by-id&quot; aria-label=&quot;38 getting video by id permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.8] Getting Video by ID&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;각 비디오를 클릭했을 때, 해당 비디오의 id를 가져와서, 해당 비디오의 detail 페이지에 보이도록 하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-클릭된-video의-id-가져오기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%ED%81%B4%EB%A6%AD%EB%90%9C-video%EC%9D%98-id-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0&quot; aria-label=&quot;1 클릭된 video의 id 가져오기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 클릭된 video의 id 가져오기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;req.params&lt;/code&gt; 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;우리가 routes에서 생성한 &lt;code class=&quot;language-text&quot;&gt;:id&lt;/code&gt;값을 url에서 찾아서 가져와줌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-해당-id에-해당하는-테이블-찾기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%ED%95%B4%EB%8B%B9-id%EC%97%90-%ED%95%B4%EB%8B%B9%ED%95%98%EB%8A%94-%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%B0%BE%EA%B8%B0&quot; aria-label=&quot;2 해당 id에 해당하는 테이블 찾기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 해당 id에 해당하는 테이블? 찾기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.findById&lt;/code&gt;로 params로 가져온 id값에 해당하는 model을 찾기&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;찾아낸 모델(video)를 이제, 렌더링할 videoDetail페이지에 보내서, 해당 비디오 내용만 랜더링&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const videoDetail = async (req, res) =&amp;gt; {
+const {
+    params : {id}
+} = req;
+try{
+    const video = await Video.findById(id)
+    res.render(&amp;quot;videoDetail&amp;quot;, { pageTitle : &amp;quot;Video Detail&amp;quot;, video})
+} catch(error) {
+    res.redirect(routes.home)
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210131]]></title><description><![CDATA[윈도우 셋업 1.2 Chocolatey Chocolatey 설치하면, powershell에서 명령문으로 프로그램 설치가능 윈도우에서 번거로운 .exe 파일 받아서 실행할 필요 x 3.0 MongoDB and Mongoose MongoDB 설치 윈도우…]]></description><link>https://dobedh.github.io/TIL_31_210131/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_31_210131/</guid><pubDate>Sun, 31 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;윈도우-셋업-12-chocolatey&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%88%EB%8F%84%EC%9A%B0-%EC%85%8B%EC%97%85-12-chocolatey&quot; aria-label=&quot;윈도우 셋업 12 chocolatey permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;윈도우 셋업 [1.2] Chocolatey&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Chocolatey 설치하면, powershell에서 명령문으로 프로그램 설치가능&lt;/li&gt;
 &lt;li&gt;윈도우에서 번거로운 .exe 파일 받아서 실행할 필요 x&lt;/li&gt;
@@ -661,47 +787,4 @@ HTML
 &lt;li&gt;기타 파일들 생성후, git add,commit 및 push&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210122]]></title><description><![CDATA[2.11 MVC Pattern part(3) URL 들만 따로 나누기 routes 폴더를 만들고, 그 안에 URL들을 모두 변수화 시킨다. 변수화된 routes 들을 object화 해서 불러 쓸수 있게 한다.  그리고 그 routes 코드를 다른 파…]]></description><link>https://dobedh.github.io/TIL_22_210122/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_22_210122/</guid><pubDate>Fri, 22 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;211-mvc-pattern-part3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#211-mvc-pattern-part3&quot; aria-label=&quot;211 mvc pattern part3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.11] MVC Pattern part(3)&lt;/h1&gt;
-&lt;h3 id=&quot;url-들만-따로-나누기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#url-%EB%93%A4%EB%A7%8C-%EB%94%B0%EB%A1%9C-%EB%82%98%EB%88%84%EA%B8%B0&quot; aria-label=&quot;url 들만 따로 나누기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;URL 들만 따로 나누기&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;routes 폴더를 만들고, 그 안에 URL들을 모두 변수화 시킨다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;변수화된 routes 들을 object화 해서 불러 쓸수 있게 한다. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;그리고 그 routes 코드를 다른 파일들에서 import 한다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;결과적으로, 직접 URL을 쓰거나 기억할 필요 없이, routes 안의 변수를 불러와 URL생성 가능!&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// home
-const HOME = &amp;quot;/&amp;quot;cd 
-const JOIN = &amp;quot;/join&amp;quot;
-
-//user 
-const USERS = &amp;quot;/users&amp;quot;
-const USERS_DETAIL = &amp;quot;/:id&amp;quot;
-
-
-const routes = {
-    home : HOME,
-    join : JOIN,
-    users : USERS,
-    userDetail : USERS_DETAIL,
-};
-
-export default routes;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# [2.11] MVC Pattern part(4)
-
-### 1. Controller
-* function을 따로 분리하여 저장한다.
-* 보통 각 프로젝트에서, 모델들 마다 controller 파일을 생성함 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
