@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 01 Feb 2021 14:04:30 GMT</lastBuildDate><item><title><![CDATA[TIL-210201]]></title><description><![CDATA[3.6 Uploading and Creating a Video Video 파일만 업로드 받기  코드를 input에 추가 비디오 업로드시, 해당 비디오의 dir를 저장/불러오기 비디오를 직접 DB에 저장하면 너무 heavy해짐 이용해서, 비디오의 링크…]]></description><link>https://dobedh.github.io/TIL_32_210201/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_32_210201/</guid><pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;36-uploading-and-creating-a-video&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#36-uploading-and-creating-a-video&quot; aria-label=&quot;36 uploading and creating a video permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.6] Uploading and Creating a Video&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Feb 2021 14:11:07 GMT</lastBuildDate><item><title><![CDATA[TIL-210202]]></title><description><![CDATA[Youtube Clone Coding Challenge add 페이지 만들기 sumbit된 정보를 post로 받아오기 이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정 post된 정보를 받아오는 법?  에 저장되어 있다 inp…]]></description><link>https://dobedh.github.io/TIL_33_210202/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_33_210202/</guid><pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding-challenge&quot; aria-label=&quot;youtube clone coding challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding Challenge&lt;/h1&gt;
+&lt;h3 id=&quot;add-페이지-만들기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#add-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;add 페이지 만들기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;add 페이지 만들기&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;sumbit된 정보를 post로 받아오기&lt;/li&gt;
+&lt;li&gt;이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;post된 정보를 받아오는 법? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;req.body&lt;/code&gt;에 저장되어 있다&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const addMovies = async (req, res) =&amp;gt; {
+const {
+body: { title, synopsis, genre }
+} = req;
+const genres = genre.split(&amp;quot;,&amp;quot;);
+const movie = { title, synopsis, genres };
+await addMovie(movie);
+res.redirect(&amp;quot;/&amp;quot;);
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;input에 입력된 string을, &lt;code class=&quot;language-text&quot;&gt;,&lt;/code&gt;기준으로 분리하여 array화 하는 방법은?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.split(&amp;#39;,&amp;#39;)&lt;/code&gt; 사용. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;보다 자세한 정보는, 노션 및 challenge에 제출한 코드 링크 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;func에서 prameter안에 정보를 넘겨줄때, prameter이름을 일치하게 넘겨줘야 인식하는 듯&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;이번에는, prameter가 object형태로 되어 있어서 그럴지도. object 안의 key명과 일치하게 넘겨줘야 인식&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const addMovie = ({ title, synopsis, genres }) =&amp;gt; {
+if (typeof title !== &amp;quot;string&amp;quot; || typeof synopsis !== &amp;quot;string&amp;quot;) {
+throw Error(&amp;quot;❌  title and synopsis should be strings  ❌&amp;quot;);
+}
+if (!genres instanceof Array) {
+throw Error(&amp;quot;❌  genres should be an array  ❌&amp;quot;);
+}
+const id = Math.floor(Math.random() * (title.length + Date.now()));
+movies = [{ id, title, synopsis, genres }, ...movies];
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210201]]></title><description><![CDATA[3.6 Uploading and Creating a Video Video 파일만 업로드 받기  코드를 input에 추가 비디오 업로드시, 해당 비디오의 dir를 저장/불러오기 비디오를 직접 DB에 저장하면 너무 heavy해짐 이용해서, 비디오의 링크…]]></description><link>https://dobedh.github.io/TIL_32_210201/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_32_210201/</guid><pubDate>Mon, 01 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;36-uploading-and-creating-a-video&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#36-uploading-and-creating-a-video&quot; aria-label=&quot;36 uploading and creating a video permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.6] Uploading and Creating a Video&lt;/h1&gt;
 &lt;h3 id=&quot;video-파일만-업로드-받기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#video-%ED%8C%8C%EC%9D%BC%EB%A7%8C-%EC%97%85%EB%A1%9C%EB%93%9C-%EB%B0%9B%EA%B8%B0&quot; aria-label=&quot;video 파일만 업로드 받기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Video 파일만 업로드 받기&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;accept=&amp;quot;video/*&amp;quot;&lt;/code&gt; 코드를 input에 추가&lt;/li&gt;
@@ -723,68 +769,5 @@ HTML
     head
         link(rel=&amp;quot;stylesheet&amp;quot;, href=&amp;quot;https://use.fontawesome.com/releases/v5.15.2/css/all.css&amp;quot;, integrity=&amp;quot;sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu&amp;quot;, crossorigin=&amp;quot;anonymous&amp;quot;)
     title #{pageTitle} | #{siteName}    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210123]]></title><description><![CDATA[Project Setting - 복습 프로젝트 폴더 생성   해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)  expressJS 사용할 수 있도록 express 설치 node modules 설치…]]></description><link>https://dobedh.github.io/TIL_23_210123/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_23_210123/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;project-setting---복습&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#project-setting---%EB%B3%B5%EC%8A%B5&quot; aria-label=&quot;project setting   복습 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Project Setting - 복습&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;프로젝트 폴더 생성&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm init&lt;/code&gt; &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;해당 프로젝트에 대한 정보를 입력(author, project name, liscence... etc)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm install express&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;expressJS 사용할 수 있도록 express 설치&lt;/li&gt;
-&lt;li&gt;node modules 설치되어, 기존 패키지들 활용 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;README.md 생성&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;해당 프로젝트 설명(github에서)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; 생성&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;github 업로드시 업로드 안하고 무시할 코드/파일들 저장&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;git remote add origin &lt;code class=&quot;language-text&quot;&gt;github저장소 url&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;github과 로컬의 해당 프로젝트 폴더를 연결&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;7&quot;&gt;
-&lt;li&gt;기타 파일들 생성후, git add,commit 및 push&lt;/li&gt;
-&lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
