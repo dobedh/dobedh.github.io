@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Feb 2021 14:11:07 GMT</lastBuildDate><item><title><![CDATA[TIL-210202]]></title><description><![CDATA[Youtube Clone Coding Challenge add 페이지 만들기 sumbit된 정보를 post로 받아오기 이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정 post된 정보를 받아오는 법?  에 저장되어 있다 inp…]]></description><link>https://dobedh.github.io/TIL_33_210202/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_33_210202/</guid><pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding-challenge&quot; aria-label=&quot;youtube clone coding challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding Challenge&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 05 Feb 2021 14:18:29 GMT</lastBuildDate><item><title><![CDATA[TIL-210205]]></title><description><![CDATA[3.12 Searching Videos Self-code DB에서 데이터를 Search 하는 기능 구현 1. 검색한 값을 string화 시킨다  사용. 자세한 방법은 검색 import escapeStringRegexp from "escape-stri…]]></description><link>https://dobedh.github.io/TIL_35_210205/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_35_210205/</guid><pubDate>Fri, 05 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;312-searching-videos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#312-searching-videos&quot; aria-label=&quot;312 searching videos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.12] Searching Videos&lt;/h1&gt;
+&lt;h2 id=&quot;self-code-db에서-데이터를-search-하는-기능-구현&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-code-db%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-search-%ED%95%98%EB%8A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84&quot; aria-label=&quot;self code db에서 데이터를 search 하는 기능 구현 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[Self-code] DB에서 데이터를 Search 하는 기능 구현&lt;/h2&gt;
+&lt;h3 id=&quot;1-검색한-값을-string화-시킨다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EA%B2%80%EC%83%89%ED%95%9C-%EA%B0%92%EC%9D%84-string%ED%99%94-%EC%8B%9C%ED%82%A8%EB%8B%A4&quot; aria-label=&quot;1 검색한 값을 string화 시킨다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 검색한 값을 string화 시킨다&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$regex&lt;/code&gt; 사용. 자세한 방법은 검색&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;import escapeStringRegexp from &quot;escape-string-regexp&quot;;&lt;/li&gt;
+&lt;li&gt;$regex = escapeStringRegexp(searchingBy);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-or로-title이든-description이든-키워드를-가진-데이터를-찾는다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-or%EB%A1%9C-title%EC%9D%B4%EB%93%A0-description%EC%9D%B4%EB%93%A0-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A5%BC-%EA%B0%80%EC%A7%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%B0%BE%EB%8A%94%EB%8B%A4&quot; aria-label=&quot;2 or로 title이든 description이든 키워드를 가진 데이터를 찾는다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. or로, title이든 description이든 키워드를 가진 데이터를 찾는다&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$or&lt;/code&gt; 사용&lt;/li&gt;
+&lt;li&gt;상세 내용은 아래 코드 참고&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const search = async (req, res) =&amp;gt; {
+  const {
+    query: { term: searchingBy },
+  } = req;
+  const $regex = escapeStringRegexp(searchingBy);
+  try {
+    const videos = await Video.find({
+      $or: [({ title: { $regex } }, { description: { $regex } })],
+    });
+    res.render(&amp;quot;search&amp;quot;, {
+      pageTitle: `Search ${videos.title}`,
+      searchingBy,
+      videos,
+    });
+  } catch {
+    res.redirect(routes.home);
+  }
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210204]]></title><description><![CDATA[3.9 Editing a Video mongoDB에 저장된 데이터를 수정하는 법  몽구스의 공식 문서를 참고하는 것이 도움 된다. https://mongoosejs.com/docs/api.html#find_find try and catch 지속 사용…]]></description><link>https://dobedh.github.io/TIL_34_210204/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_34_210204/</guid><pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;39-editing-a-video&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#39-editing-a-video&quot; aria-label=&quot;39 editing a video permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.9] Editing a Video&lt;/h1&gt;
+&lt;h3 id=&quot;mongodb에-저장된-데이터를-수정하는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mongodb%EC%97%90-%EC%A0%80%EC%9E%A5%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;mongodb에 저장된 데이터를 수정하는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;mongoDB에 저장된 데이터를 수정하는 법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;db.findOneAndUpdate(query, update)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;몽구스의 공식 문서를 참고하는 것이 도움 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mongoosejs.com/docs/api.html#find_find&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://mongoosejs.com/docs/api.html#find_find&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;try and catch 지속 사용. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;310-deleting-a-video&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#310-deleting-a-video&quot; aria-label=&quot;310 deleting a video permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.10] Deleting a Video&lt;/h1&gt;
+&lt;h3 id=&quot;mongodb에-저장된-데이터를-삭제하는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mongodb%EC%97%90-%EC%A0%80%EC%9E%A5%EB%90%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%82%AD%EC%A0%9C%ED%95%98%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;mongodb에 저장된 데이터를 삭제하는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;MongoDB에 저장된 데이터를 삭제하는 법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;db.findOneAndRemove(query)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;몽구스 공식 문서 참고&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;해당하는 db의 id를 url에서 가져오는 법&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const {
+params : {id}
+} = req;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210202]]></title><description><![CDATA[Youtube Clone Coding Challenge add 페이지 만들기 sumbit된 정보를 post로 받아오기 이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정 post된 정보를 받아오는 법?  에 저장되어 있다 inp…]]></description><link>https://dobedh.github.io/TIL_33_210202/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_33_210202/</guid><pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding-challenge&quot; aria-label=&quot;youtube clone coding challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding Challenge&lt;/h1&gt;
 &lt;h3 id=&quot;add-페이지-만들기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#add-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;add 페이지 만들기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;add 페이지 만들기&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;sumbit된 정보를 post로 받아오기&lt;/li&gt;
@@ -560,214 +617,4 @@ block content
     ```
     video.videoBlock__thumbnail(src=video.videoFile, controls=true)
     ```
-* textarea =&amp;gt; 넓은 input&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210125]]></title><description><![CDATA[2.18 Search Controller 1 .Form으로 데이터 보내기 form  : form에 데이터가 입력되었을때, 보낼 url, 액션 등  : 은 form에 input된 데이터를 url값으로 넘김. post는 나중에 input  : defau…]]></description><link>https://dobedh.github.io/TIL_25_210125/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_25_210125/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;218-search-controller&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#218-search-controller&quot; aria-label=&quot;218 search controller permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.18] Search Controller&lt;/h1&gt;
-&lt;h2 id=&quot;1-form으로-데이터-보내기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-form%EC%9C%BC%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EB%82%B4%EA%B8%B0&quot; aria-label=&quot;1 form으로 데이터 보내기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1 .Form으로 데이터 보내기&lt;/h2&gt;
-&lt;h3 id=&quot;form&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#form&quot; aria-label=&quot;form permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;form&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;action&lt;/code&gt; : form에 데이터가 입력되었을때, 보낼 url, 액션 등&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;method&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;get&lt;/code&gt;은 form에 input된 데이터를 url값으로 넘김. post는 나중에&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;input&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#input&quot; aria-label=&quot;input permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;input&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;placeholder&lt;/code&gt; : default로 쳐져있는 텍스트&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;type&lt;/code&gt; : 넣을 타입&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt; : input된 데이터를 담을 변수 명&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;methoed--get&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#methoed--get&quot; aria-label=&quot;methoed  get permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;methoed = &quot;get&quot;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;input에 넘겨진 value를 url에 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;2-reqquery로-데이터-받기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-reqquery%EB%A1%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%9B%EA%B8%B0&quot; aria-label=&quot;2 reqquery로 데이터 받기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. req.query로 데이터 받기&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;search를 호출하는 controller funciton에서, &lt;code class=&quot;language-text&quot;&gt;req.qeury&lt;/code&gt;로 form에서 get된 데이터를 가져옴&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;아래 방식으로 가져오기 가능&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;--기존
-const serachingBy = req.query.term
-
---최신
-const {query : {
-        term: searchingBy
-}} = req.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;219-join--log-in-html&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#219-join--log-in-html&quot; aria-label=&quot;219 join  log in html permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.19] Join : Log In HTML&lt;/h1&gt;
-&lt;h3 id=&quot;1-login-join-페이지에-form-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-login-join-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90-form-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;1 login join 페이지에 form 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. login, join 페이지에 form 추가&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;input의 type을 eamil, password등으로 설정 가능&lt;/li&gt;
-&lt;li&gt;action은 login 페이지로 이동하게&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-social-login-버튼&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-social-login-%EB%B2%84%ED%8A%BC&quot; aria-label=&quot;2 social login 버튼 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. social login 버튼&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;partial에 socialloin 버튼 추가. &lt;/li&gt;
-&lt;li&gt;login, join pug에 include로 가져오기&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt;을 사용하면 pug에서, 제일 앞글자를 element가 아니라 text로 인식해줌&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;BEM&lt;/code&gt;이 뭐지? &lt;code class=&quot;language-text&quot;&gt;social--login&lt;/code&gt;이런식으로 class name부여하는 방식인듯&lt;/li&gt;
-&lt;li&gt;카카오 클론 수업에서 다뤘다니까 찾아볼 필요&lt;/li&gt;
-&lt;li&gt;backend할때는 backend만, front할때는 front만. 순차적으로&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#challenge&quot; aria-label=&quot;challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Challenge&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;노션에 오늘의 challenge 코드 정리해둠&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210124]]></title><description><![CDATA[2.12 recap  : 사용자 인증할때 쓰는 미들웨어  : 사용자가 보낸 정보를 검증하는 미들웨어  : log를 남겨주는 미들웨어 2.13 Installing Pug 란? html 코드를 훨씬 깔금하게 만들어주는 템플릿 https://www.npm…]]></description><link>https://dobedh.github.io/TIL_24_210124/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_24_210124/</guid><pubDate>Sun, 24 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;212-recap&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#212-recap&quot; aria-label=&quot;212 recap permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.12] recap&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;coockie-parser&lt;/code&gt; : 사용자 인증할때 쓰는 미들웨어&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;body parser&lt;/code&gt; : 사용자가 보낸 정보를 검증하는 미들웨어&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;morgan&lt;/code&gt; : log를 남겨주는 미들웨어&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;213-installing-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#213-installing-pug&quot; aria-label=&quot;213 installing pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.13] Installing Pug&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Pug&lt;/code&gt;란?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;html 코드를 훨씬 깔금하게 만들어주는 템플릿&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/pug&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.npmjs.com/package/pug&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pug 초반 세팅&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install pug&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;app.set(&amp;quot;view engine&amp;quot;, &amp;quot;pug&amp;quot;)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;view 엔진으로 pug 확장자를 보겠다는 것&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;views&lt;/code&gt; 디렉토리 생성     &lt;/li&gt;
-&lt;li&gt;view를 렌더링 할때, express는 &lt;code class=&quot;language-text&quot;&gt;views&lt;/code&gt; 디렉토리를 봄. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;해당 디렉토리에, pug확장자 파일 생성&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;controller(func) 파일에서, &lt;code class=&quot;language-text&quot;&gt;res.render&lt;/code&gt;로 views 안의 pug파일 가져옴&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;214-layouts-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#214-layouts-with-pug&quot; aria-label=&quot;214 layouts with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.14] Layouts with Pug&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;pug layout 파일을 생성해서, 전체 html 파일들에 적용될 layout을 세팅하고 불러와서 씀&lt;/li&gt;
-&lt;li&gt;layout관련 디렉토리 생성해서, main.pug 생성&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;해당 파일에서, 모든 파일에 적용될 레이아웃 코드 작성&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;block content 부분에, 각 파일의 코드가 삽입 될 예정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;DOCTYPE
-html
-HTML 
-title wetube
-head
-body
-header  
-    h2  Wetube
-main
-    block content&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;footer
-span © dobedh&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;각 파일에, &lt;code class=&quot;language-text&quot;&gt;extends layouts/main&lt;/code&gt; 코드 상단에 작성&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;block contetn&lt;/code&gt;를 쓰고, 하위에 이제 해당 페이지에 넣을 코드 작성&lt;/li&gt;
-&lt;li&gt;이렇게 하면, main.pug에 작성해둔 레이아웃 유지된 상태에서 block content에 각 페이지의 내용만 삽입됨.&lt;/li&gt;
-&lt;li&gt;와우&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;215-partials-with-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#215-partials-with-pug&quot; aria-label=&quot;215 partials with pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.15] Partials with Pug&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;footer, header 등 partially 들어가는 것들을 따로 템플릿화 해서 저장 가능&lt;/li&gt;
-&lt;li&gt;위 main layout처럼 별도 파일 생성&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;해당 파일의 내용을, &lt;code class=&quot;language-text&quot;&gt;include /파일경로&lt;/code&gt; 코드 통해서 불러옴&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body
-include ../partials/header
-main
-    block content
-include ../partials/footer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;216-local-middelware&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#216-local-middelware&quot; aria-label=&quot;216 local middelware permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.16] local Middelware&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;다른 local 파일에 있는 코드들을 pug view에 끌어다 쓰는 법&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;res.locals&lt;/code&gt; 이용해서, pug에서 쓸수 있게 코드들을 내보내줌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;방법&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;로컬 미드웨어 추가 : &lt;code class=&quot;language-text&quot;&gt;app.use(localMiddleware)&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;로컬 미드웨어 divide &amp;#x26; conquere : localmiddleware.js&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;해당 파일에서, &lt;code class=&quot;language-text&quot;&gt;res.locals.변수명&lt;/code&gt; 으로 내보낼 값들 설정&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;내보낸 값들을 pug에서 불러와서 쓰면 됨&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;localMiddleware.js&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import routes from &amp;quot;./routes&amp;quot;;
-
-export const localMiddelware = (req, res, next) =&amp;gt; {
-    res.locals.siteName = &amp;quot;Wetube&amp;quot;;
-    res.locals.routes = routes
-    next()
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;header.pug&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;header.header
-.header_column
-    i.fab.fa-youtube
-.header_column
-    ul 
-        li
-            a(href=routes.join) join
-        li
-            a(href=routes.login) login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;217-template-variables-in-pug&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#217-template-variables-in-pug&quot; aria-label=&quot;217 template variables in pug permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.17] Template Variables in Pug&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;pug의 layout 템플릿에서 변수를 설정하고, 각 pug 페이지별 이 변수 값을 주는 방법&lt;/li&gt;
-&lt;li&gt;즉, 각 pug별 고유한 변수 값을 전달하는 방법&lt;/li&gt;
-&lt;li&gt;controller에서, 해당 pug page를 render할때, 변수 값을 전달한다&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;코드 &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---controllers.js
-export const home = (req, res) =&amp;gt; res.render(&amp;quot;Home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot; })
-export const home = (req, res) =&amp;gt; res.render(&amp;quot;Home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot; })
-
----main.pug
-HTML 
-    head
-        link(rel=&amp;quot;stylesheet&amp;quot;, href=&amp;quot;https://use.fontawesome.com/releases/v5.15.2/css/all.css&amp;quot;, integrity=&amp;quot;sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu&amp;quot;, crossorigin=&amp;quot;anonymous&amp;quot;)
-    title #{pageTitle} | #{siteName}    &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+* textarea =&amp;gt; 넓은 input&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
