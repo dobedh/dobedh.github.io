@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 09 Feb 2021 14:37:45 GMT</lastBuildDate><item><title><![CDATA[TIL-210209]]></title><description><![CDATA[Code Challenge txt 파일을 업로드하는 폴더 만들기 txt를 업로드하고, convert누르면 txt의 내용이 보여야 함 코드 내용 : https://codesandbox.io/s/txt2html-forked-3wyeq?file=/src/…]]></description><link>https://dobedh.github.io/TIL_38_210209/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_38_210209/</guid><pubDate>Tue, 09 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;code-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-challenge&quot; aria-label=&quot;code challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Challenge&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Feb 2021 12:32:42 GMT</lastBuildDate><item><title><![CDATA[TIL-210210]]></title><description><![CDATA[6.0 Introduction to PassportJS 기능 유저의 authentication 정보를 확인하고 알려줌 쿠키를 생성, 브라우저에 저장, 유저에게 할당  요건 user auth 의 기본적인 것들을 다 해주는 module.다음시간에 배워보…]]></description><link>https://dobedh.github.io/TIL_39_210210/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_39_210210/</guid><pubDate>Wed, 10 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;60-introduction-to-passportjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#60-introduction-to-passportjs&quot; aria-label=&quot;60 introduction to passportjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.0] Introduction to PassportJS&lt;/h1&gt;
+&lt;h3 id=&quot;기능&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%EB%8A%A5&quot; aria-label=&quot;기능 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기능&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;유저의 authentication 정보를 확인하고 알려줌&lt;/li&gt;
+&lt;li&gt;쿠키를 생성, 브라우저에 저장, 유저에게 할당&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;passport-local-mongoose&lt;/code&gt; 요건 user auth 의 기본적인 것들을 다 해주는 module.다음시간에 배워보자.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;61-local-authentication-with-passport-part-one&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#61-local-authentication-with-passport-part-one&quot; aria-label=&quot;61 local authentication with passport part one permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.1] Local Authentication with Passport part One&lt;/h1&gt;
+&lt;h3 id=&quot;1-passport-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-passport-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;1 passport 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Passport 설치&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PassportJS 공식 문서 : &lt;a href=&quot;http://www.passportjs.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://www.passportjs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install passport&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-user-model-생성-userjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-user-model-%EC%83%9D%EC%84%B1-userjs&quot; aria-label=&quot;2 user model 생성 userjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. User Model 생성 (User.js)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;아래 코드에서 로직을 잘 이해해보자.&lt;/li&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;우선, DB생성을 위하여 mongoose를 import&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&quot;이 DB의 구조는 이래!&quot;를 알려주기 위해, schema 생성&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;생성된 스키마로, model을 생성!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;이 모델을 이제 내보내주자!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    import mongoose from &amp;quot;mongoose&amp;quot;;
+
+    const UserSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    avatarUrl: String, // 이게 뭘까?
+    facebookId: Number,
+    githubId: Number,
+    });
+
+    const model = mongoose.model(&amp;quot;User&amp;quot;, UserSchema);
+
+    export default model;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;3-user-model-을-init에-import&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-user-model-%EC%9D%84-init%EC%97%90-import&quot; aria-label=&quot;3 user model 을 init에 import permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. User model 을 init에 import&lt;/h3&gt;
+&lt;h3 id=&quot;4-passport-local-mongoose-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-passport-local-mongoose-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;4 passport local mongoose 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. passport-local-mongoose 설치&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;password 확인, 설정 등을 자동으로 해주는 모듈&lt;/li&gt;
+&lt;li&gt;`npm install passport-local-mongoose&lt;/li&gt;
+&lt;li&gt;설치후, User모델에서 passport-local-mongoose를 import하고, usernameField를 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;41-passport-local-plugin-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#41-passport-local-plugin-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;41 passport local plugin 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4.1 passport-local plugin 추가&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;기존의 User model에, 비밀번호를 자동으로 체크, 설정할 수 있는 passport-local 플러그인을 추가해보자!&lt;/li&gt;
+&lt;li&gt;해당 코드로, passport-local에 있는 많은것을 쓸 수 있음&lt;/li&gt;
+&lt;li&gt;but 이걸로 실제 auth를 하는건 아님. 그래서 다음의 auth를 하는 passport.js 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import passportLocalMongoose from &amp;quot;passport-local-mongoose&amp;quot;;
+UserSchema.plugin(passportLocalMongoose, { usernameField: &amp;quot;email&amp;quot; });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;5-passportjs-생성-passport-local-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-passportjs-%EC%83%9D%EC%84%B1-passport-local-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;5 passportjs 생성 passport local 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. passport.js 생성, passport-local 설치&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;실제 user auth를 하는건 &lt;code class=&quot;language-text&quot;&gt;passport.js&lt;/code&gt;에서 이루어진다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;passport.js 파일에서, strategy를 설정해준다&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;strategy란, 우리가 어떤 로그인 방식을 사용할지에 관한 것&lt;/li&gt;
+&lt;li&gt;페이스북, 깃헙, 카카오 로그인 등&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;코드 : passport와 user를 import해주고, strategy 설정&lt;/li&gt;
+&lt;li&gt;아래의 &lt;code class=&quot;language-text&quot;&gt;createStrategy&lt;/code&gt;는 매우 많은 코드(유저명 확인, 패스워드 확인) 등을 한줄로 짧게 해준것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import passport from &amp;quot;passport&amp;quot;;
+import User from &amp;quot;./models/User&amp;quot;;
+
+passport.use(User.createStrategy());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210209]]></title><description><![CDATA[Code Challenge txt 파일을 업로드하는 폴더 만들기 txt를 업로드하고, convert누르면 txt의 내용이 보여야 함 코드 내용 : https://codesandbox.io/s/txt2html-forked-3wyeq?file=/src/…]]></description><link>https://dobedh.github.io/TIL_38_210209/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_38_210209/</guid><pubDate>Tue, 09 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;code-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-challenge&quot; aria-label=&quot;code challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Challenge&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;txt 파일을 업로드하는 폴더 만들기&lt;/li&gt;
 &lt;li&gt;txt를 업로드하고, convert누르면 txt의 내용이 보여야 함&lt;/li&gt;
@@ -632,32 +713,4 @@ res.render(&amp;quot;home&amp;quot;, { pageTitle: &amp;quot;Home&amp;quot;, vide
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210130]]></title><description><![CDATA[Sangdami 세팅 코드 추가  install npm install pug app.set("view engine", "pug") views, layouts, partial dir 추가   세팅 url 변수화, import   생성 func 기능 모…]]></description><link>https://dobedh.github.io/TIL_30_210130/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_30_210130/</guid><pubDate>Sat, 30 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;sangdami-세팅&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sangdami-%EC%84%B8%ED%8C%85&quot; aria-label=&quot;sangdami 세팅 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sangdami 세팅&lt;/h1&gt;
-&lt;h3 id=&quot;코드-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%94%EB%93%9C-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;코드 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;코드 추가&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pug&lt;/code&gt; install&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;npm install pug&lt;/li&gt;
-&lt;li&gt;app.set(&quot;view engine&quot;, &quot;pug&quot;)&lt;/li&gt;
-&lt;li&gt;views, layouts, partial dir 추가 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;routes&lt;/code&gt; 세팅&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;url 변수화, import &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;controllers&lt;/code&gt; 생성&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;func 기능 모두 controller로 받아오기&lt;/li&gt;
-&lt;li&gt;pug views 생성후, controller에서 get 후 pug view로 .render&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;추가-정보&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B6%94%EA%B0%80-%EC%A0%95%EB%B3%B4&quot; aria-label=&quot;추가 정보 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;추가 정보&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/dobedh/sangdami&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/dobedh/sangdami&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
