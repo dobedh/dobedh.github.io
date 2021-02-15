@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 12 Feb 2021 12:47:14 GMT</lastBuildDate><item><title><![CDATA[TIL-210212]]></title><description><![CDATA[6.2 Local Authentication with Passport part Two serialize 의미 어떤 정보를 cookie에게 줄것인가. cookie가 어떤 정보를 가질 수 있는가 어떤 field가 쿠키에 포함될 것인지 알려줌. id를 알…]]></description><link>https://dobedh.github.io/TIL_40_210212/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_40_210212/</guid><pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;62-local-authentication-with-passport-part-two&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#62-local-authentication-with-passport-part-two&quot; aria-label=&quot;62 local authentication with passport part two permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.2] Local Authentication with Passport part Two&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Feb 2021 14:48:35 GMT</lastBuildDate><item><title><![CDATA[TIL-210212]]></title><description><![CDATA[6.3 Loggin the User In what to learn db에 유저 정보를 저장하는 것()에서 한단계 더 나아가,  User를 authenticate 하고 로그인 시킴 1. passport.authenticate 앞선 에서 넘겨받은 use…]]></description><link>https://dobedh.github.io/TIL_41_210215/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_41_210215/</guid><pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;63-loggin-the-user-in&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#63-loggin-the-user-in&quot; aria-label=&quot;63 loggin the user in permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.3] Loggin the User In&lt;/h1&gt;
+&lt;h3 id=&quot;what-to-learn&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-to-learn&quot; aria-label=&quot;what to learn permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;what to learn&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;db에 유저 정보를 저장하는 것(&lt;code class=&quot;language-text&quot;&gt;User.register()&lt;/code&gt;)에서 한단계 더 나아가, &lt;/li&gt;
+&lt;li&gt;User를 authenticate 하고 로그인 시킴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-passportauthenticate&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-passportauthenticate&quot; aria-label=&quot;1 passportauthenticate permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. passport.authenticate&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;앞선 &lt;code class=&quot;language-text&quot;&gt;postJoin&lt;/code&gt;에서 넘겨받은 user의 eamil, passport 정보를 바탕으로 등록 유저 여부를 auth&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;공식 문서 : &lt;a href=&quot;http://www.passportjs.org/docs/authenticate/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://www.passportjs.org/docs/authenticate/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const postLogin = passport.authenticate(&amp;#39;local&amp;#39;, {
+  failureRedirect : routes.login,
+  successRedirect : routes.home
+})
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-passport를-시작시키고-전체에-다-넘겨준다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-passport%EB%A5%BC-%EC%8B%9C%EC%9E%91%EC%8B%9C%ED%82%A4%EA%B3%A0-%EC%A0%84%EC%B2%B4%EC%97%90-%EB%8B%A4-%EB%84%98%EA%B2%A8%EC%A4%80%EB%8B%A4&quot; aria-label=&quot;2 passport를 시작시키고 전체에 다 넘겨준다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. passport를 시작시키고, 전체에 다 넘겨준다&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;app.js에 아래 코드 삽입&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;import passport from &quot;passport&quot;&lt;/li&gt;
+&lt;li&gt;import &quot;./passport&quot; : passport 만들어진 파일을 연결&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-appjs에-아래-코드-삽입--passport를-시작시키고-session에-쿠키-정보를-담음&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-appjs%EC%97%90-%EC%95%84%EB%9E%98-%EC%BD%94%EB%93%9C-%EC%82%BD%EC%9E%85--passport%EB%A5%BC-%EC%8B%9C%EC%9E%91%EC%8B%9C%ED%82%A4%EA%B3%A0-session%EC%97%90-%EC%BF%A0%ED%82%A4-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EB%8B%B4%EC%9D%8C&quot; aria-label=&quot;3 appjs에 아래 코드 삽입  passport를 시작시키고 session에 쿠키 정보를 담음 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. app.js에 아래 코드 삽입 : passport를 시작시키고, session에 쿠키 정보를 담음?!&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;passport를 사용한 곳에는 다 passport를 import 해줌 &lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(passport.initialize())&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(passport.session())&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이걸 위해서 &lt;code class=&quot;language-text&quot;&gt;express-session&lt;/code&gt; install 필요 -&gt; 자세한 기능은 다음 강의에서 배우자!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-localmiddleware에-있는-user정보-변경&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-localmiddleware%EC%97%90-%EC%9E%88%EB%8A%94-user%EC%A0%95%EB%B3%B4-%EB%B3%80%EA%B2%BD&quot; aria-label=&quot;4 localmiddleware에 있는 user정보 변경 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. localMiddleware에 있는 user정보 변경&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;req.user&lt;/code&gt;안에, 로그인/조인 하는 유저 정보가 담긴다. 때문에 이 정보를 담아줌&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210212]]></title><description><![CDATA[6.2 Local Authentication with Passport part Two serialize 의미 어떤 정보를 cookie에게 줄것인가. cookie가 어떤 정보를 가질 수 있는가 어떤 field가 쿠키에 포함될 것인지 알려줌. id를 알…]]></description><link>https://dobedh.github.io/TIL_40_210212/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_40_210212/</guid><pubDate>Fri, 12 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;62-local-authentication-with-passport-part-two&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#62-local-authentication-with-passport-part-two&quot; aria-label=&quot;62 local authentication with passport part two permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.2] Local Authentication with Passport part Two&lt;/h1&gt;
 &lt;h3 id=&quot;serialize&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#serialize&quot; aria-label=&quot;serialize permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;serialize&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -507,51 +549,5 @@ name: &quot;[name].[format]&quot;,
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const {
 params : {id}
 } = req;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210202]]></title><description><![CDATA[Youtube Clone Coding Challenge add 페이지 만들기 sumbit된 정보를 post로 받아오기 이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정 post된 정보를 받아오는 법?  에 저장되어 있다 inp…]]></description><link>https://dobedh.github.io/TIL_33_210202/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_33_210202/</guid><pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;youtube-clone-coding-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#youtube-clone-coding-challenge&quot; aria-label=&quot;youtube clone coding challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Youtube Clone Coding Challenge&lt;/h1&gt;
-&lt;h3 id=&quot;add-페이지-만들기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#add-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;add 페이지 만들기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;add 페이지 만들기&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;sumbit된 정보를 post로 받아오기&lt;/li&gt;
-&lt;li&gt;이때 .post는, 메인에서 하는게 아니라 해당하는 router에서 설정&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;post된 정보를 받아오는 법? &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;req.body&lt;/code&gt;에 저장되어 있다&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const addMovies = async (req, res) =&amp;gt; {
-const {
-body: { title, synopsis, genre }
-} = req;
-const genres = genre.split(&amp;quot;,&amp;quot;);
-const movie = { title, synopsis, genres };
-await addMovie(movie);
-res.redirect(&amp;quot;/&amp;quot;);
-};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;input에 입력된 string을, &lt;code class=&quot;language-text&quot;&gt;,&lt;/code&gt;기준으로 분리하여 array화 하는 방법은?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.split(&amp;#39;,&amp;#39;)&lt;/code&gt; 사용. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;보다 자세한 정보는, 노션 및 challenge에 제출한 코드 링크 확인&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;func에서 prameter안에 정보를 넘겨줄때, prameter이름을 일치하게 넘겨줘야 인식하는 듯&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;이번에는, prameter가 object형태로 되어 있어서 그럴지도. object 안의 key명과 일치하게 넘겨줘야 인식&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const addMovie = ({ title, synopsis, genres }) =&amp;gt; {
-if (typeof title !== &amp;quot;string&amp;quot; || typeof synopsis !== &amp;quot;string&amp;quot;) {
-throw Error(&amp;quot;❌  title and synopsis should be strings  ❌&amp;quot;);
-}
-if (!genres instanceof Array) {
-throw Error(&amp;quot;❌  genres should be an array  ❌&amp;quot;);
-}
-const id = Math.floor(Math.random() * (title.length + Date.now()));
-movies = [{ id, title, synopsis, genres }, ...movies];
-};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
