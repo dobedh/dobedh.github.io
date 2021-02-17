@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Feb 2021 14:42:35 GMT</lastBuildDate><item><title><![CDATA[TIL-210216]]></title><description><![CDATA[6.4 Sessions on Express 로그인 전체 flow User 로그인 user 정보가 됨 이때, user id는 암호화 되서 저장 으로, Cookie에 저장된 정보를 불러옴 가 session안의 쿠키 정보를 읽어서, 에서 함 이를 통해, …]]></description><link>https://dobedh.github.io/TIL_42_210216/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_42_210216/</guid><pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;64-sessions-on-express&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#64-sessions-on-express&quot; aria-label=&quot;64 sessions on express permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.4] Sessions on Express&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 14:28:55 GMT</lastBuildDate><item><title><![CDATA[TIL-210217]]></title><description><![CDATA[6.5 MongoStore and Middlewares 유저 정보를 쿠키에 계속 유지하는 법 로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감 따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인…]]></description><link>https://dobedh.github.io/TIL_43_210217/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_43_210217/</guid><pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;65-mongostore-and-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#65-mongostore-and-middlewares&quot; aria-label=&quot;65 mongostore and middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.5] MongoStore and Middlewares&lt;/h1&gt;
+&lt;h3 id=&quot;유저-정보를-쿠키에-계속-유지하는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%A0%EC%A0%80-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%BF%A0%ED%82%A4%EC%97%90-%EA%B3%84%EC%86%8D-%EC%9C%A0%EC%A7%80%ED%95%98%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;유저 정보를 쿠키에 계속 유지하는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;유저 정보를 쿠키에 계속 유지하는 법&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감&lt;/li&gt;
+&lt;li&gt;따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인 해있다는 걸 쿠키에 계속 남겨줘야 함&lt;/li&gt;
+&lt;li&gt;공식 문서 참고 : &lt;a href=&quot;https://github.com/jdesboeufs/connect-mongo#readme&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/jdesboeufs/connect-mongo#readme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-connect-mongo-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-connect-mongo-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;1 connect mongo 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. connect-mongo 설치&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install connect-mongo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-import-connect-mongo&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-import-connect-mongo&quot; aria-label=&quot;2 import connect mongo permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. import connect-mongo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;import MongoStore from &amp;quot;connect-mongo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-mongodb에-연결해줌&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-mongodb%EC%97%90-%EC%97%B0%EA%B2%B0%ED%95%B4%EC%A4%8C&quot; aria-label=&quot;3 mongodb에 연결해줌 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. mongodb에 연결해줌&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;일단, 공식문서에 따라서 new MongoStore 변수에 담음 &lt;/li&gt;
+&lt;li&gt;const CookieStore = new MongoStore(session)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-appusesession에-store-key값-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-appusesession%EC%97%90-store-key%EA%B0%92-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;4 appusesession에 store key값 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. app.use(session)에 store key값 추가&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;아래 코드는 공식문서를 따른것&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;mongoose.connection&lt;/code&gt;을 통해, db에 연결!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;app.use(
+session({
+secret: process.env.COOKIE_SECRET,
+resave: true,
+saveUninitialized: false,
+store: new CookieStore({ mongooseConnection: mongoose.connection }),
+})
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;routes-접근-제한&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#routes-%EC%A0%91%EA%B7%BC-%EC%A0%9C%ED%95%9C&quot; aria-label=&quot;routes 접근 제한 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Routes 접근 제한&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;이미 로그인한 유저는 join 화면에 접근이 안되어야함&lt;/li&gt;
+&lt;li&gt;로그인하지 않은 유저는, 볼 수 없는 페이지가 있어야함(프로필 수정 등)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-middleware-생성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-middleware-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;1 middleware 생성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. middleware 생성&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;로그인된 user 정보가 있는지 &lt;code class=&quot;language-text&quot;&gt;req.user&lt;/code&gt;로 체크하고, 있는경우와 없는경우에 routing 시킬 곳을 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-onlypubclic-미들웨어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-onlypubclic-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4&quot; aria-label=&quot;2 onlypubclic 미들웨어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. onlyPubclic 미들웨어&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;로그인 안된 유저의 접근을 막는 페이지 코드&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const onlyPublic = (req, res, next) =&amp;gt; {
+if (req.user) {
+res.redirect(routes.home);
+} else {
+next();
+}
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-onlyprivate-미들웨어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-onlyprivate-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4&quot; aria-label=&quot;3 onlyprivate 미들웨어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. onlyPrivate 미들웨어&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;로그인한 유저의 접근을 막는 페이지 코드&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const onlyPrivate = (req, res, next) =&amp;gt; {
+if (req.user) {
+next();
+} else {
+res.redirect(routes.home);
+}
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;4-해당-코드들을-router-파일들의-필요부분에-삽입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%ED%95%B4%EB%8B%B9-%EC%BD%94%EB%93%9C%EB%93%A4%EC%9D%84-router-%ED%8C%8C%EC%9D%BC%EB%93%A4%EC%9D%98-%ED%95%84%EC%9A%94%EB%B6%80%EB%B6%84%EC%97%90-%EC%82%BD%EC%9E%85&quot; aria-label=&quot;4 해당 코드들을 router 파일들의 필요부분에 삽입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 해당 코드들을, router 파일들의 필요부분에 삽입&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[TIL-210216]]></title><description><![CDATA[6.4 Sessions on Express 로그인 전체 flow User 로그인 user 정보가 됨 이때, user id는 암호화 되서 저장 으로, Cookie에 저장된 정보를 불러옴 가 session안의 쿠키 정보를 읽어서, 에서 함 이를 통해, …]]></description><link>https://dobedh.github.io/TIL_42_210216/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_42_210216/</guid><pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;64-sessions-on-express&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#64-sessions-on-express&quot; aria-label=&quot;64 sessions on express permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.4] Sessions on Express&lt;/h1&gt;
 &lt;h3 id=&quot;로그인-전체-flow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%A0%84%EC%B2%B4-flow&quot; aria-label=&quot;로그인 전체 flow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;로그인 전체 flow&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;User 로그인&lt;/li&gt;
@@ -529,38 +599,4 @@ name: &quot;[name].[format]&quot;,
 &lt;p&gt;module.exports = config;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210205]]></title><description><![CDATA[3.12 Searching Videos Self-code DB에서 데이터를 Search 하는 기능 구현 1. 검색한 값을 string화 시킨다  사용. 자세한 방법은 검색 import escapeStringRegexp from "escape-stri…]]></description><link>https://dobedh.github.io/TIL_35_210205/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_35_210205/</guid><pubDate>Fri, 05 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;312-searching-videos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#312-searching-videos&quot; aria-label=&quot;312 searching videos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.12] Searching Videos&lt;/h1&gt;
-&lt;h2 id=&quot;self-code-db에서-데이터를-search-하는-기능-구현&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-code-db%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-search-%ED%95%98%EB%8A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84&quot; aria-label=&quot;self code db에서 데이터를 search 하는 기능 구현 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[Self-code] DB에서 데이터를 Search 하는 기능 구현&lt;/h2&gt;
-&lt;h3 id=&quot;1-검색한-값을-string화-시킨다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EA%B2%80%EC%83%89%ED%95%9C-%EA%B0%92%EC%9D%84-string%ED%99%94-%EC%8B%9C%ED%82%A8%EB%8B%A4&quot; aria-label=&quot;1 검색한 값을 string화 시킨다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 검색한 값을 string화 시킨다&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$regex&lt;/code&gt; 사용. 자세한 방법은 검색&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;import escapeStringRegexp from &quot;escape-string-regexp&quot;;&lt;/li&gt;
-&lt;li&gt;$regex = escapeStringRegexp(searchingBy);&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;2-or로-title이든-description이든-키워드를-가진-데이터를-찾는다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-or%EB%A1%9C-title%EC%9D%B4%EB%93%A0-description%EC%9D%B4%EB%93%A0-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%A5%BC-%EA%B0%80%EC%A7%84-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%B0%BE%EB%8A%94%EB%8B%A4&quot; aria-label=&quot;2 or로 title이든 description이든 키워드를 가진 데이터를 찾는다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. or로, title이든 description이든 키워드를 가진 데이터를 찾는다&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;$or&lt;/code&gt; 사용&lt;/li&gt;
-&lt;li&gt;상세 내용은 아래 코드 참고&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const search = async (req, res) =&amp;gt; {
-  const {
-    query: { term: searchingBy },
-  } = req;
-  const $regex = escapeStringRegexp(searchingBy);
-  try {
-    const videos = await Video.find({
-      $or: [({ title: { $regex } }, { description: { $regex } })],
-    });
-    res.render(&amp;quot;search&amp;quot;, {
-      pageTitle: `Search ${videos.title}`,
-      searchingBy,
-      videos,
-    });
-  } catch {
-    res.redirect(routes.home);
-  }
-};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
