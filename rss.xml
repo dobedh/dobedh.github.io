@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 14:28:55 GMT</lastBuildDate><item><title><![CDATA[TIL-210217]]></title><description><![CDATA[6.5 MongoStore and Middlewares 유저 정보를 쿠키에 계속 유지하는 법 로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감 따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인…]]></description><link>https://dobedh.github.io/TIL_43_210217/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_43_210217/</guid><pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;65-mongostore-and-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#65-mongostore-and-middlewares&quot; aria-label=&quot;65 mongostore and middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.5] MongoStore and Middlewares&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 Feb 2021 15:20:37 GMT</lastBuildDate><item><title><![CDATA[상다미-210220]]></title><description><![CDATA[to-do profile 클릭시, profile 페이지(유저 정보 표시) logout 하면 유저 정보를 모두 삭제(cookie, session) profile  통해서, user name, email 정보를 받기 controller에서 위 정보를 p…]]></description><link>https://dobedh.github.io/sangdami_210220/</link><guid isPermaLink="false">https://dobedh.github.io/sangdami_210220/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;to-do&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-do&quot; aria-label=&quot;to do permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;to-do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; profile 클릭시, profile 페이지(유저 정보 표시)&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; logout 하면 유저 정보를 모두 삭제(cookie, session)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;profile&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#profile&quot; aria-label=&quot;profile permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;profile&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;req.user&lt;/code&gt; 통해서, user name, email 정보를 받기&lt;/li&gt;
+&lt;li&gt;controller에서 위 정보를 pug로 넘겨서, 해당 유저 정보 표기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;logout&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#logout&quot; aria-label=&quot;logout permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;logout&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;req.logout()&lt;/code&gt;이라는 매우 좋은 passport function 쓰면 됨&lt;/li&gt;
+&lt;li&gt;자동으로 유저 정보 삭제! 굳&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210220]]></title><description><![CDATA[6.6 Github Log In part One install github strategy  put github strategy in passport.js callback function은 controller에 별도 생성해두었음 밑의 clineId,…]]></description><link>https://dobedh.github.io/TIL_44_210220/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_44_210220/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;66-github-log-in-part-one&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#66-github-log-in-part-one&quot; aria-label=&quot;66 github log in part one permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.6] Github Log In part One&lt;/h1&gt;
+&lt;h3 id=&quot;install-github-strategy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install-github-strategy&quot; aria-label=&quot;install github strategy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install github strategy&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install paspport-github&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;put-github-strategy-in-passportjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#put-github-strategy-in-passportjs&quot; aria-label=&quot;put github strategy in passportjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;put github strategy in passport.js&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;callback function은 controller에 별도 생성해두었음&lt;/li&gt;
+&lt;li&gt;밑의 clineId, clientSecret은 env파일에 별도 저장 (중요 키값)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;passport.use(
+  new GithubStrategy(
+    {
+      clientID: process.env.GH_ID,
+      clientSecret: process.env.GH_SECRET,
+      callbackURL: &amp;quot;http://localhost:4000/auth/github/callback&amp;quot;,
+    },
+    githubLoginCallback
+  )
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210217]]></title><description><![CDATA[6.5 MongoStore and Middlewares 유저 정보를 쿠키에 계속 유지하는 법 로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감 따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인…]]></description><link>https://dobedh.github.io/TIL_43_210217/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_43_210217/</guid><pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;65-mongostore-and-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#65-mongostore-and-middlewares&quot; aria-label=&quot;65 mongostore and middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.5] MongoStore and Middlewares&lt;/h1&gt;
 &lt;h3 id=&quot;유저-정보를-쿠키에-계속-유지하는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%A0%EC%A0%80-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%BF%A0%ED%82%A4%EC%97%90-%EA%B3%84%EC%86%8D-%EC%9C%A0%EC%A7%80%ED%95%98%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;유저 정보를 쿠키에 계속 유지하는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;유저 정보를 쿠키에 계속 유지하는 법&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감&lt;/li&gt;
@@ -491,112 +524,5 @@ passport.use(User.createStrategy());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</conte
 &lt;li&gt;다른 terminal에서, &lt;code class=&quot;language-text&quot;&gt;npm run dev:assets&lt;/code&gt;(웹팩이겠지?) 실행&lt;/li&gt;
 &lt;li&gt;해당 코드를 실행함으로써, 웹팩이 static에 생성되고 해당 css등이 내 파일에 적용됨&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[상다미-210206]]></title><description><![CDATA[To-do 미들웨어 전부 추가 helmet morgan cookie-parser body-parser 로그인 sns 로그인 버튼 추가 facebook  google 카카오  User authentication localMiddleware에 임의로, …]]></description><link>https://dobedh.github.io/sangdami_210206/</link><guid isPermaLink="false">https://dobedh.github.io/sangdami_210206/</guid><pubDate>Sat, 06 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;to-do&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-do&quot; aria-label=&quot;to do permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To-do&lt;/h1&gt;
-&lt;h3 id=&quot;미들웨어-전부-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%EC%A0%84%EB%B6%80-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;미들웨어 전부 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;미들웨어 전부 추가&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; helmet&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; morgan&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; cookie-parser&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; body-parser&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;로그인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A1%9C%EA%B7%B8%EC%9D%B8&quot; aria-label=&quot;로그인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;로그인&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;sns 로그인 버튼 추가&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; facebook &lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; google&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 카카오 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;
-&lt;p&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; User authentication&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; localMiddleware에 임의로, &lt;code class=&quot;language-text&quot;&gt;User.isAuthenticated : true&lt;/code&gt;로 설정해둠&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;fontaswome을 코드에 삽입해야한다. 쓸수 있게&lt;/li&gt;
-&lt;li&gt;fontawsome에서 sns로그인 할 서비스들 이미지 가져오기&lt;/li&gt;
-&lt;li&gt;fontawsome 최신버전인, kit로 하는건 이미지가 안나타나서 시도 못함ㅠ&lt;/li&gt;
-&lt;li&gt;partial pug로 sns로그인 만들기&lt;/li&gt;
-&lt;li&gt;user authentication 은 아직&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;회원가입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85&quot; aria-label=&quot;회원가입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;회원가입&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; 화면 추가&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;서버-설치-연결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%9C%EB%B2%84-%EC%84%A4%EC%B9%98-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;서버 설치 연결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;서버 설치, 연결&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled&gt; mongoDB, Mongoose 설치&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;최종-output&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B5%9C%EC%A2%85-output&quot; aria-label=&quot;최종 output permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;최종 output&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;로그인, 회원가입 가능&lt;/li&gt;
-&lt;li&gt;자유 게시판 필요&lt;/li&gt;
-&lt;li&gt;게시글 및 코멘트 필요 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210206]]></title><description><![CDATA[3.12 Searching Videos regular expression string에서 특정 character를 가져와줌 https://regex101.com/ 4.0 Introduction to Webpack Webpack 내가 사용한 JS, s…]]></description><link>https://dobedh.github.io/TIL_36_210206/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_36_210206/</guid><pubDate>Sat, 06 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;312-searching-videos&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#312-searching-videos&quot; aria-label=&quot;312 searching videos permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.12] Searching Videos&lt;/h1&gt;
-&lt;h3 id=&quot;regular-expression&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#regular-expression&quot; aria-label=&quot;regular expression permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;regular expression&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;string에서 특정 character를 가져와줌&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://regex101.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://regex101.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;40-introduction-to-webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#40-introduction-to-webpack&quot; aria-label=&quot;40 introduction to webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[4.0] Introduction to Webpack&lt;/h1&gt;
-&lt;h3 id=&quot;webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack&quot; aria-label=&quot;webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Webpack&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;내가 사용한 JS, scss 등을, 최종 JS, HTML 등이 이해할 수 있는 형태로 변형해주는 module&lt;/li&gt;
-&lt;li&gt;더 공부해보자 =&gt; &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://webpack.js.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;webpack-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;webpack 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Webpack 설치&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install webpack webpack-cli&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt; 파일 생성&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt;에 start를 아래와 같이 변경&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;dev:server&lt;/code&gt; : backend를 키는 js&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;dev:asset&lt;/code&gt; : front를 키는 js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;아래 dir, file 생성 : webpack이 켜질때 찾는 dir들&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;assets &gt; js, sccss &gt; main, styles.scsss&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt;파일에 내용 넣기&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const path = require(&amp;quot;path&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;const ENTRY&lt;em&gt;FILE = path.resolve(__dirname, &quot;assets&quot;, &quot;js&quot;, &quot;main.js&quot;);
-const OUTPUT&lt;/em&gt;DIR = path.join(__dirname, &quot;static&quot;);&lt;/p&gt;
-&lt;p&gt;const config = {
-entry: ENTRY&lt;em&gt;FILE,
-output: {
-path: OUTPUT&lt;/em&gt;DIR,
-name: &quot;[name].[format]&quot;,
-},
-};&lt;/p&gt;
-&lt;p&gt;module.exports = config;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
