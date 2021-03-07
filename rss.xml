@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 Feb 2021 15:20:37 GMT</lastBuildDate><item><title><![CDATA[상다미-210220]]></title><description><![CDATA[to-do profile 클릭시, profile 페이지(유저 정보 표시) logout 하면 유저 정보를 모두 삭제(cookie, session) profile  통해서, user name, email 정보를 받기 controller에서 위 정보를 p…]]></description><link>https://dobedh.github.io/sangdami_210220/</link><guid isPermaLink="false">https://dobedh.github.io/sangdami_210220/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;to-do&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-do&quot; aria-label=&quot;to do permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;to-do&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Mar 2021 13:47:27 GMT</lastBuildDate><item><title><![CDATA[TIL_210307]]></title><description><![CDATA[1.1 First Rule of Flexbox Flexbox? 의미 : 화면 등에 따라, element들의 배열이 깨지는것을 대응해주는? 새로운 display 방식 기존의 한계 값에 margin 등을 줘서, 각 element들의 간격들을 조정했었음.…]]></description><link>https://dobedh.github.io/TIL_46_210307/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_46_210307/</guid><pubDate>Sun, 07 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;11-first-rule-of-flexbox&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#11-first-rule-of-flexbox&quot; aria-label=&quot;11 first rule of flexbox permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[1.1] First Rule of Flexbox&lt;/h1&gt;
+&lt;h3 id=&quot;flexbox&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#flexbox&quot; aria-label=&quot;flexbox permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flexbox?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;의미 : 화면 등에 따라, element들의 배열이 깨지는것을 대응해주는? 새로운 display 방식&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;기존의 한계&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;display&lt;/code&gt;값에 margin 등을 줘서, 각 element들의 간격들을 조정했었음.&lt;/li&gt;
+&lt;li&gt;하지만 화면 크기가 달라지면 해당 구조가 깨져서, 보기 안좋게 됨 (ex. inline-block)&lt;/li&gt;
+&lt;li&gt;flexbox는 화면 크기 등이 바뀌더라도 구조가 깨지지 않고 대응되게 해줌.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;flexbox의-법칙&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#flexbox%EC%9D%98-%EB%B2%95%EC%B9%99&quot; aria-label=&quot;flexbox의 법칙 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;flexbox의 법칙&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;해당 element의 바로 위 father가 flexbox로 설정되도록 한다&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;fleoxbox 설정 방법 : &lt;code class=&quot;language-text&quot;&gt;display : flex&lt;/code&gt;로 설정&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body{
+    display : flex;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[상다미-210220]]></title><description><![CDATA[to-do profile 클릭시, profile 페이지(유저 정보 표시) logout 하면 유저 정보를 모두 삭제(cookie, session) profile  통해서, user name, email 정보를 받기 controller에서 위 정보를 p…]]></description><link>https://dobedh.github.io/sangdami_210220/</link><guid isPermaLink="false">https://dobedh.github.io/sangdami_210220/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;to-do&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-do&quot; aria-label=&quot;to do permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;to-do&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; profile 클릭시, profile 페이지(유저 정보 표시)&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked disabled&gt; logout 하면 유저 정보를 모두 삭제(cookie, session)&lt;/li&gt;
@@ -31,7 +59,11 @@
     },
     githubLoginCallback
   )
-);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210217]]></title><description><![CDATA[6.5 MongoStore and Middlewares 유저 정보를 쿠키에 계속 유지하는 법 로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감 따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인…]]></description><link>https://dobedh.github.io/TIL_43_210217/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_43_210217/</guid><pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;65-mongostore-and-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#65-mongostore-and-middlewares&quot; aria-label=&quot;65 mongostore and middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.5] MongoStore and Middlewares&lt;/h1&gt;
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL_210220]]></title><description><![CDATA[self kakao login 카카오 로그인 시도했으나 실패 github 로그인보다 조금 더 복잡한듯...다시 시도해보자]]></description><link>https://dobedh.github.io/TIL_45_210223/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_45_210223/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;self-kakao-login&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#self-kakao-login&quot; aria-label=&quot;self kakao login permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[self] kakao login&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;카카오 로그인 시도했으나 실패&lt;/li&gt;
+&lt;li&gt;github 로그인보다 조금 더 복잡한듯...다시 시도해보자&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210217]]></title><description><![CDATA[6.5 MongoStore and Middlewares 유저 정보를 쿠키에 계속 유지하는 법 로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감 따라서, 유저 정보를 Mongodb에 저장해서, X라는 유저가 지금 로그인…]]></description><link>https://dobedh.github.io/TIL_43_210217/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_43_210217/</guid><pubDate>Wed, 17 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;65-mongostore-and-middlewares&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#65-mongostore-and-middlewares&quot; aria-label=&quot;65 mongostore and middlewares permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.5] MongoStore and Middlewares&lt;/h1&gt;
 &lt;h3 id=&quot;유저-정보를-쿠키에-계속-유지하는-법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9C%A0%EC%A0%80-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%BF%A0%ED%82%A4%EC%97%90-%EA%B3%84%EC%86%8D-%EC%9C%A0%EC%A7%80%ED%95%98%EB%8A%94-%EB%B2%95&quot; aria-label=&quot;유저 정보를 쿠키에 계속 유지하는 법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;유저 정보를 쿠키에 계속 유지하는 법&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;로그인 했다 해도, 서버를 껐다 키거나, 새로고침하면 쿠키가 남아있지 않고 날아감&lt;/li&gt;
@@ -379,150 +411,4 @@ UserSchema.plugin(passportLocalMongoose, { usernameField: &amp;quot;email&amp;qu
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import passport from &amp;quot;passport&amp;quot;;
 import User from &amp;quot;./models/User&amp;quot;;
 
-passport.use(User.createStrategy());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210209]]></title><description><![CDATA[Code Challenge txt 파일을 업로드하는 폴더 만들기 txt를 업로드하고, convert누르면 txt의 내용이 보여야 함 코드 내용 : https://codesandbox.io/s/txt2html-forked-3wyeq?file=/src/…]]></description><link>https://dobedh.github.io/TIL_38_210209/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_38_210209/</guid><pubDate>Tue, 09 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;code-challenge&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-challenge&quot; aria-label=&quot;code challenge permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Challenge&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;txt 파일을 업로드하는 폴더 만들기&lt;/li&gt;
-&lt;li&gt;txt를 업로드하고, convert누르면 txt의 내용이 보여야 함&lt;/li&gt;
-&lt;li&gt;코드 내용 : &lt;a href=&quot;https://codesandbox.io/s/txt2html-forked-3wyeq?file=/src/views/home.pug&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codesandbox.io/s/txt2html-forked-3wyeq?file=/src/views/home.pug&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210208]]></title><description><![CDATA[4.1 Styles with Webpack part One webpack 관련 코드를 package.json에 추가 이건 이해가 잘안됨...왜 이코드를 넣는지? 웹팩에서 env를 이해못해서 수동으로 가져온다? rules webpack이 이해할 수 있…]]></description><link>https://dobedh.github.io/TIL_37_210208/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_37_210208/</guid><pubDate>Mon, 08 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;41-styles-with-webpack-part-one&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#41-styles-with-webpack-part-one&quot; aria-label=&quot;41 styles with webpack part one permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[4.1] Styles with Webpack part One&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;webpack 관련 코드를 package.json에 추가&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;이건 이해가 잘안됨...왜 이코드를 넣는지?&lt;/li&gt;
-&lt;li&gt;웹팩에서 env를 이해못해서 수동으로 가져온다?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;rules&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rules&quot; aria-label=&quot;rules permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rules&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;webpack이 이해할 수 있는 rule을 추가해준다&lt;/li&gt;
-&lt;li&gt;webpack.config.js에 추가&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;loader&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;코드 실행되면, 웹팩이 loader실행&lt;/li&gt;
-&lt;li&gt;웹팩에게 해당 파일을 어떻게 handle 해야하는지 알려줌&lt;/li&gt;
-&lt;li&gt;웹팩은 아무것도 할줄 모름.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;1-rules---test&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-rules---test&quot; aria-label=&quot;1 rules   test permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. rules - test&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;test&lt;/code&gt;는 : 좋아 이 파일을 만나면, 이파일이 이런 파일인지 우선 알아봐의 의미&lt;/li&gt;
-&lt;li&gt;정규식을 써야함&lt;/li&gt;
-&lt;li&gt;밑의 test는, scss 확장자의 모든 파일을 찾아줄거임&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  module : {
-    rules : [
-      {
-        test : /\.(scss)$/,
-
-      }
-    ]
-  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;2-rules--module--use&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-rules--module--use&quot; aria-label=&quot;2 rules  module  use permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. rules &gt; module &gt; use&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;scss&lt;/code&gt; 파일을 찾는다 (test의 정규식)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;해당 파일을 &lt;code class=&quot;language-text&quot;&gt;css&lt;/code&gt;로 변환한다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;css내 텍스트만 다 뽑는다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;그걸 다시 css파일로 저장해준다&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;sass-loader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sass-loader&quot; aria-label=&quot;sass loader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sass loader&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;sass 혹은 scss파일을 css파일로 바꿔줌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;postcss-loader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#postcss-loader&quot; aria-label=&quot;postcss loader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;postcss loader&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;호환성 문제를 해결해줌&lt;/li&gt;
-&lt;li&gt;위에서 변형한 css파일을...인터넷 익스플로어에 뿌려주자(호환) 등등&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;autoprefixer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#autoprefixer&quot; aria-label=&quot;autoprefixer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;autoprefixer&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;코드를, 다양항 환경(크롬, 파이어폭스, 익스플로러)에서 호환될 수 있게 자동으로 변경해줌&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install autoprefixer&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;설치-설치-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EC%B9%98-%EC%84%A4%EC%B9%98-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;설치 설치 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설치 설치 설치&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;node-sas 설치&lt;/li&gt;
-&lt;li&gt;css-loader&lt;/li&gt;
-&lt;li&gt;postcss-loader&lt;/li&gt;
-&lt;li&gt;sass-loader
-모두 설치&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;postcss-loader에-autoprefixer-플러그인-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#postcss-loader%EC%97%90-autoprefixer-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;postcss loader에 autoprefixer 플러그인 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;postcss-loader에 autoprefixer 플러그인 추가&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;이 강의는 너무 어려워서..다시 수강필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;npm-run-devassets&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#npm-run-devassets&quot; aria-label=&quot;npm run devassets permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;npm run dev:assets&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;해당 코드 돌리면, static 폴더 생성&lt;/li&gt;
-&lt;li&gt;해당 폴더 안에, main.js와 main.css파일이 생성&lt;/li&gt;
-&lt;li&gt;즉, webpack이 assets 안의 코드를 js와 css로 바꾸어주었다는것!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;43-es6-with-webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#43-es6-with-webpack&quot; aria-label=&quot;43 es6 with webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[4.3] ES6 with Webpack&lt;/h1&gt;
-&lt;h2 id=&quot;js파일을-웹팩으로-변환&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#js%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%9B%B9%ED%8C%A9%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98&quot; aria-label=&quot;js파일을 웹팩으로 변환 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JS파일을 웹팩으로 변환&lt;/h2&gt;
-&lt;h3 id=&quot;rules에-js파일을-찾고-변환하는-코드-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rules%EC%97%90-js%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%B0%BE%EA%B3%A0-%EB%B3%80%ED%99%98%ED%95%98%EB%8A%94-%EC%BD%94%EB%93%9C-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;rules에 js파일을 찾고 변환하는 코드 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rules에 js파일을 찾고, 변환하는 코드 추가&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;아래 코드 추가&lt;/li&gt;
-&lt;li&gt;loader에 해당하는 &lt;code class=&quot;language-text&quot;&gt;bable-loader&lt;/code&gt; 설치&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    rules: [
-      {
-        test: /\.(js)$/,
-        use: [
-          {
-            loader: &amp;quot;babel-loader&amp;quot;,
-          },
-        ],
-      },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;dev-웹팩이-수정이-있을때마다-지켜보게함&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dev-%EC%9B%B9%ED%8C%A9%EC%9D%B4-%EC%88%98%EC%A0%95%EC%9D%B4-%EC%9E%88%EC%9D%84%EB%95%8C%EB%A7%88%EB%8B%A4-%EC%A7%80%EC%BC%9C%EB%B3%B4%EA%B2%8C%ED%95%A8&quot; aria-label=&quot;dev 웹팩이 수정이 있을때마다 지켜보게함 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dev 웹팩이, 수정이 있을때마다 지켜보게함&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;기존 dev:assets 코드에 &lt;code class=&quot;language-text&quot;&gt;-w&lt;/code&gt;추가&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;watch&lt;/code&gt;의미. 보고 있다가 변화가 있으면&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;dev:assets&amp;quot;: &amp;quot;cross-env WEBPACK_ENV=development webpack -w&amp;quot;,&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;만들어진-static안의-css와-mainjs를-pug에-연결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A7%84-static%EC%95%88%EC%9D%98-css%EC%99%80-mainjs%EB%A5%BC-pug%EC%97%90-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;만들어진 static안의 css와 mainjs를 pug에 연결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;만들어진 static안의 css와 main.js를 pug에 연결&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;pug에 기존 css파일과 js파일 연결하듯이 코드 삽입&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;HTML
-    head
-
-        link(rel=&amp;quot;stylesheet&amp;quot;, href=&amp;quot;/static/styles.css&amp;quot;)
-    body
-        script(src=&amp;quot;/static/main.js&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;appjs에서-static을-바라볼-수-있도록-코드-삽입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#appjs%EC%97%90%EC%84%9C-static%EC%9D%84-%EB%B0%94%EB%9D%BC%EB%B3%BC-%EC%88%98-%EC%9E%88%EB%8F%84%EB%A1%9D-%EC%BD%94%EB%93%9C-%EC%82%BD%EC%9E%85&quot; aria-label=&quot;appjs에서 static을 바라볼 수 있도록 코드 삽입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;app.js에서 static을 바라볼 수 있도록 코드 삽입&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;app.use(&quot;/static&quot;, express.static(&quot;static&quot;));&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;서버--dev-순차적-실행&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%9C%EB%B2%84--dev-%EC%88%9C%EC%B0%A8%EC%A0%81-%EC%8B%A4%ED%96%89&quot; aria-label=&quot;서버  dev 순차적 실행 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;서버 &gt; dev 순차적 실행&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;서버 실행&lt;code class=&quot;language-text&quot;&gt;npm run dev:server&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;다른 terminal에서, &lt;code class=&quot;language-text&quot;&gt;npm run dev:assets&lt;/code&gt;(웹팩이겠지?) 실행&lt;/li&gt;
-&lt;li&gt;해당 코드를 실행함으로써, 웹팩이 static에 생성되고 해당 css등이 내 파일에 적용됨&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+passport.use(User.createStrategy());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
