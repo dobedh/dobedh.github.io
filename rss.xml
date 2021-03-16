@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 12:31:13 GMT</lastBuildDate><item><title><![CDATA[TIL_210312]]></title><description><![CDATA[2.10 Auto Columns and Rows align-self, justify-self, place-self child에게 직접 적용하는 grid  : column에 대한 위치 등  : row에 대한 위치 등  : row, column 에 대한…]]></description><link>https://dobedh.github.io/TIL_51_210312/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_51_210312/</guid><pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;210-auto-columns-and-rows&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#210-auto-columns-and-rows&quot; aria-label=&quot;210 auto columns and rows permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.10] Auto Columns and Rows&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 13:36:47 GMT</lastBuildDate><item><title><![CDATA[TIL_210316]]></title><description><![CDATA[3.0 세팅 scss 사용하기 위해서, 몇가지 세팅이 필요  install? npm install?  install?  나중에 확실히 확인해볼것ㅎㅎ SCSS 간편하게, 로지컬하게 css를 작성하고, 이걸 나중에 웹이 이해할 수 있는 css파일 형태로…]]></description><link>https://dobedh.github.io/TIL_53_210316/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_53_210316/</guid><pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;30&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#30&quot; aria-label=&quot;30 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.0]&lt;/h1&gt;
+&lt;h3 id=&quot;세팅&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%B8%ED%8C%85&quot; aria-label=&quot;세팅 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;세팅&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;scss 사용하기 위해서, 몇가지 세팅이 필요&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;gulp&lt;/code&gt; install?&lt;/li&gt;
+&lt;li&gt;npm install?&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt; install? &lt;/li&gt;
+&lt;li&gt;나중에 확실히 확인해볼것ㅎㅎ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;scss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scss&quot; aria-label=&quot;scss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SCSS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;간편하게, 로지컬하게 css를 작성하고, 이걸 나중에 웹이 이해할 수 있는 css파일 형태로 변환함&lt;/li&gt;
+&lt;li&gt;scss내에서는 코드의 간편함, 변수사용 가능 등의 강점이 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;scss-directory&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scss-directory&quot; aria-label=&quot;scss directory permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;scss directory&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;src &gt; styles.scss&lt;/li&gt;
+&lt;li&gt;css파일로 변환하고 싶지 않은 파일은 언더바 &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;를 파일명에 넣어줌&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dist &gt; styles.css&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scss 가 변환될 css파일을 저장하는 저장소&lt;/li&gt;
+&lt;li&gt;scss파일 내용을 바꾸면 해당 디렉토리의 파일 내용 자동 변경됨 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;31-variables-and-nesting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#31-variables-and-nesting&quot; aria-label=&quot;31 variables and nesting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.1] Variables and Nesting&lt;/h1&gt;
+&lt;h3 id=&quot;varaibles&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#varaibles&quot; aria-label=&quot;varaibles permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Varaibles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;variable 파일을 만듬&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;varialbe로 활용할 것을 &lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt;을 이용해 지정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$bg : red&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;variable 설정한 폴더를 scss 파일에서 &lt;code class=&quot;language-text&quot;&gt;@import&lt;/code&gt;한 후에, variable 사용&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nesting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nesting&quot; aria-label=&quot;nesting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nesting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;class나 css element 안에 다시 class나 element를 넣어서 css 속성을 부여하는 것&lt;/li&gt;
+&lt;li&gt;코드를 읽기가 매우 쉬워짐!&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nesting 안에서 &lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;는 nesting 상위의 father 값을 의미함&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.box {
+h2 {
+color : red;
+}
+button {
+color : blue
+}
+&amp;amp;:hover {
+background : peru;
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210312]]></title><description><![CDATA[2.10 Auto Columns and Rows align-self, justify-self, place-self child에게 직접 적용하는 grid  : column에 대한 위치 등  : row에 대한 위치 등  : row, column 에 대한…]]></description><link>https://dobedh.github.io/TIL_51_210312/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_51_210312/</guid><pubDate>Fri, 12 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;210-auto-columns-and-rows&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#210-auto-columns-and-rows&quot; aria-label=&quot;210 auto columns and rows permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[2.10] Auto Columns and Rows&lt;/h1&gt;
 &lt;h3 id=&quot;align-self-justify-self-place-self&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#align-self-justify-self-place-self&quot; aria-label=&quot;align self justify self place self permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;align-self, justify-self, place-self&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;child에게 직접 적용하는 grid&lt;/li&gt;
@@ -451,23 +521,4 @@ flex-basis : 30%&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;카카오 로그인 시도했으나 실패&lt;/li&gt;
 &lt;li&gt;github 로그인보다 조금 더 복잡한듯...다시 시도해보자&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210220]]></title><description><![CDATA[6.6 Github Log In part One install github strategy  put github strategy in passport.js callback function은 controller에 별도 생성해두었음 밑의 clineId,…]]></description><link>https://dobedh.github.io/TIL_44_210220/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_44_210220/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;66-github-log-in-part-one&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#66-github-log-in-part-one&quot; aria-label=&quot;66 github log in part one permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[6.6] Github Log In part One&lt;/h1&gt;
-&lt;h3 id=&quot;install-github-strategy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install-github-strategy&quot; aria-label=&quot;install github strategy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install github strategy&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install paspport-github&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;put-github-strategy-in-passportjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#put-github-strategy-in-passportjs&quot; aria-label=&quot;put github strategy in passportjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;put github strategy in passport.js&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;callback function은 controller에 별도 생성해두었음&lt;/li&gt;
-&lt;li&gt;밑의 clineId, clientSecret은 env파일에 별도 저장 (중요 키값)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;passport.use(
-  new GithubStrategy(
-    {
-      clientID: process.env.GH_ID,
-      clientSecret: process.env.GH_SECRET,
-      callbackURL: &amp;quot;http://localhost:4000/auth/github/callback&amp;quot;,
-    },
-    githubLoginCallback
-  )
-);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
