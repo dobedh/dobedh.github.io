@@ -13,7 +13,7 @@
     },
     "ecmaVersion": 11
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "@babel/plugin-syntax-class-properties"],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": 0
   },
