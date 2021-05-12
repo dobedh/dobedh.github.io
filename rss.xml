@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 May 2021 06:30:34 GMT</lastBuildDate><item><title><![CDATA[TIL-210508]]></title><description><![CDATA[Link - pathname, state Link를 사용하면, pathname으로 연동될 url을 넣고 state 안에 내가 전달하고 싶은 데이터를 넘길 수 있다(string,array,object 등) Component 안의 props 모든 컴포넌…]]></description><link>https://dobedh.github.io/TIL_210508/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210508/</guid><pubDate>Sat, 08 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;link---pathname-state&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#link---pathname-state&quot; aria-label=&quot;link   pathname state permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Link - pathname, state&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 May 2021 11:41:17 GMT</lastBuildDate><item><title><![CDATA[TIL-210512]]></title><description><![CDATA[React-native react와 안드로이드, ios를 연결해주는 브릿지 View, Text 처럼 양쪽을 연결해주는 브릿지 컴포넌트들이 있음 모든 것이 그런데 기존 html, css, js처럼 작동하지는 않고, react native만의 규칙을 갖…]]></description><link>https://dobedh.github.io/TIL_210512/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210512/</guid><pubDate>Wed, 12 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;react-native&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react-native&quot; aria-label=&quot;react native permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React-native&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;react와 안드로이드, ios를 연결해주는 브릿지&lt;/li&gt;
+&lt;li&gt;View, Text 처럼 양쪽을 연결해주는 브릿지 컴포넌트들이 있음&lt;/li&gt;
+&lt;li&gt;모든 것이 그런데 기존 html, css, js처럼 작동하지는 않고, react native만의 규칙을 갖고 있기도 함&lt;/li&gt;
+&lt;li&gt;무거운 것들(3d 게임 등) 아니면 react native로 만들기는 좋음&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210509]]></title><description><![CDATA[Create React app npx create-react-app 생성하고자하는 project/dir 이름 cd pjt 이름 npm start]]></description><link>https://dobedh.github.io/TIL_210509/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210509/</guid><pubDate>Sun, 09 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;create-react-app&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#create-react-app&quot; aria-label=&quot;create react app permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create React app&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;npx create-react-app 생성하고자하는 project/dir 이름&lt;/li&gt;
+&lt;li&gt;cd pjt 이름&lt;/li&gt;
+&lt;li&gt;npm start&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210508]]></title><description><![CDATA[Link - pathname, state Link를 사용하면, pathname으로 연동될 url을 넣고 state 안에 내가 전달하고 싶은 데이터를 넘길 수 있다(string,array,object 등) Component 안의 props 모든 컴포넌…]]></description><link>https://dobedh.github.io/TIL_210508/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210508/</guid><pubDate>Sat, 08 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;link---pathname-state&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#link---pathname-state&quot; aria-label=&quot;link   pathname state permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Link - pathname, state&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Link를 사용하면, pathname으로 연동될 url을 넣고&lt;/li&gt;
 &lt;li&gt;state 안에 내가 전달하고 싶은 데이터를 넘길 수 있다(string,array,object 등)&lt;/li&gt;
@@ -40,7 +51,13 @@
       return null;
     }
   }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210507]]></title><description><![CDATA[Hash Router react지원 기능으로, Routing API인듯 특정 path를 호출하면, 특정 component 페이지가 보이도록 해준다 근데 최근에는 Brower Router라는걸 더 많이 쓰는 듯. 확인 필요 Navigation navi…]]></description><link>https://dobedh.github.io/TIL_210507/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210507/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;hash-router&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hash-router&quot; aria-label=&quot;hash router permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hash Router&lt;/h3&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 로컬에 문제가 생겼을 때, git remote에 있는 걸 clone 할 수 있음&lt;/li&gt;
+&lt;li&gt;현재 로컬 버젼을, 깃헙에 있는 걸로 변경 : &lt;code class=&quot;language-text&quot;&gt;git reset --hard commit한 버전 코드&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;git pull로 병합 등등...&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210507]]></title><description><![CDATA[Hash Router react지원 기능으로, Routing API인듯 특정 path를 호출하면, 특정 component 페이지가 보이도록 해준다 근데 최근에는 Brower Router라는걸 더 많이 쓰는 듯. 확인 필요 Navigation navi…]]></description><link>https://dobedh.github.io/TIL_210507/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210507/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;hash-router&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hash-router&quot; aria-label=&quot;hash router permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hash Router&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;react지원 기능으로, Routing API인듯&lt;/li&gt;
 &lt;li&gt;특정 path를 호출하면, 특정 component 페이지가 보이도록 해준다&lt;/li&gt;
@@ -204,135 +221,4 @@ function App() {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
   rating: PropTypes.number,
-};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210429]]></title><description><![CDATA[Firebase]]></description><link>https://dobedh.github.io/TIL_210317/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210317/</guid><pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;firebase&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#firebase&quot; aria-label=&quot;firebase permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Firebase&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[TIL_210317]]></title><description><![CDATA[3.2 Mixins 의미 scss에서 function 처럼 일부 func을 생성해서 활용할 수 있도록 하는 것 상황에 따라서, css 결과가 달라지게 보이도록 하고 싶을때?! (if문 사용 등) minxis 파일 내에, func처럼 활용하고 싶은 것…]]></description><link>https://dobedh.github.io/TIL_54_210317/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_54_210317/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;32-mixins&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#32-mixins&quot; aria-label=&quot;32 mixins permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.2] Mixins&lt;/h1&gt;
-&lt;h3 id=&quot;의미&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%98%EB%AF%B8&quot; aria-label=&quot;의미 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;의미&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;scss에서 function 처럼 일부 func을 생성해서 활용할 수 있도록 하는 것&lt;/li&gt;
-&lt;li&gt;상황에 따라서, css 결과가 달라지게 보이도록 하고 싶을때?! (if문 사용 등)&lt;/li&gt;
-&lt;li&gt;minxis 파일 내에, func처럼 활용하고 싶은 것들을 생성하고, scss파일에 import해서 사용 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;directory&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#directory&quot; aria-label=&quot;directory permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;directory&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;src &gt; scss &gt; _mixins.scss&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;_mixinsscss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#_mixinsscss&quot; aria-label=&quot;_mixinsscss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;_mixins.scss&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;아래 형식으로 생성&lt;/li&gt;
-&lt;li&gt;파라미터를 넘길 수도, if문을 쓸수도 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;@mixin link($word) {
-    display : block;
-    @if $word == &amp;quot;odd&amp;quot; {
-        color : orangered
-    } else {
-        color : powderblue
-    };
-    text-decoration: none;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;stylesscss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#stylesscss&quot; aria-label=&quot;stylesscss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;styles.scss&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;아래 형식으로 import&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;        @import &amp;quot;_mixins&amp;quot;;
-
-
-        a {
-        &amp;amp;:nth-child(odd) {
-            @include link(&amp;quot;odd&amp;quot;)
-        }
-        &amp;amp;:nth-child(even) {
-        @include link(&amp;quot;even&amp;quot;)
-        }
-        }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;33-extends&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#33-extends&quot; aria-label=&quot;33 extends permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.3] Extends&lt;/h1&gt;
-&lt;h3 id=&quot;의미-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%98%EB%AF%B8-1&quot; aria-label=&quot;의미 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;의미&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;scss에서 같은 코드를 반복 할때 쓰는 것&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;사용법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9%EB%B2%95&quot; aria-label=&quot;사용법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용법&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;_directory.scss&lt;/code&gt; 생성&lt;/li&gt;
-&lt;li&gt;해당 파일 내, &lt;code class=&quot;language-text&quot;&gt;%extend_var&lt;/code&gt; 형태로 생성&lt;/li&gt;
-&lt;li&gt;styles.scss &gt; &lt;code class=&quot;language-text&quot;&gt;@import _directory&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;@extend %var&lt;/code&gt; 형태로 import&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;34-awesome-mixins-and-conclusions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#34-awesome-mixins-and-conclusions&quot; aria-label=&quot;34 awesome mixins and conclusions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.4] Awesome Mixins and Conclusions&lt;/h1&gt;
-&lt;h3 id=&quot;mixin으로-responsive한-화면-만들-수-있음&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mixin%EC%9C%BC%EB%A1%9C-responsive%ED%95%9C-%ED%99%94%EB%A9%B4-%EB%A7%8C%EB%93%A4-%EC%88%98-%EC%9E%88%EC%9D%8C&quot; aria-label=&quot;mixin으로 responsive한 화면 만들 수 있음 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mixin으로 responsive한 화면 만들 수 있음&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;화면 크기에 따라 css가 responsive하게 &lt;code class=&quot;language-text&quot;&gt;mixin&lt;/code&gt;으로 인자를 전달해서 func 생성&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;awesome-scss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#awesome-scss&quot; aria-label=&quot;awesome scss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;awesome scss&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;라이브러리가 있어서, 손쉽게 scss 작성 가능&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/colourgarden/awesome-scss&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/colourgarden/awesome-scss&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL_210316]]></title><description><![CDATA[3.0 세팅 scss 사용하기 위해서, 몇가지 세팅이 필요  install? npm install?  install?  나중에 확실히 확인해볼것ㅎㅎ SCSS 간편하게, 로지컬하게 css를 작성하고, 이걸 나중에 웹이 이해할 수 있는 css파일 형태로…]]></description><link>https://dobedh.github.io/TIL_53_210316/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_53_210316/</guid><pubDate>Tue, 16 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;30&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#30&quot; aria-label=&quot;30 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.0]&lt;/h1&gt;
-&lt;h3 id=&quot;세팅&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%B8%ED%8C%85&quot; aria-label=&quot;세팅 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;세팅&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;scss 사용하기 위해서, 몇가지 세팅이 필요&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;gulp&lt;/code&gt; install?&lt;/li&gt;
-&lt;li&gt;npm install?&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt; install? &lt;/li&gt;
-&lt;li&gt;나중에 확실히 확인해볼것ㅎㅎ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;scss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scss&quot; aria-label=&quot;scss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SCSS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;간편하게, 로지컬하게 css를 작성하고, 이걸 나중에 웹이 이해할 수 있는 css파일 형태로 변환함&lt;/li&gt;
-&lt;li&gt;scss내에서는 코드의 간편함, 변수사용 가능 등의 강점이 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;scss-directory&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scss-directory&quot; aria-label=&quot;scss directory permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;scss directory&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;src &gt; styles.scss&lt;/li&gt;
-&lt;li&gt;css파일로 변환하고 싶지 않은 파일은 언더바 &lt;code class=&quot;language-text&quot;&gt;_&lt;/code&gt;를 파일명에 넣어줌&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;dist &gt; styles.css&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;scss 가 변환될 css파일을 저장하는 저장소&lt;/li&gt;
-&lt;li&gt;scss파일 내용을 바꾸면 해당 디렉토리의 파일 내용 자동 변경됨 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;31-variables-and-nesting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#31-variables-and-nesting&quot; aria-label=&quot;31 variables and nesting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[3.1] Variables and Nesting&lt;/h1&gt;
-&lt;h3 id=&quot;varaibles&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#varaibles&quot; aria-label=&quot;varaibles permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Varaibles&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol&gt;
-&lt;li&gt;variable 파일을 만듬&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;varialbe로 활용할 것을 &lt;code class=&quot;language-text&quot;&gt;$&lt;/code&gt;을 이용해 지정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$bg : red&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;variable 설정한 폴더를 scss 파일에서 &lt;code class=&quot;language-text&quot;&gt;@import&lt;/code&gt;한 후에, variable 사용&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nesting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nesting&quot; aria-label=&quot;nesting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nesting&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;class나 css element 안에 다시 class나 element를 넣어서 css 속성을 부여하는 것&lt;/li&gt;
-&lt;li&gt;코드를 읽기가 매우 쉬워짐!&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;nesting 안에서 &lt;code class=&quot;language-text&quot;&gt;&amp;amp;&lt;/code&gt;는 nesting 상위의 father 값을 의미함&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.box {
-h2 {
-color : red;
-}
-button {
-color : blue
-}
-&amp;amp;:hover {
-background : peru;
-}
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210429]]></title><description><![CDATA[Firebase]]></description><link>https://dobedh.github.io/TIL_210317/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210317/</guid><pubDate>Thu, 29 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;firebase&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#firebase&quot; aria-label=&quot;firebase permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Firebase&lt;/h2&gt;</content:encoded></item></channel></rss>
