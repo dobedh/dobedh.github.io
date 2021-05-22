@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 21 May 2021 14:42:51 GMT</lastBuildDate><item><title><![CDATA[TIL-210521]]></title><description><![CDATA[Hooks useRef 특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것 document.getElementById와 유사한 역할 current useRef로 특정 tag를 잡았을 때,…]]></description><link>https://dobedh.github.io/TIL_210521/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210521/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 May 2021 09:45:34 GMT</lastBuildDate><item><title><![CDATA[TIL-210522]]></title><description><![CDATA[Hooks useConfirm Hooks은 아님 confirm() 브라우저에 내장된 function 인듯 클릭하면, cofirm 을 확인하는 alert 창을 띄어줌 onconfirm() alert창에 confirm을 하면 onconfirm 값은 tr…]]></description><link>https://dobedh.github.io/TIL_210522/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210522/</guid><pubDate>Sat, 22 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
+&lt;h3 id=&quot;useconfirm&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useconfirm&quot; aria-label=&quot;useconfirm permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useConfirm&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hooks은 아님&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;confirm&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#confirm&quot; aria-label=&quot;confirm permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;confirm()&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;브라우저에 내장된 function 인듯&lt;/li&gt;
+&lt;li&gt;클릭하면, cofirm 을 확인하는 alert 창을 띄어줌&lt;/li&gt;
+&lt;li&gt;onconfirm() alert창에 confirm을 하면 onconfirm 값은 true가 되고&lt;/li&gt;
+&lt;li&gt;onconfirm() alert 창에 취소를 하면 onconfirm 값은 false가 된다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const useConfirm = (message, onConfirm, onRejection) =&amp;gt; {
+  if (!onConfirm || typeof onConfirm !== &amp;quot;function&amp;quot;) {
+    return;
+  }
+  const confirmAction = () =&amp;gt; {
+    if (confirm(message)) {
+      onConfirm();
+    } else {
+      onRejection();
+    }
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;preventleave&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#preventleave&quot; aria-label=&quot;preventleave permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PreventLeave&lt;/h2&gt;
+&lt;h3 id=&quot;addeventlistener&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#addeventlistener&quot; aria-label=&quot;addeventlistener permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;addEventListener&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;반응할 event의 종류, event 발생시 실행할 함수를 넣어줘야함&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;window.addEventListener(&amp;quot;beforeunload&amp;quot;, listener)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;beforeunload =&gt; 나갈떄 발생하는 event&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;eventpreventdefault&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#eventpreventdefault&quot; aria-label=&quot;eventpreventdefault permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;event.preventDefault()&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 이벤트가 발생할떄, 바로 event 실행안하고 prevent 시키는 alert창을 띄운다?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const preventLeave = () =&amp;gt; {
+  const listener = (event) =&amp;gt; {
+    event.preventDefault();
+    event.returnValue = &amp;quot;&amp;quot;;
+  };
+  const protectEvent = () =&amp;gt; window.addEventListener(&amp;quot;beforeunload&amp;quot;, listener);
+  const unprotectEvent = () =&amp;gt;
+    window.removeEventListener(&amp;quot;beforeunload&amp;quot;, listener);
+  return { protectEvent, unprotectEvent };
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;use-fadein&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#use-fadein&quot; aria-label=&quot;use fadein permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;use Fadein&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;opacity, duration, dealy 등의 개념 사용&lt;/li&gt;
+&lt;li&gt;useEffect는 계속 사용되네&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const useFadeIn = (duration = 1, delay = 1) =&amp;gt; {
+  const element = useRef();
+  useEffect(() =&amp;gt; {
+    if (!element.current) {
+      return;
+    }
+    const { current } = element;
+    current.style.transition = `opacity ${duration}s ${delay}s`;
+    current.style.opacity = 1;
+  }, []);
+  return { ref: element, style: { opacity: 0 } };
+};
+
+const App = () =&amp;gt; {
+  const fadeIn = useFadeIn(3, 1);
+  const fadeIn2 = useFadeIn(7, 6);
+  return (
+    &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+      &amp;lt;h2 {...fadeIn}&amp;gt; Hello Counselors :) &amp;lt;/h2&amp;gt;
+      &amp;lt;p {...fadeIn2}&amp;gt; This is our playgorund! &amp;lt;/p&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210521]]></title><description><![CDATA[Hooks useRef 특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것 document.getElementById와 유사한 역할 current useRef로 특정 tag를 잡았을 때,…]]></description><link>https://dobedh.github.io/TIL_210521/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210521/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
 &lt;h3 id=&quot;useref&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useref&quot; aria-label=&quot;useref permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useRef&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것&lt;/li&gt;
@@ -284,47 +355,4 @@ return (
 &lt;li&gt;현재 로컬에 문제가 생겼을 때, git remote에 있는 걸 clone 할 수 있음&lt;/li&gt;
 &lt;li&gt;현재 로컬 버젼을, 깃헙에 있는 걸로 변경 : &lt;code class=&quot;language-text&quot;&gt;git reset --hard commit한 버전 코드&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;git pull로 병합 등등...&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210507]]></title><description><![CDATA[Hash Router react지원 기능으로, Routing API인듯 특정 path를 호출하면, 특정 component 페이지가 보이도록 해준다 근데 최근에는 Brower Router라는걸 더 많이 쓰는 듯. 확인 필요 Navigation navi…]]></description><link>https://dobedh.github.io/TIL_210507/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210507/</guid><pubDate>Fri, 07 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;hash-router&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hash-router&quot; aria-label=&quot;hash router permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hash Router&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;react지원 기능으로, Routing API인듯&lt;/li&gt;
-&lt;li&gt;특정 path를 호출하면, 특정 component 페이지가 보이도록 해준다&lt;/li&gt;
-&lt;li&gt;근데 최근에는 Brower Router라는걸 더 많이 쓰는 듯. 확인 필요&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { HashRouter, Route } from &amp;quot;react-router-dom&amp;quot;;
-import Home from &amp;quot;./routes/Home&amp;quot;;
-import About from &amp;quot;./routes/About&amp;quot;;
-
-function App() {
-  return (
-    &amp;lt;HashRouter&amp;gt;
-      &amp;lt;Route path=&amp;quot;/&amp;quot; exact={true} component={Home}&amp;gt;&amp;lt;/Route&amp;gt;
-      &amp;lt;Route path=&amp;quot;/about&amp;quot; component={About}&amp;gt;&amp;lt;/Route&amp;gt;
-    &amp;lt;/HashRouter&amp;gt;
-  );
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;navigation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#navigation&quot; aria-label=&quot;navigation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Navigation&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;navigation router를 생성해서, 상단 네비게이션으로 할수 있음&lt;/li&gt;
-&lt;li&gt;특히, html의 &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;태그를 쓰지 않고 &lt;code class=&quot;language-text&quot;&gt;Link&lt;/code&gt;태그를 사용하면, 전체 화면을 refresh하는게 아니라 react로 매우 빠르게 화면을 이동 가능&lt;/li&gt;
-&lt;li&gt;Navigation.js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function Navigation() {
-  return (
-    &amp;lt;div&amp;gt;
-      &amp;lt;Link to=&amp;quot;/&amp;quot;&amp;gt;Home&amp;lt;/Link&amp;gt;
-      &amp;lt;Link to=&amp;quot;/about&amp;quot;&amp;gt;About&amp;lt;/Link&amp;gt;
-    &amp;lt;/div&amp;gt;
-  );
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;App.js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function App() {
-  return (
-    &amp;lt;HashRouter&amp;gt;
-      &amp;lt;Navigation /&amp;gt;
-      &amp;lt;Route path=&amp;quot;/&amp;quot; exact={true} component={Home}&amp;gt;&amp;lt;/Route&amp;gt;
-      &amp;lt;Route path=&amp;quot;/about&amp;quot; component={About}&amp;gt;&amp;lt;/Route&amp;gt;
-    &amp;lt;/HashRouter&amp;gt;
-  );
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
