@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 May 2021 09:45:34 GMT</lastBuildDate><item><title><![CDATA[TIL-210522]]></title><description><![CDATA[Hooks useConfirm Hooks은 아님 confirm() 브라우저에 내장된 function 인듯 클릭하면, cofirm 을 확인하는 alert 창을 띄어줌 onconfirm() alert창에 confirm을 하면 onconfirm 값은 tr…]]></description><link>https://dobedh.github.io/TIL_210522/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210522/</guid><pubDate>Sat, 22 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dobedh | Feed]]></title><description><![CDATA[Blog Description]]></description><link>https://dobedh.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 May 2021 14:56:21 GMT</lastBuildDate><item><title><![CDATA[TIL-210523]]></title><description><![CDATA[Hooks current.requestFullscreen() screen을 크게 만든다 document.exitFullscreen() 풀스크린에서 나온다 useRef element에 태그를 붙이고 조정할떄 쓰인다. 자주 쓰이네! 오늘의 풀 예제]]></description><link>https://dobedh.github.io/TIL_210523/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210523/</guid><pubDate>Sun, 23 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
+&lt;h3 id=&quot;currentrequestfullscreen&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#currentrequestfullscreen&quot; aria-label=&quot;currentrequestfullscreen permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;current.requestFullscreen()&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;screen을 크게 만든다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;documentexitfullscreen&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#documentexitfullscreen&quot; aria-label=&quot;documentexitfullscreen permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;document.exitFullscreen()&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;풀스크린에서 나온다&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;useref&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useref&quot; aria-label=&quot;useref permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useRef&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;element에 태그를 붙이고 조정할떄 쓰인다. 자주 쓰이네!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;오늘의-풀-예제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98%EC%9D%98-%ED%92%80-%EC%98%88%EC%A0%9C&quot; aria-label=&quot;오늘의 풀 예제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘의 풀 예제&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  const useFull = () =&amp;gt; {
+    const element = useRef();
+    const makeFull = () =&amp;gt; {
+      if (element.current) {
+        element.current.requestFullscreen();
+      }
+    };
+    const makeSmall = () =&amp;gt; {
+      if (element.current) {
+        document.exitFullscreen();
+      }
+    };
+    return { element, makeFull, makeSmall };
+  };
+
+  const App = () =&amp;gt; {
+    const { element, makeFull, makeSmall } = useFull();
+    return (
+      &amp;lt;div className=&amp;quot;App&amp;quot; style={{ height: &amp;quot;1000vh&amp;quot; }}&amp;gt;
+        &amp;lt;div ref={element}&amp;gt;
+          &amp;lt;img src=&amp;quot;https://images.chosun.com/resizer/EQOOCCZ8k7OIspF8mmVBc1WK-j8=/530x749/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/5JJTP6WWYEZRJTHKVDT4XD4LVM.jpg&amp;quot; /&amp;gt;
+          &amp;lt;button onClick={makeFull}&amp;gt;Full Screen&amp;lt;/button&amp;gt;
+          &amp;lt;button onClick={makeSmall}&amp;gt;Small Screen&amp;lt;/button&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210522]]></title><description><![CDATA[Hooks useConfirm Hooks은 아님 confirm() 브라우저에 내장된 function 인듯 클릭하면, cofirm 을 확인하는 alert 창을 띄어줌 onconfirm() alert창에 confirm을 하면 onconfirm 값은 tr…]]></description><link>https://dobedh.github.io/TIL_210522/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210522/</guid><pubDate>Sat, 22 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
 &lt;h3 id=&quot;useconfirm&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useconfirm&quot; aria-label=&quot;useconfirm permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useConfirm&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Hooks은 아님&lt;/li&gt;
@@ -69,7 +109,63 @@ const App = () =&amp;gt; {
       &amp;lt;p {...fadeIn2}&amp;gt; This is our playgorund! &amp;lt;/p&amp;gt;
     &amp;lt;/div&amp;gt;
   );
-};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210521]]></title><description><![CDATA[Hooks useRef 특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것 document.getElementById와 유사한 역할 current useRef로 특정 tag를 잡았을 때,…]]></description><link>https://dobedh.github.io/TIL_210521/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210521/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;usenetwork&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#usenetwork&quot; aria-label=&quot;usenetwork permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useNetwork&lt;/h2&gt;
+&lt;h3 id=&quot;navigatoronline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#navigatoronline&quot; aria-label=&quot;navigatoronline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;navigator.onLine&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;네트워크가 online 이면 true를, offline이면 false를 뱉음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  const useNetwork = () =&amp;gt; {
+    const [status, setStatus] = useState(navigator.onLine);
+    const handleChange = () =&amp;gt; {
+      setStatus(navigator.onLine);
+    };
+    useEffect(() =&amp;gt; {
+      window.addEventListener(&amp;quot;online&amp;quot;, handleChange);
+      window.addEventListener(&amp;quot;offline&amp;quot;, handleChange);
+      return () =&amp;gt; {
+        window.removeEventListener(&amp;quot;online&amp;quot;, handleChange);
+        window.removeEventListener(&amp;quot;offline&amp;quot;, handleChange);
+      };
+    }, []);
+    return status;
+  };
+
+  const App = () =&amp;gt; {
+    const network = useNetwork();
+    return (
+      &amp;lt;div className=&amp;quot;App&amp;quot;&amp;gt;
+        &amp;lt;h2&amp;gt;{network ? &amp;quot;online&amp;quot; : &amp;quot;offline&amp;quot;}&amp;lt;/h2&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;usescroll&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#usescroll&quot; aria-label=&quot;usescroll permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useScroll&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;스크롤 움직이는 것에 대한 eventListener를 추가하고&lt;/li&gt;
+&lt;li&gt;y축이 100이상일때 색깔 변화하게 하는 것&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  const useScroll = () =&amp;gt; {
+    const [state, setState] = useState({ x: 0, y: 0 });
+    const handleScroll = () =&amp;gt; {
+      setState({ x: window.scrollX, y: window.scrollY });
+    };
+    useEffect(() =&amp;gt; {
+      window.addEventListener(&amp;quot;scroll&amp;quot;, handleScroll);
+      return () =&amp;gt; window.removeEventListener(&amp;quot;scroll&amp;quot;, handleScroll);
+    });
+    return state;
+  };
+
+  const App = () =&amp;gt; {
+    const { y } = useScroll();
+    return (
+      &amp;lt;div className=&amp;quot;App&amp;quot; style={{ height: &amp;quot;1000vh&amp;quot; }}&amp;gt;
+        &amp;lt;h2 style={{ position: &amp;quot;fixed&amp;quot;, color: y &amp;gt; 100 ? &amp;quot;red&amp;quot; : &amp;quot;blue&amp;quot; }}&amp;gt;
+          Hello Counselors :){&amp;quot; &amp;quot;}
+        &amp;lt;/h2&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL-210521]]></title><description><![CDATA[Hooks useRef 특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것 document.getElementById와 유사한 역할 current useRef로 특정 tag를 잡았을 때,…]]></description><link>https://dobedh.github.io/TIL_210521/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210521/</guid><pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hooks&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hooks&quot; aria-label=&quot;hooks permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hooks&lt;/h1&gt;
 &lt;h3 id=&quot;useref&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useref&quot; aria-label=&quot;useref permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useRef&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;특정 html에 ref를 추가해서, html 태그를 조작하거나 eventListener를 추가할 수 있도록 한 것&lt;/li&gt;
@@ -307,52 +403,4 @@ return (
 &lt;li&gt;npx create-react-app 생성하고자하는 project/dir 이름&lt;/li&gt;
 &lt;li&gt;cd pjt 이름&lt;/li&gt;
 &lt;li&gt;npm start&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL-210508]]></title><description><![CDATA[Link - pathname, state Link를 사용하면, pathname으로 연동될 url을 넣고 state 안에 내가 전달하고 싶은 데이터를 넘길 수 있다(string,array,object 등) Component 안의 props 모든 컴포넌…]]></description><link>https://dobedh.github.io/TIL_210508/</link><guid isPermaLink="false">https://dobedh.github.io/TIL_210508/</guid><pubDate>Sat, 08 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;link---pathname-state&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#link---pathname-state&quot; aria-label=&quot;link   pathname state permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Link - pathname, state&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Link를 사용하면, pathname으로 연동될 url을 넣고&lt;/li&gt;
-&lt;li&gt;state 안에 내가 전달하고 싶은 데이터를 넘길 수 있다(string,array,object 등)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    &amp;lt;Link
-      to={{
-        pathname: &amp;quot;/movie&amp;quot;,
-        state: {
-          title,
-          year,
-          summary,
-          poster,
-          genres,
-        },
-      }}
-    &amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;component-안의-props&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#component-%EC%95%88%EC%9D%98-props&quot; aria-label=&quot;component 안의 props permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Component 안의 props&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;모든 컴포넌트는 기본적으로 props를 전달 받아 가지고 있다(console안에서 확인 가능)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;state안에-값이-있는지-없는지-체크하고-페이지-이동&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#state%EC%95%88%EC%97%90-%EA%B0%92%EC%9D%B4-%EC%9E%88%EB%8A%94%EC%A7%80-%EC%97%86%EB%8A%94%EC%A7%80-%EC%B2%B4%ED%81%AC%ED%95%98%EA%B3%A0-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%EB%8F%99&quot; aria-label=&quot;state안에 값이 있는지 없는지 체크하고 페이지 이동 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;state안에 값이 있는지 없는지 체크하고 페이지 이동&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;만약, 유저가 url직접 치고 들어와서 데이터가 없는 페이지로 간다면 다시 홈이나 다른 페이지로 redirect 해줄 필요&lt;/li&gt;
-&lt;li&gt;이때 prpos 안에 있는 history 를 사용 가능&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;props.history.push(&amp;quot;url&amp;quot;)&lt;/code&gt; 이렇게하면, 해당 url로 redirect됨&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Detail extends React.Component {
-  componentDidMount() {
-    const { location, history } = this.props;
-    if (location.state === undefined) {
-      history.push(&amp;quot;/&amp;quot;);
-    }
-  }
-  render() {
-    const { location } = this.props;
-    if (location.state) {
-      return &amp;lt;span&amp;gt;{location.state.title}&amp;lt;/span&amp;gt;;
-    } else {
-      return null;
-    }
-  }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B8%B0%ED%83%80&quot; aria-label=&quot;기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;기타&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;현재 로컬에 문제가 생겼을 때, git remote에 있는 걸 clone 할 수 있음&lt;/li&gt;
-&lt;li&gt;현재 로컬 버젼을, 깃헙에 있는 걸로 변경 : &lt;code class=&quot;language-text&quot;&gt;git reset --hard commit한 버전 코드&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;git pull로 병합 등등...&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
